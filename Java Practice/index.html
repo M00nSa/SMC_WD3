@@ -86,6 +86,27 @@
 
         </div>
 
+        <div class="AELFB" id="multipleFunction">
+            <h1>Add Many Event Handlers to the Same Element</h1>
+
+            <button id="myBtn2">Click me.</button>
+            <script>
+                var x = document.getElementById("myBtn2");
+                x.addEventListener("click", myFunction);
+                x.addEventListener("click", someOtherFunction);
+                
+                function myFunction() {
+                  alert ("Hello World!");
+                }
+                
+                function someOtherFunction() {
+                  alert ("This function was also executed!");
+                }
+                </script>
+
+        </div>
+
+
 
 
     </body>

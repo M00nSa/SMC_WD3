@@ -22,3 +22,7 @@ color: steelblue;
  #onmouseover{
     width: 700px;
 }
+
+#multipleFunction h1{
+    color: orange;
+}
