@@ -24,8 +24,11 @@
                     document.getElementById("demo1").innerHTML= Date();
                 }
             </script>
+        </div>
 
-        <div class="AELFB" id="onclick">
+
+
+        <div class="Events" id="onclick">
             <h1>Events for button</h1>
             <P>This example uses the Onclick event to displayDate.
             </P>
@@ -40,9 +43,17 @@
                 }
             </script>
 
-            <button onclick="this.innerHTML=Date()">The time is?</button>
+
+            <div class="AELFB" id="onmouseover">
+                <h1>onmouseover</h1>
+    
+                <div onmouseover="this.style.backgroundColor='green'">This one!</div>
+    
+            </div>
 
         </div>
+
+
 
         <div class="AELFB" id="this">
             <h1>this.innerHTML</h1>
@@ -52,6 +63,29 @@
             <button onclick="this.innerHTML=Date()">The time is?</button>
 
         </div>
+
+
+
+
+        <div class="AELFB" id="alert">
+            <h1>alert with onclick</h1>
+
+            <button onclick="alert('Welcome')">Click me.</button>
+
+        </div>
+
+        <div class="AELFB" id="alert">
+            <h1>alert with addEventListener</h1>
+
+            <button id="myBtn">Click me.</button>
+            <script>
+                document.getElementById("myBtn").addEventListener("click", function(){
+                    alert("Hello World!");
+                });
+            </script>
+
+        </div>
+
 
 
     </body>

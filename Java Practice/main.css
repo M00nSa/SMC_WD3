@@ -3,7 +3,7 @@
     font-size: 40px;
 
 }
-.AELFB{
+.AELFB, .Events{
     border: 5px outset;
     padding: 10px;
     width: 800px;
@@ -17,4 +17,8 @@ color: steelblue;
 
 #this h1{
     color: grey;
+}
+
+ #onmouseover{
+    width: 700px;
 }
