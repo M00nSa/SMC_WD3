@@ -87,7 +87,7 @@
         </div>
 
         <div class="AELFB" id="multipleFunction">
-            <h1>Add Many Event Handlers to the Same Element</h1>
+            <h1>Using Var to Add Many Event to the same button(click)</h1>
 
             <button id="myBtn2">Click me.</button>
             <script>
@@ -103,8 +103,50 @@
                   alert ("This function was also executed!");
                 }
                 </script>
-
         </div>
+
+        <div class="AELFB" id="multipleFunction2">
+            <h1>Using Var to Add Many Event to the same button (mouseover,mouseout)</h1>
+            <button id="myBtn3">Click me.</button>
+            <p id="demo3"></p>
+
+            <script>
+
+               // var x = document.getElementById("myBtn3");
+               //x.addEventListener("mouseover", myFunction);
+               // x.addEventListener("click", mySecondFunction);
+               // x.addEventListener("mouseout", myThirdFunction);
+
+               // function myFunction() {
+                //document.getElementById("demo3").innerHTML += "Moused over!<br>";
+               // }
+
+               // function mySecondFunction() {
+               // document.getElementById("demo3").innerHTML += "Clicked!<br>";
+                //}
+
+               // function myThirdFunction() {
+               // document.getElementById("demo3").innerHTML += "Moused out!<br>";
+               // }
+
+               //Or
+
+           document.getElementById("myBtn3").addEventListener("mouseover", myFunction);
+            document.getElementById("myBtn3").addEventListener("mouseout", mySecondFunction);
+
+            function myFunction(){
+               document.getElementById("demo3").innerHTML += "Hi!<br>";
+            }
+
+            function mySecondFunction(){
+                document.getElementById("demo3").innerHTML += "Bye<br>";
+            }
+
+            
+            </script>
+        <div>
+
+        
 
 
 
