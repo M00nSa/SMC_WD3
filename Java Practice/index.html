@@ -164,6 +164,31 @@
 
 
 
+
+        
+        <!--The most important method that always should be use.-->
+
+        <div class="AELFB" id="allBrowsers">
+                <h1>using solution that will work for all browsers.</h1>
+                <button id="myBtn4">Click me.</button>
+                <p id="demo4"></p>
+    
+                <script>
+                    var x = document.getElementById("myBtn4");
+                    if (x.addEventListener){
+                        x.addEventListener("click", myFunction);
+                    } else if (x.attachEvent){
+                        x.attachEvent("onclick", myFunction);
+                    }
+
+                    function myFunction(){
+                        alert("Hello WOrld!");
+                    }
+                </script>
+        </div>
+
+        <!--The most important method that always should be use.-->
+
     </body>
 
     <footer>
