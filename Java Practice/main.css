@@ -30,3 +30,7 @@ color: steelblue;
 #multipleFunction2 h1{
     color: black;
 }
+
+#windowResize h1{
+    color: rgb(4, 175, 255);
+}
