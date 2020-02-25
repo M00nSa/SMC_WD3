@@ -189,6 +189,30 @@
 
         <!--The most important method that always should be use.-->
 
+
+
+        <div class="section" id="Section1">
+        </div>
+        
+        <div class="section" id="Section2">
+            <button id="mainButton">Click Me!</button>
+        </div>
+        
+        <script>
+        var mainB = document.getElementByID("mainButton");
+        mainB.addEventListener("click", function(){
+            document.getElementByID("Section1").backgroundColor("red");
+        });
+        function doIT(){
+            document.getElementByID("Section2").backgroundColor("green");
+        }
+        </script>
+
+
+
+
+
+
     </body>
 
     <footer>
