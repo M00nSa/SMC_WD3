@@ -15,8 +15,8 @@
     <title>Bootstrap Grid and Navigation Homework</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Belleza&display=swap&subset=latin-ext');
-        @import url('https://fonts.googleapis.com/css?family=Belleza|Roboto+Condensed&display=swap&subset=latin-ext');
+       @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
+       @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:900&display=swap');
         .navbar-brand img {
             width: 80px;
         }
@@ -26,8 +26,12 @@
 
         h2{
             font-size: 22px;
-            font-family: 'Roboto Condensed' ;
+            font-family: 'Frank Ruhl Libre' ;
         }
+        .nav-link{
+            font-family: 'Frank Ruhl Libre' ;
+        }
+        
         h3{
             font-size: 18px;
         }
@@ -36,7 +40,7 @@
         }
          
         h3,p {
-            font-family: 'Belleza' ;
+            font-family: 'Cormorant' ;
             letter-spacing: .4px;
         }
         .col-2 {
@@ -103,8 +107,7 @@
        }
 
        .Company{
-        padding-top: 3vw;
-        padding-bottom: 3vw;
+        padding: 9vw;
         
         }
 
@@ -117,7 +120,7 @@
         }
 
         .buttoncontainer button{
-            padding: 4.2vw;
+            padding-top: 6vw;
         }
        
        .navbar-light .navbar-nav .nav-link {
@@ -128,39 +131,45 @@
         padding: 1.75rem 1rem;
        }
 
+       .navbar-toggler-icon {
+        width: 1em;
+        color: black;
+        }
+
+        .buttoncontainer .form-control{
+            width: 27vw;
+        }
+        
     </style>
   </head>
 
 
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
-        <div class="row">
-            <div class="col-4 col-md-4">
-                <div class="logocontainer">
-                <a class="navbar-brand" href="#"> 
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top  d-flex justify-content-between">
+            <div class="logocontainer mr-auto">
+                <a class="navbar-brand" href="index.html"> 
                     <img src="Pictures/logo.png" alt="Our brand logo"/>
                 </a>
-                </div>
             </div>
-            <div class="col-2 d-md-none">
+           
+            
+                <div class="buttoncontainer">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            
                 <div class="buttoncontainer">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-            </div>
-            <div class="col-4 col-md-2" >
-                <div class="buttoncontainer">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                </div>
-            </div>
-            
+
+
             <div class="collapse navbar-collapse col-md-4" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
                   </li>
                   <!--<span class="sr-only">(current)</span> is only for screen readers to show the current page.-->
                   <li class="nav-item">
@@ -174,14 +183,13 @@
                     </li>
                 </ul>
               </div>
-            <div class="col-2">
-                <div class="cartimgcontainer" >
-                <a class="navbar-brand" href="#"> 
-                    <img src="Pictures/cart.svg"> 
-                </a>
-                </div>
-            </div>
-        </div>
+              
+                <!--<div class="cartimgcontainer" >
+                    <a class="navbar-brand" href="#"> 
+                        <img src="Pictures/cart.svg"> 
+                    </a>
+                </div> -->
+            
        
         
     </nav>
