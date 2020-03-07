@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
     <title>Paradocs Coffee and Tea</title>
 
@@ -32,27 +33,112 @@
         }
         .Logocontainer{
             background-color: white;
-            height: 5rem;
+            height: 8rem;
         }
 
         .Logocontainer img{
-        width: 9rem;
+        width: 10rem;
         }
 
         .container h1{
             font-size: 2rem;
         }
 
+        .search-form input {
+            border-top: 1px solid #fff;
+            border-left: 1px solid white;
+            background: 0 0;
+            border-right: 1px solid;
+            letter-spacing: .1em;
+            font-size: .90rem;
+            color: #fff;
+            border-radius: 0px;
+            padding: 4px 0px 0px 27px;
+            padding-bottom: 0;
+            max-width: 115px;
+           
+            
+        }
+
+        .search-form input:focus{
+            max-width: 100%;
+        }
+        .collapse  .form-control {
+            background-image: url(https://img.icons8.com/android/24/000000/search.png);
+            background-repeat: no-repeat;
+            background-position: 2px;
+            background-size: 18px;
+        }
+
+        .navbar-light .navbar-toggler{
+            border: 0px;
+        }
+        
         
     </style>
 </head>
 
 <body>
+
+
+    <nav class="navbar navbar-expand-md fixed-bottom d-flex justify-content-between navbar-light bg-white py-4">
+        <!--<div class="Logocontainer mr-auto">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/favicon.png" alt="PCT Logo"/>
+        </a>
+        </div>-->
+
+        <div class="buttoncontainer">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse col-md-4" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-md-4">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+              </li>
+              <!--<span class="sr-only">(current)</span> is only for screen readers to show the current page.-->
+              <li>
+                <form role="search" action="/" method="get" class="search-form">
+                    <label class="sr-only">Search</label>
+                    <span class="icon-search"></span><!-- .icon-search -->
+                    <input class="form-control" name="s" type="search" placeholder="Search" title="search" aria-label="Search" autocomplete="off">
+                </form>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">Find Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">Account</a>
+                  </li>
+                
+            </ul>
+          </div>
+          
+    
+            </div> 
+
+
+    </nav>
+
+
     <div class="Logocontainer mr-auto">
-            <a class="navbar-brand" href="index.html"> 
+            <a class="navbar-brand py-4 pl-2" href="index.html"> 
                 <img src="assets/Logo.png" alt="PCT Logo"/>
             </a>
     </div>
+
+
+
+
     <div class="jumbotron jumbotron-fluid" style="background-image: url(assets/Jombo.jpg);">
         <div class="container pt-5">
             <h1 class="display-4 text-light">Girls Gotta Run is back</h1>
