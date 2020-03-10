@@ -1,0 +1,240 @@
+
+        .jumbotron {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .display-4 {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .btn {
+            border: 1px solid white;
+            border-radius: 3rem;
+
+        }
+
+        .btn-lg{
+            color: white;
+        }
+
+        hr {
+            border-color: #72472B;
+        }
+
+        .Logocontainer {
+            background-color: white;
+            height: 4rem;
+        }
+
+        .Logocontainer img {
+            width: 9rem;
+        }
+
+        .container h1 {
+            font-size: 1.9rem;
+        }
+
+        .search-form input {
+            background: 0 0;
+            border-right: 1px solid;
+            letter-spacing: .1em;
+            font-size: .90rem;
+            border: 0;
+            padding: 4px 0px 0px 27px;
+            padding-bottom: 0;
+            max-width: 115px;
+            border-bottom: 1px solid black;
+            border-radius: 0px;
+
+        }
+
+        .search-form input:focus {
+            max-width: 100%;
+        }
+
+        .collapse .form-control {
+            background-image: url(https://img.icons8.com/android/24/000000/search.png);
+            background-repeat: no-repeat;
+            background-position: 2px;
+            background-size: 18px;
+        }
+
+        .navbar-light .navbar-toggler {
+            border: 0px;
+        }
+
+        .navbar-toggler-icon {
+            width: 27px;
+        }
+
+        .navbar-light .navbar-toggler {
+            border: 1px solid #72472B;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            padding: 0px;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+        }
+
+        .navbar-collapse {
+            width: 100%;
+            background: rgba(219, 185, 113, .90);
+            bottom: 14vh;
+            position: absolute;
+            left: 0px;
+            padding: 30px;
+            max-height: calc(100vh - 70px);
+            transition: all 0.5s ease 0s;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(219, 185, 113, .60);
+        }
+
+        .btn {
+            border: 2px solid white;
+        }
+
+        .TNav {
+            background-color: #D1BF96;
+            font-size: 13px;
+        }
+
+
+
+        p {
+            line-height: 33px;
+        }
+
+        p,
+        h2 {
+            letter-spacing: .65px;
+        }
+
+        @media screen and (min-width: 760px) {
+            .Logocontainer img {
+                width: 12rem;
+            }
+
+            .flex-container {
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            .dropdown-menu {
+                background-color: white;
+            }
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+
+        }
+
+
+        td,
+        th {
+            border: 2px solid #E0E0E0;
+            padding: 10px;
+            width: 100%;
+            letter-spacing: 1px;
+        }
+
+
+        thead {
+            background-color: #45ACC9;
+        }
+
+
+
+        tbody tr:nth-child(even) {
+            background-color: #E1D6BC;
+        }
+
+        tbody tr:hover {
+            background-color: #72472B;
+            color: white;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .Menu h2,
+        .Dailyspecials h2 {
+            text-align: center;
+        }
+
+        .flex-container .row {
+            font-size: 1.5rem;
+            width: 100%;
+        }
+
+        .Logocontainer p {
+            text-align: center;
+        }
+
+        .Dailyspecials {
+            background-color: #618B75;
+        }
+
+        .jumbotron .container .lead {
+            text-shadow: 1px 1px #261f1f;
+        }
+
+        .jumbotron {
+            padding: 1rem 1rem;
+        }
+
+        .rounded-circle {
+            border-radius: 10% !important;
+        }
+
+        .featurette .btn {
+            border: 2px solid #72472B;
+        }
+
+        .h2,
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .Menu h2 {
+            background-color: #E1D6BC;
+        }
+
+        footer {
+            background-color: #72472B;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        footer,
+        .Bottompage .divider {
+            color: white;
+        }
+
+        @media screen and (min-width:760px) {
+            .navbar-collapse {
+                position: initial;
+                background-color: #f8f9fa;
+                justify-content: flex-end;
+            }
+        }

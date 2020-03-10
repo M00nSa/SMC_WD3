@@ -9,341 +9,192 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <!-- Main CSS -->
+    <link href="main.css" rel="stylesheet">
+
 
     <title>Paradocs Coffee and Tea</title>
 
-    <style>
-        .jumbotron{
-            background-size: cover;
-            background-position: center;
-        }
-        .display-4 {
-            background-color: rgba(0,0,0,.5);
-        }
-
-        .btn{
-            border: 1px solid white;
-            border-radius: 3rem;
-            color: white;
-        }
-
-        hr{
-            border-color: #72472B;
-        }
-        .Logocontainer{
-            background-color: white;
-            height: 4rem;
-        }
-
-        .Logocontainer img{
-        width: 9rem;
-        }
-
-        .container h1{
-            font-size: 2rem;
-        }
-
-        .search-form input {
-            background: 0 0;
-            border-right: 1px solid;
-            letter-spacing: .1em;
-            font-size: .90rem;
-            border: 0;
-            padding: 4px 0px 0px 27px;
-            padding-bottom: 0;
-            max-width: 115px;
-            border-bottom: 1px solid black;
-            border-radius: 0px;
-            
-        }
-
-        .search-form input:focus{
-            max-width: 100%;
-        }
-        .collapse  .form-control {
-            background-image: url(https://img.icons8.com/android/24/000000/search.png);
-            background-repeat: no-repeat;
-            background-position: 2px;
-            background-size: 18px;
-        }
-
-        .navbar-light .navbar-toggler{
-            border: 0px;
-        }
-
-        .navbar-toggler-icon{
-            width: 27px;
-        }
-
-        .navbar-light .navbar-toggler {
-        border: 1px solid #72472B;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        padding: 0px;
-        }
-        
-        .navbar-light .navbar-nav .nav-link {
-    color: black;
-}
-
-.navbar-collapse{
-    width: 100%;
-    background: rgba( 219, 185, 113, .90);
-    bottom: 14vh;
-    position: absolute;
-    left: 0px;
-    padding: 30px;
-    max-height: calc(100vh - 70px);
-    transition: all 0.5s ease 0s;
-}
-        
-.btn {
-    border: 2px solid white;
-}
-
-.TNav{
-    background-color: #D1BF96;
-    font-size: 13px;
-}
-
-
-
-p{
-    line-height: 33px;
-}
-p, h2{
-    letter-spacing: .65px;
-}
-
-@media screen and (min-width: 760px){
-    .Logocontainer img {
-    width: 12rem;}
-    .flex-container{
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-}
-
-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    width: 100%;
-   
-}
-
-
-td, th{
-    border: 2px solid #E0E0E0;
-    padding: 10px;
-    width: 100%;
-    letter-spacing: 1px;
-}
-
-
-thead{
-    background-color: #45ACC9;
-}
-
-
-
-tbody tr:nth-child(even){
-    background-color: #E1D6BC;
-}
-tbody tr:hover{
-    background-color:#72472B;
-    color: white;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-
-.Menu h2, .Dailyspecials h2{
-text-align: center;
-}
-
-.flex-container .row{
-    font-size: 1.5rem;
-    width: 100%;
-}
-.Logocontainer p{
-    text-align: center;
-}
-
-.Dailyspecials{
-    background-color: #618B75;
-}
-
-.jumbotron .container .lead{
-    text-shadow: 1px 1px #261f1f;
-}
-
-.jumbotron {
-    padding: 1rem 1rem;
-}
-
-.rounded-circle {
-    border-radius: 10%!important;
-}
-
-.featurette .btn{
-    border: 2px solid #72472B;
-}
-
-.h2, h2 {
-    font-size: 1.5rem;
-}
-
-.Menu h2{
-    background-color: #E1D6BC;
-}
-    </style>
+    
 </head>
 
 <body>
-
+    <!-- START BOTTOM NAVBAR -->
     <div class="Logocontainer TNav py-4 pl-3">
         <P>Free shipping on orders over $50</P>
     </div>
-    <nav class="navbar navbar-expand-md fixed-bottom d-flex justify-content-between navbar-light bg-white py-4">
-        
 
-        <div class="buttoncontainer">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-md fixed-bottom d-flex justify-content-between navbar-light bg-light py-4 py-md-0">
+
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
+        </button>
+
+        <div class="Logocontainer">
+            <a class="navbar-brand pt-2 pl-3" href="index.html">
+                <img src="assets/Paradocs.png" alt="PCT Logo" />
+            </a>
         </div>
 
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mt-md-4">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
-              </li>
-              <!--<span class="sr-only">(current)</span> is only for screen readers to show the current page.-->
-              <li>
-                <form role="search" action="/" method="get" class="search-form">
-                    <label class="sr-only">Search</label>
-                    <span class="icon-search"></span><!-- .icon-search -->
-                    <input class="form-control" name="s" type="search" placeholder="Search" title="search" aria-label="Search" autocomplete="off">
-                </form>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">About Us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">Find Us</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                </li>
+                <!--<span class="sr-only">(current)</span> is only for screen readers to show the current page.-->
+                <li>
+                    <form role="search" action="/" method="get" class="search-form d-md-none">
+                        <label class="sr-only">Search</label>
+                        <span class="icon-search"></span><!-- .icon-search -->
+                        <input class="form-control" name="s" type="search" placeholder="Search" title="search"
+                            aria-label="Search" autocomplete="off">
+                    </form>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">Shop</a>
+                    <a class="nav-link" href="#" target="_blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">Find Us</a>
+                </li>
+                <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" href="#" target="_blank" id="dropdown10" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Shop</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="#">Coffee</a>
+                        <a class="dropdown-item" href="#">Tea</a>
+                        <a class="dropdown-item" href="#">Accessories</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" target="_blank">Account</a>
-                  </li>
-                
+                </li>
+
             </ul>
-          </div>
-          <div class="Logocontainer">
-            <a class="navbar-brand pt-2 pl-3" href="index.html"> 
-                <img src="assets/Logo.png" alt="PCT Logo"/>
-            </a>
         </div>
-    
-        </div> 
+
+
+        </div>
         <a href="https://m.facebook.com/paradocscoffee/" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 226 226"
-            style=" fill:#000000;"><g transform="translate(4.972,4.972) scale(0.956,0.956)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g stroke="#72472b" stroke-width="10" stroke-linejoin="round"><path d="M207.16667,113c0,52.00681 -42.15985,94.16667 -94.16667,94.16667c-52.00681,0 -94.16667,-42.15985 -94.16667,-94.16667c0,-52.00681 42.15985,-94.16667 94.16667,-94.16667c52.00681,0 94.16667,42.15985 94.16667,94.16667z" fill="#ecf0f1"></path><path d="M138.27433,113h-15.85767v56.5h-23.54167v-56.5h-14.125v-18.83333h14.125v-11.34708c0.00942,-16.51683 6.86946,-26.31958 26.329,-26.31958h16.046v18.83333h-10.76796c-7.57571,0 -8.06538,2.825 -8.06538,8.11246v10.72088h18.83333z" fill="#ffffff"></path></g><path d="M0,226v-226h226v226z" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><g stroke="none" stroke-width="1" stroke-linejoin="miter"><path d="M113,18.83333c-52.00681,0 -94.16667,42.15985 -94.16667,94.16667c0,52.00681 42.15985,94.16667 94.16667,94.16667c52.00681,0 94.16667,-42.15985 94.16667,-94.16667c0,-52.00681 -42.15985,-94.16667 -94.16667,-94.16667z" fill="#92c8e9"></path><path d="M138.27433,113h-15.85767v56.5h-23.54167v-56.5h-14.125v-18.83333h14.125v-11.34708c0.00942,-16.51683 6.86946,-26.31958 26.329,-26.31958h16.046v18.83333h-10.76796c-7.57571,0 -8.06538,2.825 -8.06538,8.11246v10.72088h18.83333z" fill="#ffffff"></path></g><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path></g></g>
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="d-md-none" x="0px" y="0px" width="48" height="48"
+                viewBox="0 0 226 226" style=" fill:#000000;">
+                <g transform="translate(4.972,4.972) scale(0.956,0.956)">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt"
+                        stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g stroke="#72472b" stroke-width="10" stroke-linejoin="round">
+                            <path
+                                d="M207.16667,113c0,52.00681 -42.15985,94.16667 -94.16667,94.16667c-52.00681,0 -94.16667,-42.15985 -94.16667,-94.16667c0,-52.00681 42.15985,-94.16667 94.16667,-94.16667c52.00681,0 94.16667,42.15985 94.16667,94.16667z"
+                                fill="#ecf0f1"></path>
+                            <path
+                                d="M138.27433,113h-15.85767v56.5h-23.54167v-56.5h-14.125v-18.83333h14.125v-11.34708c0.00942,-16.51683 6.86946,-26.31958 26.329,-26.31958h16.046v18.83333h-10.76796c-7.57571,0 -8.06538,2.825 -8.06538,8.11246v10.72088h18.83333z"
+                                fill="#ffffff"></path>
+                        </g>
+                        <path d="M0,226v-226h226v226z" fill="none" stroke="none" stroke-width="1"
+                            stroke-linejoin="miter"></path>
+                        <g stroke="none" stroke-width="1" stroke-linejoin="miter">
+                            <path
+                                d="M113,18.83333c-52.00681,0 -94.16667,42.15985 -94.16667,94.16667c0,52.00681 42.15985,94.16667 94.16667,94.16667c52.00681,0 94.16667,-42.15985 94.16667,-94.16667c0,-52.00681 -42.15985,-94.16667 -94.16667,-94.16667z"
+                                fill="#92c8e9"></path>
+                            <path
+                                d="M138.27433,113h-15.85767v56.5h-23.54167v-56.5h-14.125v-18.83333h14.125v-11.34708c0.00942,-16.51683 6.86946,-26.31958 26.329,-26.31958h16.046v18.83333h-10.76796c-7.57571,0 -8.06538,2.825 -8.06538,8.11246v10.72088h18.83333z"
+                                fill="#ffffff"></path>
+                        </g>
+                        <path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path>
+                    </g>
+                </g>
+            </svg>
         </a>
 
 
     </nav>
+    <!--BOTTOM NAVBAR Ends -->
 
 
-    
 
 
 
-        <div class="jumbotron jumbotron-fluid mb-5" style="background-image: url(assets/Jombo2.jpeg);">
-           
+    <div class="jumbotron jumbotron-fluid mb-5" style="background-image: url(assets/Jombo2.jpeg);">
+
         <div class="container pt-5 px-0">
-            <h1 class="display-4 text-light col-md-5 py-2">Our weekly contest</h1>
-            <p class="lead text-light py-4 pl-2  pr-5 col-md-7 mb-0">This light roast from Ethiopia shines with notes of strawberry, marshmallow, and sweet spice - and it's only here for a limited time.</p>
-           
-                    <a class="btn btn-lg" href="#" role="button">Click here now!
-                    </a>
+            <h1 class="display-4 text-light col-md-6 py-2">Our New Blend is Back!</h1>
+            <p class="lead text-light py-4 pl-2  pr-5 col-md-7 mb-0">This light roast from Ethiopia shines with notes of
+                strawberry, marshmallow, and sweet spice - and it's only here for a limited time.</p>
+
+            <a class="btn btn-lg" href="#" role="button">Click here now!
+            </a>
         </div>
     </div>
-    </div>
+   
 
-    
 
+
+
+
+ <!-- START THE FEATURETTES -->
     <div class="container">
-        <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">
 
         <div class="row featurette py-4">
             <div class="col-md-7">
                 <h2 class="featurette-heading ">Our Story.. </h2>
-                <p class="lead">We're longtime supporters of Girls Gotta Run Foundation. Learn more about their mission to help girls in Ethiopia achieve success through education and athletics.</p>
+                <p class="lead">We're longtime supporters of Girls Gotta Run Foundation. Learn more about their mission
+                    to help girls in Ethiopia achieve success through education and athletics.</p>
             </div>
-           
-                <div class="col-md-4">
-                    <picture class="rounded">
-                        <source media="(min-width: 1200px)" srcset="assets/story500.jpg">
-                        <source media="(min-width: 768px)" srcset="assets/story270.jpg">
-                            <img src="assets/story345.jpg" alt="PCTStory" class="rounded-circle">
-                    </picture>
-                </div>
-            </div>
-     
 
-      
+            <div class="col-md-4">
+                <picture class="rounded">
+                    <source media="(min-width: 1200px)" srcset="assets/story500.jpg">
+                    <source media="(min-width: 768px)" srcset="assets/story270.jpg">
+                    <img src="assets/story345.jpg" alt="PCTStory" class="rounded-circle">
+                </picture>
+            </div>
+        </div>
+
+
+
         <div class="row featurette py-4">
             <div class="col-md-7 order-md-2 ml-md-5 pl-md-5">
                 <h2 class="featurette-heading">This Month's Favorites.. </h2>
-                <p class="lead">French Vanilla, Chocolate Mocha, Peanut Butter Cookie, White Chocolate Strawberry Truffle and more.</p>
-                
-                <a class="btn btn-lg mb-2 mt-md-5" href="#" role="button" target="_blank"><button>Discover more..</button></a>
+                <p class="lead">French Vanilla, Chocolate Mocha, Peanut Butter Cookie, White Chocolate Strawberry
+                    Truffle and more.</p>
+
+                <a class="btn mb-2 mt-md-5" href="#" role="button" target="_blank">Discover more..</a>
             </div>
-           
+
             <div class="col-md-4">
-                    <picture>
-                        <source media="(min-width: 1200px)" srcset="assets/coffee500.jpg">
-                        <source media="(min-width: 768px)" srcset="assets/coffee270.jpg">
-                            <img src="assets/coffee345.jpg" alt="MostWanted" class="rounded-circle">
-                    </picture>
-                </div>
-               
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="assets/coffee500.jpg">
+                    <source media="(min-width: 768px)" srcset="assets/coffee270.jpg">
+                    <img src="assets/coffee345.jpg" alt="MostWanted" class="rounded-circle">
+                </picture>
+            </div>
+
         </div>
 
-      
+
 
         <div class="row featurette py-4">
             <div class="col-md-7 ">
                 <h2 class="featurette-heading">Office Coffee Service..</h2>
-                <p class="lead">Want to enjoy sustainably delicious Allegro Coffee and Allegro Tea at work? Our office coffee division services supplies companies in Boulder, Denver and surrounding cities. Quality coffee is a wonderful benefit for your hard working staff – an affordable perk that makes for happy, motivated people!</p>
+                <p class="lead">Want to enjoy sustainably delicious Allegro Coffee and Allegro Tea at work? Our office
+                    coffee division services supplies companies in Boulder, Denver and surrounding cities. Quality
+                    coffee is a wonderful benefit for your hard working staff – an affordable perk that makes for happy,
+                    motivated people!</p>
             </div>
             <div class="col-md-4">
-                    <picture>
-                        <source media="(min-width: 1200px)" srcset="assets/office500.jpg">
-                        <source media="(min-width: 768px)" srcset="assets/office270.jpg">
-                            <img src="assets/office345.jpg" alt="OfficeCoffee" class="rounded-circle">
-                    </picture>
-                </div>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="assets/office500.jpg">
+                    <source media="(min-width: 768px)" srcset="assets/office270.jpg">
+                    <img src="assets/office345.jpg" alt="OfficeCoffee" class="rounded-circle">
+                </picture>
+            </div>
         </div>
 
         <hr class="featurette-divider">
@@ -351,69 +202,73 @@ text-align: center;
         <!-- /END THE FEATURETTES -->
     </div>
 
-    <div class="Menu">
-    <h2 class="py-4 mt-5"> Our Menu</h2>
-    <div class="flex-container">
-        
-        <div class="row">
-            <div class="col-md-6">
-                    <table class="table-striped">
-                                <thead>
-                                <tr>
-                                    <th><b>Espresso Drinks</b></th>
-                                    </tr>
-                                </thead>
-                            </table>
-                    
-                            <table>
-                                <tbody>
-                                <tr>
-                                        <td>Espresso</td>
-                                        <td>$2.50</td>
-                                </tr>
-                                <tr>
-                                        <td>Espresso Macchiato</td>
-                                        <td>$3.00</td>
-                                </tr>
-                                <tr>
-                                        <td>Cappuccino</td>
-                                        <td>$3.75</td>
-                                </tr>
-                                <tr>
-                                        <td>Americano</td>
-                                        <td>$2.75</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cafe Latte</td>
-                                        <td>$3.75</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vanilla Latte</td>
-                                        <td>$4.25</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Paradocs Latte</td>
-                                        <td>$4.25</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Caramel Latte </td>
-                                        <td>$4.25</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Caffe Mocha</td>
-                                        <td>$4.50</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Affogato</td>
-                                        <td>$4.50</td>
-                                    </tr>
-                    
-                                </tbody>
-                    </table>
-            </div>
-   
 
-            <div class="col-md-6 pt-5 pt-md-0">
+
+
+    <!--TABLE MENU-->
+    <div class="Menu">
+        <h2 class="py-4 mt-5"> Our Menu</h2>
+        <div class="flex-container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table-striped">
+                        <thead>
+                            <tr>
+                                <th><b>Espresso Drinks</b></th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Espresso</td>
+                                <td>$2.50</td>
+                            </tr>
+                            <tr>
+                                <td>Espresso Macchiato</td>
+                                <td>$3.00</td>
+                            </tr>
+                            <tr>
+                                <td>Cappuccino</td>
+                                <td>$3.75</td>
+                            </tr>
+                            <tr>
+                                <td>Americano</td>
+                                <td>$2.75</td>
+                            </tr>
+                            <tr>
+                                <td>Cafe Latte</td>
+                                <td>$3.75</td>
+                            </tr>
+                            <tr>
+                                <td>Vanilla Latte</td>
+                                <td>$4.25</td>
+                            </tr>
+                            <tr>
+                                <td>Paradocs Latte</td>
+                                <td>$4.25</td>
+                            </tr>
+                            <tr>
+                                <td>Caramel Latte </td>
+                                <td>$4.25</td>
+                            </tr>
+                            <tr>
+                                <td>Caffe Mocha</td>
+                                <td>$4.50</td>
+                            </tr>
+                            <tr>
+                                <td>Affogato</td>
+                                <td>$4.50</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="col-md-6 pt-5 pt-md-0">
                     <table>
                         <thead>
                             <tr>
@@ -421,7 +276,7 @@ text-align: center;
                             </tr>
                         </thead>
                     </table>
-                    
+
                     <table>
                         <tbody>
                             <tr>
@@ -464,23 +319,26 @@ text-align: center;
                                 <td>White Tea </td>
                                 <td>$3.50</td>
                             </tr>
-                                        
-                    
+
+
                         </tbody>
                     </table>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+    <!--/END TABLE MENU-->
 
 
- <!-- carousel starts -->
+
+
+    <!-- carousel starts For Daily Specials-->
     <div class="Dailyspecials py-4 mt-5">
         <h2>And our most wanteds..</h2>
     </div>
-  
+
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
+        <div class="carousel-inner">
 
             <div class="carousel-item active">
                 <img class="d-block w-100" src="assets/dessert3.jpg" alt="Affogato with Chocolatechip Cookie">
@@ -491,34 +349,121 @@ text-align: center;
             <div class="carousel-item">
                 <img class="d-block w-100" src="assets/dailyspecial3.jpg" alt="Matcha Brownie">
             </div>
-            </div>
-        
-                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-                </a>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- carousel ends -->
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="Bottompage p-4">
+                        <h2>Location</h2>
+                        <p><em>Los Angeles<br></em>323-965-2158</p>
+                        <p>1032 S Fairfax Ave<br>Los Angeles, CA 90019</p>
+
+                    </div>
+                </div>
+
+                <div class="col-3 py-4">
+                    <div class="Socialmedia">
+                        <a href="https://m.facebook.com/paradocscoffee/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                viewBox="0 0 226 226" style=" fill:#000000;">
+                                <g transform="translate(4.746,4.746) scale(0.958,0.958)">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none"
+                                        stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g stroke="#72472b" stroke-width="10" stroke-linejoin="round">
+                                            <path
+                                                d="M207.16667,113c0,52.00681 -42.15985,94.16667 -94.16667,94.16667c-52.00681,0 -94.16667,-42.15985 -94.16667,-94.16667c0,-52.00681 42.15985,-94.16667 94.16667,-94.16667c52.00681,0 94.16667,42.15985 94.16667,94.16667z"
+                                                fill="#3f51b5"></path>
+                                            <path
+                                                d="M138.27433,113h-15.85767v56.5h-23.54167v-56.5h-14.125v-18.83333h14.125v-11.34708c0.00942,-16.51683 6.86946,-26.31958 26.329,-26.31958h16.046v18.83333h-10.76796c-7.57571,0 -8.06538,2.825 -8.06538,8.11246v10.72088h18.83333z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                        <path d="M0,226v-226h226v226z" fill="none" stroke="none" stroke-width="1"
+                                            stroke-linejoin="miter"></path>
+                                        <g stroke="none" stroke-width="1" stroke-linejoin="miter">
+                                            <path
+                                                d="M113,18.83333c-52.00681,0 -94.16667,42.15985 -94.16667,94.16667c0,52.00681 42.15985,94.16667 94.16667,94.16667c52.00681,0 94.16667,-42.15985 94.16667,-94.16667c0,-52.00681 -42.15985,-94.16667 -94.16667,-94.16667z"
+                                                fill="#3f51b5"></path>
+                                            <path
+                                                d="M138.27433,113h-15.85767v56.5h-23.54167v-56.5h-14.125v-18.83333h14.125v-11.34708c0.00942,-16.51683 6.86946,-26.31958 26.329,-26.31958h16.046v18.83333h-10.76796c-7.57571,0 -8.06538,2.825 -8.06538,8.11246v10.72088h18.83333z"
+                                                fill="#ffffff"></path>
+                                        </g>
+                                        <path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3 py-4">
+                    <div class="Socialmedia">
+                        <a href="https://www.yelp.com/biz/paradocs-coffee-and-tea-los-angeles?rh_count=3&rh_start=0&start=20&ylist=coffee-shops-monterey-park-2"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g transform="">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <path d="" fill="none"></path>
+                                        <path d="" fill="none"></path>
+                                        <g>
+                                            <path
+                                                d="M132.225,108.84375c-1.67969,-1.84766 -4.77031,-2.62031 -7.08828,-3.39297c-2.41875,-0.80625 -4.90469,-1.51172 -7.32344,-2.28437c-4.77031,-1.57891 -9.10391,-4.43438 -14.14297,-5.24063c-0.20156,-0.03359 -0.36953,-0.06719 -0.50391,-0.13437c-1.34375,2.04922 -0.87344,4.16562 0.26875,6.34922c1.31016,2.51953 2.98984,4.93828 4.63594,7.25625c3.42656,4.8375 7.28984,9.30547 11.15312,13.77344c3.86328,-0.47031 6.65156,-4.90469 8.70078,-7.72656c1.27656,-1.78047 6.51719,-6.14766 4.3,-8.6zM74.51094,91.27422c-2.55312,-1.31016 -5.27422,-2.31797 -7.96172,-3.29219c-5.57656,-1.98203 -11.32109,-3.46016 -17.06563,-4.87109c-2.88906,2.62031 -2.62031,7.86094 -2.6875,11.35469c-0.03359,2.15 -1.81406,8.73438 1.41094,9.43984c2.45234,0.5375 5.44219,-0.60469 7.76016,-1.27656c2.45234,-0.73906 4.87109,-1.57891 7.32344,-2.31797c4.80391,-1.47812 10.01094,-1.6125 14.57969,-3.82969c0.16797,-0.06719 0.33594,-0.13437 0.50391,-0.16797c-0.06719,-2.45234 -1.67969,-3.89688 -3.86328,-5.03906zM125.47266,64.33203c-1.41094,-1.6125 -4.53516,-7.69297 -7.39062,-6.04687c-2.18359,1.24297 -3.62812,4.09844 -4.87109,6.18125c-1.31016,2.18359 -2.55313,4.43437 -3.86328,6.65156c-2.58672,4.33359 -6.34922,7.89453 -8.23047,12.63125c-0.06719,0.16797 -0.16797,0.33594 -0.26875,0.47031c1.67969,1.74688 3.86328,1.74688 6.24844,1.14219c2.75469,-0.73906 5.47578,-1.81406 8.09609,-2.92266c5.47578,-2.28437 10.68281,-5.03906 15.88984,-7.86094c0.40312,-3.89688 -3.32578,-7.59219 -5.61016,-10.24609zM86.06719,74.77969c-1.075,-4.77031 -2.25078,-9.50703 -3.39297,-14.27734c-1.10859,-4.63594 -2.72109,-9.40625 -3.19141,-14.17656c-0.33594,-3.56094 -0.36953,-7.12188 -0.77266,-10.64922c-0.33594,-2.92266 -0.70547,-6.71875 -2.85547,-8.96953c-0.06719,-0.10078 -0.16797,-0.16797 -0.20156,-0.26875c-0.10078,0.06719 -0.20156,0.10078 -0.30234,0.13438c-5.67734,2.31797 -10.68281,5.87891 -16.22578,8.36484c-4.03125,1.81406 -8.76797,2.72109 -12.46328,5.20703c4.26641,4.09844 7.79375,9.07031 11.52266,13.63906c3.29219,4.03125 6.85312,7.86094 10.41406,11.65703c3.46016,3.69531 6.65156,7.65938 10.11172,11.35469c1.17578,1.24297 2.25078,2.55312 3.52734,3.66172c0.83984,0.73906 2.28437,2.08281 3.49375,1.44453c2.08281,-1.04141 0.70547,-5.375 0.33594,-7.12188zM91.9125,127.62266c-0.13437,-2.55313 -0.40313,-5.10625 -0.57109,-7.65937c-0.33594,-5.00547 0.73906,-10.11172 -0.36953,-15.08359c-0.03359,-0.20156 -0.06719,-0.36953 -0.06719,-0.5375c-2.38516,-0.47031 -4.16562,0.73906 -5.77813,2.62031c-1.84766,2.18359 -3.49375,4.60234 -5.03906,6.9875c-3.225,4.97187 -5.94609,10.2125 -8.66719,15.48672c1.88125,3.39297 7.02109,4.33359 10.41406,5.20703c2.08281,0.5375 8.09609,3.79609 9.50703,0.80625c1.14219,-2.25078 0.70547,-5.40859 0.57109,-7.82734z"
+                                                fill="#ffffff"></path>
+                                            <path
+                                                d="M159.30156,54.32109c-5.40859,-15.65469 -15.68828,-29.26016 -30.67109,-36.81875c-17.09922,-8.63359 -37.28906,-9.43984 -55.9,-6.48359c-16.72969,2.6875 -34.36641,8.73438 -46.89687,20.55938c-6.58438,6.21484 -11.65703,13.73984 -14.34453,22.44063c-2.6875,8.73438 -3.49375,17.83828 -4.06484,26.90859c-0.03359,0.36953 -0.13437,0.67188 -0.33594,0.90703c0,0.06719 0.03359,0.16797 0.03359,0.26875c0,17.77109 -0.36953,36.38203 10.11172,51.70078c8.49922,12.46328 21.66797,20.66016 36.0125,24.75859c29.5625,8.46562 65.23906,3.225 88.98984,-17.06563c24.89297,-21.26484 27.17734,-57.88203 17.06562,-87.17578zM43.26875,37.625c3.99766,-3.29219 9.47344,-4.23281 14.10938,-6.31563c5.375,-2.41875 10.27969,-5.77812 15.68828,-8.16328c0.36953,-0.60469 1.00781,-0.97422 1.91484,-1.00781c0.83984,-0.03359 1.44453,0.40312 1.78047,0.97422c0.5375,-0.16797 1.17578,-0.03359 1.71328,0.5375c2.75469,2.88906 3.66172,6.92031 4.13203,10.78359c0.47031,3.96406 0.43672,7.96172 0.90703,11.92578c0.26875,2.41875 1.00781,4.80391 1.57891,7.15547c0.60469,2.48594 1.20937,5.00547 1.81406,7.49141c1.075,4.43437 2.21719,8.93594 3.15781,13.33672c0.60469,2.88906 1.41094,6.55078 -0.33594,9.20469c-2.08281,3.19141 -6.04687,2.95625 -8.86875,0.94063c-3.05703,-2.15 -5.375,-5.34141 -7.79375,-8.16328c-3.39297,-3.93047 -7.02109,-7.69297 -10.54844,-11.52266c-3.42656,-3.69531 -6.78594,-7.49141 -9.94375,-11.42187c-3.05703,-3.79609 -5.9125,-7.79375 -9.54063,-11.08594c-0.77266,-0.70547 -0.80625,-1.6125 -0.43672,-2.35156c-0.23516,-0.73906 -0.13437,-1.64609 0.67188,-2.31797zM49.38281,108.07109c-3.82969,-0.03359 -6.38281,-2.31797 -6.88672,-6.11406c-0.23516,-1.91484 -0.06719,-3.86328 0.10078,-5.81172c0.20156,-1.84766 0.13438,-3.72891 0.30234,-5.57656c0.30234,-3.93047 1.14219,-8.16328 4.33359,-10.78359c1.98203,-1.6125 5.00547,-0.10078 7.25625,0.47031c2.41875,0.60469 4.87109,1.24297 7.25625,1.98203c4.70313,1.41094 9.47344,2.98984 13.87422,5.13984c3.99766,1.94844 7.05469,4.97187 6.75234,9.675c-0.06719,1.075 -0.80625,1.67969 -1.6125,1.84766c-0.13437,0.47031 -0.43672,0.87344 -1.00781,1.14219c-0.83984,0.40313 -1.71328,0.77266 -2.58672,1.10859c-4.40078,1.57891 -9.10391,1.88125 -13.53828,3.29219c-4.46797,1.37734 -9.43984,3.66172 -14.24375,3.62813zM95.675,135.28203c-0.90703,3.72891 -3.72891,5.67734 -7.55859,5.27422c-1.94844,-0.20156 -3.79609,-0.80625 -5.61016,-1.44453c-1.78047,-0.60469 -3.59453,-1.00781 -5.375,-1.57891c-3.7625,-1.20938 -7.65938,-2.98984 -9.50703,-6.71875c-1.14219,-2.31797 1.075,-4.90469 2.11641,-6.95391c1.17578,-2.21719 2.35156,-4.43438 3.59453,-6.61797c2.45234,-4.26641 5.10625,-8.53281 8.19688,-12.32891c2.82188,-3.42656 6.45,-5.71094 10.98516,-4.33359c1.00781,0.30234 1.44453,1.17578 1.41094,1.98203c0.40312,0.23516 0.73906,0.63828 0.87344,1.24297c0.20156,0.90703 0.36953,1.84766 0.47031,2.78828c0.50391,4.63594 -0.26875,9.30547 0.06719,13.94141c0.43672,4.73672 1.47813,10.11172 0.33594,14.74766zM97.38828,86.33594c-0.67187,-0.83984 -0.5375,-1.78047 -0.03359,-2.45234c-0.20156,-0.43672 -0.26875,-0.94063 -0.03359,-1.51172c0.33594,-0.87344 0.73906,-1.71328 1.17578,-2.55313c2.21719,-4.13203 5.47578,-7.49141 7.82734,-11.52266c2.35156,-4.06484 4.53516,-9.10391 8.09609,-12.26172c2.85547,-2.55313 6.31562,-2.55313 9.20469,-0.06719c1.47812,1.27656 2.65391,2.82187 3.79609,4.36719c1.10859,1.51172 2.38516,2.85547 3.52734,4.33359c2.41875,3.12422 4.63594,6.78594 4.03125,10.91797c-0.36953,2.55312 -3.66172,3.42656 -5.67734,4.50156c-2.21719,1.17578 -4.43438,2.31797 -6.71875,3.42656c-4.43437,2.11641 -9.03672,4.13203 -13.73984,5.50937c-4.23281,1.20938 -8.53281,1.00781 -11.45547,-2.6875zM135.75234,113.74844c-0.90703,1.71328 -2.15,3.225 -3.42656,4.66953c-1.20937,1.41094 -2.25078,2.95625 -3.46016,4.40078c-2.51953,3.05703 -5.61016,6.01328 -9.74219,6.31562c-2.55313,0.20156 -4.16562,-2.78828 -5.64375,-4.53516c-1.64609,-1.91484 -3.25859,-3.82969 -4.80391,-5.77812c-3.05703,-3.86328 -6.01328,-7.89453 -8.39844,-12.19453c-2.15,-3.86328 -2.92266,-8.12969 0.06719,-11.79141c0.67188,-0.83984 1.6125,-0.90703 2.38516,-0.57109c0.36953,-0.30234 0.87344,-0.47031 1.47813,-0.36953c0.94062,0.13437 1.84766,0.33594 2.75469,0.60469c4.50156,1.24297 8.53281,3.69531 12.96719,5.10625c4.46797,1.41094 9.87656,2.41875 13.73984,5.20703c3.09062,2.21719 3.86328,5.57656 2.08281,8.93594z"
+                                                fill="#d03827"></path>
+                                            <path
+                                                d="M163.87031,56.67266c-4.77031,-15.75547 -13.73984,-29.66328 -27.54687,-38.86797c-15.55391,-10.41406 -35.37422,-12.93359 -53.68281,-11.58984c-17.36797,1.27656 -35.13906,6.01328 -49.92031,15.45313c-7.25625,4.63594 -13.73984,10.71641 -18.47656,17.93906c-5.00547,7.62578 -7.55859,16.39375 -8.93594,25.32969c-0.77266,5.07266 -1.14219,10.17891 -1.47813,15.31875c-0.03359,0.30234 0.03359,0.60469 0.13438,0.87344c-0.30234,0.30234 -0.50391,0.73906 -0.50391,1.27656c0,10.11172 -0.20156,20.29063 1.54531,30.30156c1.6125,9.10391 5.10625,17.77109 10.61563,25.22891c9.80937,13.26953 24.69141,21.26484 40.44688,25.19531c29.86484,7.45781 65.23906,1.24297 88.85547,-19.18203c24.89297,-21.53359 27.98359,-57.41172 18.94688,-87.27656zM142.23594,141.49687c-23.78438,20.29063 -59.42734,25.53125 -88.98984,17.06563c-14.34453,-4.09844 -27.51328,-12.29531 -36.0125,-24.75859c-10.44766,-15.31875 -10.11172,-33.92969 -10.11172,-51.70078c0,-0.10078 0,-0.16797 -0.03359,-0.26875c0.16797,-0.23516 0.30234,-0.5375 0.33594,-0.90703c0.57109,-9.07031 1.37734,-18.17422 4.06484,-26.90859c2.65391,-8.70078 7.76016,-16.22578 14.34453,-22.44062c12.53047,-11.825 30.16719,-17.87187 46.89687,-20.52578c18.64453,-2.95625 38.80078,-2.15 55.9,6.48359c14.98281,7.55859 25.22891,21.19766 30.67109,36.81875c10.11172,29.26016 7.82734,65.87734 -17.06562,87.14219z"
+                                                fill="#72472b"></path>
+                                            <path
+                                                d="M90.06484,74.37656c-0.94063,-4.40078 -2.08281,-8.90234 -3.15781,-13.33672c-0.60469,-2.48594 -1.20937,-5.00547 -1.81406,-7.49141c-0.57109,-2.35156 -1.31016,-4.73672 -1.57891,-7.15547c-0.47031,-3.96406 -0.43672,-7.96172 -0.90703,-11.92578c-0.47031,-3.86328 -1.37734,-7.89453 -4.13203,-10.78359c-0.5375,-0.57109 -1.14219,-0.67187 -1.71328,-0.5375c-0.33594,-0.57109 -0.94062,-1.00781 -1.78047,-0.97422c-0.90703,0.03359 -1.54531,0.40313 -1.91484,1.00781c-5.40859,2.35156 -10.31328,5.74453 -15.68828,8.16328c-4.63594,2.08281 -10.11172,3.02344 -14.10937,6.31562c-0.80625,0.63828 -0.90703,1.57891 -0.63828,2.35156c-0.36953,0.73906 -0.33594,1.64609 0.43672,2.35156c3.62813,3.29219 6.48359,7.28984 9.54063,11.08594c3.15781,3.93047 6.51719,7.72656 9.94375,11.42188c3.52734,3.82969 7.15547,7.59219 10.54844,11.52266c2.41875,2.78828 4.73672,6.01328 7.79375,8.16328c2.82188,1.98203 6.78594,2.21719 8.86875,-0.94063c1.74687,-2.6875 0.94062,-6.34922 0.30234,-9.23828zM85.69766,81.90156c-1.20937,0.60469 -2.65391,-0.73906 -3.49375,-1.44453c-1.27656,-1.10859 -2.35156,-2.41875 -3.52734,-3.66172c-3.46016,-3.66172 -6.65156,-7.62578 -10.11172,-11.35469c-3.56094,-3.79609 -7.12187,-7.62578 -10.41406,-11.65703c-3.72891,-4.56875 -7.25625,-9.54063 -11.52266,-13.63906c3.69531,-2.48594 8.46562,-3.42656 12.46328,-5.20703c5.54297,-2.48594 10.54844,-6.04687 16.19219,-8.33125c0.10078,-0.03359 0.20156,-0.10078 0.30234,-0.13438c0.06719,0.10078 0.13437,0.16797 0.20156,0.26875c2.15,2.25078 2.51953,6.01328 2.85547,8.96953c0.40312,3.52734 0.43672,7.12187 0.77266,10.64922c0.47031,4.77031 2.08281,9.54063 3.19141,14.17656c1.14219,4.73672 2.31797,9.50703 3.39297,14.27734c0.43672,1.71328 1.81406,6.04687 -0.30234,7.08828zM131.01563,64.63438c-1.14219,-1.47813 -2.41875,-2.82188 -3.52734,-4.33359c-1.14219,-1.54531 -2.31797,-3.12422 -3.79609,-4.36719c-2.92266,-2.48594 -6.34922,-2.48594 -9.20469,0.06719c-3.56094,3.19141 -5.71094,8.19687 -8.09609,12.26172c-2.35156,4.03125 -5.64375,7.42422 -7.82734,11.52266c-0.43672,0.83984 -0.83984,1.67969 -1.17578,2.55312c-0.23516,0.57109 -0.20156,1.10859 0.03359,1.51172c-0.50391,0.67188 -0.63828,1.6125 0.03359,2.45234c2.95625,3.69531 7.25625,3.89688 11.48906,2.65391c4.70313,-1.37734 9.33906,-3.39297 13.73984,-5.50938c2.25078,-1.075 4.50156,-2.25078 6.71875,-3.42656c2.04922,-1.075 5.30781,-1.98203 5.67734,-4.50156c0.57109,-4.06484 -1.64609,-7.76016 -4.06484,-10.88437zM131.11641,74.54453c-5.20703,2.78828 -10.44766,5.57656 -15.88984,7.86094c-2.62031,1.10859 -5.34141,2.18359 -8.09609,2.92266c-2.38516,0.63828 -4.53516,0.60469 -6.24844,-1.14219c0.10078,-0.13437 0.20156,-0.30234 0.26875,-0.47031c1.88125,-4.70312 5.64375,-8.29766 8.23047,-12.63125c1.31016,-2.18359 2.51953,-4.43437 3.86328,-6.65156c1.24297,-2.08281 2.72109,-4.93828 4.87109,-6.18125c2.85547,-1.64609 5.97969,4.43437 7.39063,6.04688c2.25078,2.6875 5.97969,6.38281 5.61016,10.24609zM75.65313,87.37734c-4.40078,-2.15 -9.17109,-3.7625 -13.87422,-5.13984c-2.41875,-0.70547 -4.8375,-1.34375 -7.25625,-1.98203c-2.21719,-0.57109 -5.24063,-2.11641 -7.25625,-0.47031c-3.225,2.62031 -4.06484,6.85312 -4.33359,10.78359c-0.13438,1.84766 -0.10078,3.72891 -0.30234,5.57656c-0.20156,1.91484 -0.36953,3.86328 -0.10078,5.81172c0.47031,3.79609 3.05703,6.08047 6.88672,6.11406c4.77031,0.03359 9.74219,-2.21719 14.24375,-3.66172c4.43437,-1.41094 9.1375,-1.71328 13.53828,-3.29219c0.87344,-0.30234 1.74688,-0.67187 2.58672,-1.10859c0.57109,-0.26875 0.87344,-0.70547 1.00781,-1.14219c0.80625,-0.16797 1.54531,-0.77266 1.6125,-1.84766c0.30234,-4.66953 -2.75469,-7.72656 -6.75234,-9.64141zM77.87031,96.48125c-4.56875,2.21719 -9.77578,2.35156 -14.57969,3.82969c-2.45234,0.73906 -4.87109,1.57891 -7.32344,2.31797c-2.31797,0.70547 -5.30781,1.81406 -7.76016,1.27656c-3.225,-0.70547 -1.44453,-7.32344 -1.41094,-9.43984c0.06719,-3.49375 -0.20156,-8.73437 2.6875,-11.35469c5.74453,1.41094 11.48906,2.88906 17.06563,4.87109c2.6875,0.94062 5.44219,1.98203 7.96172,3.29219c2.18359,1.14219 3.79609,2.58672 3.86328,5.03906c-0.16797,0.03359 -0.33594,0.10078 -0.50391,0.16797zM133.63594,104.77891c-3.89688,-2.78828 -9.27188,-3.79609 -13.73984,-5.20703c-4.43437,-1.41094 -8.46562,-3.86328 -12.96719,-5.10625c-0.90703,-0.23516 -1.81406,-0.43672 -2.75469,-0.60469c-0.60469,-0.10078 -1.10859,0.06719 -1.47812,0.36953c-0.77266,-0.33594 -1.71328,-0.26875 -2.38516,0.57109c-2.95625,3.69531 -2.18359,7.92812 -0.06719,11.79141c2.38516,4.3 5.34141,8.33125 8.39844,12.19453c1.54531,1.98203 3.19141,3.89688 4.80391,5.77812c1.51172,1.74688 3.09062,4.73672 5.64375,4.53516c4.13203,-0.30234 7.25625,-3.25859 9.74219,-6.31563c1.17578,-1.44453 2.21719,-2.98984 3.46016,-4.40078c1.27656,-1.47812 2.51953,-2.95625 3.42656,-4.66953c1.81406,-3.32578 1.04141,-6.68516 -2.08281,-8.93594zM127.95859,117.37656c-2.08281,2.82187 -4.87109,7.25625 -8.70078,7.72656c-3.89688,-4.46797 -7.72656,-8.93594 -11.15313,-13.77344c-1.64609,-2.31797 -3.29219,-4.73672 -4.63594,-7.25625c-1.14219,-2.18359 -1.6125,-4.3 -0.26875,-6.34922c0.16797,0.06719 0.33594,0.13437 0.50391,0.13437c5.00547,0.80625 9.33906,3.69531 14.14297,5.24063c2.41875,0.80625 4.90469,1.47812 7.32344,2.28438c2.31797,0.77266 5.40859,1.54531 7.08828,3.39297c2.18359,2.51953 -3.05703,6.88672 -4.3,8.6zM95.40625,120.56797c-0.33594,-4.63594 0.43672,-9.30547 -0.06719,-13.94141c-0.10078,-0.94062 -0.26875,-1.84766 -0.47031,-2.78828c-0.13437,-0.60469 -0.47031,-1.00781 -0.87344,-1.24297c0.03359,-0.83984 -0.40312,-1.67969 -1.41094,-1.98203c-4.53516,-1.37734 -8.16328,0.90703 -10.98516,4.33359c-3.12422,3.79609 -5.77812,8.0625 -8.19687,12.32891c-1.24297,2.18359 -2.41875,4.40078 -3.59453,6.61797c-1.075,2.04922 -3.25859,4.63594 -2.11641,6.95391c1.81406,3.72891 5.74453,5.50938 9.50703,6.71875c1.78047,0.57109 3.59453,0.94063 5.375,1.57891c1.81406,0.63828 3.69531,1.24297 5.61016,1.44453c3.79609,0.40313 6.61797,-1.54531 7.55859,-5.27422c1.075,-4.66953 0.03359,-10.04453 -0.33594,-14.74766zM91.375,135.48359c-1.44453,2.98984 -7.45781,-0.26875 -9.50703,-0.80625c-3.39297,-0.87344 -8.53281,-1.81406 -10.41406,-5.20703c2.6875,-5.27422 5.44219,-10.51484 8.66719,-15.48672c1.54531,-2.38516 3.15781,-4.8375 5.03906,-6.9875c1.6125,-1.88125 3.39297,-3.09063 5.77813,-2.62031c0,0.16797 0,0.33594 0.06719,0.5375c1.10859,4.97188 0.03359,10.04453 0.36953,15.08359c0.16797,2.55312 0.43672,5.10625 0.57109,7.65937c0.10078,2.38516 0.5375,5.54297 -0.57109,7.82734z"
+                                                fill="#72472b"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+    </footer>
+
+
+    <hr class="divider">
+    <div>
+        <p class="text-align-center"><b>©2020 PCT, Inc. All rights reserved.</b></p>
     </div>
 
 
-<!-- carousel ends -->
-
-
-
-
-
-    
 
 
 
 
 
 
-          
-    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
