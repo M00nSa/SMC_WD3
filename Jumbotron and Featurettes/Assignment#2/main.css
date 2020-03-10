@@ -190,7 +190,7 @@
         }
 
         .Dailyspecials {
-            background-color: #618B75;
+            background-color: #E1D6BC;
         }
 
         .jumbotron .container .lead {
@@ -214,6 +214,12 @@
             font-size: 1.5rem;
         }
 
+        .responsive {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+          }
+
         .Menu h2 {
             background-color: #E1D6BC;
         }
@@ -229,6 +235,14 @@
         footer,
         .Bottompage .divider {
             color: white;
+        }
+
+        .bakedgoods, .Bakedoptions{
+            text-align: center;
+        }
+        .Bakedoptions {
+            background-color:#E1D6BC;
+            text-align: center;
         }
 
         @media screen and (min-width:760px) {
