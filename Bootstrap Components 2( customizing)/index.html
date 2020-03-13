@@ -12,21 +12,42 @@
     <link rel="stylesheet" href="main.js">
     <!-- Fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Hello, world!</title>
+     <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.png">
+    <title>Welcome to Pose Theme!</title>
   </head>
   <body>
 
       <header>
-          <div class="Logo">Logo</div>
+          
+          <div class="Navcontainer d-flex justify-content-between">
+                <div class=" d-md-none Cart mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#000000"><path d="M86,3.44c-19.04094,0 -34.4,15.35906 -34.4,34.4v6.88h-27.1975l-0.3225,3.01l-13.76,120.4l-0.43,3.87h152.22l-0.43,-3.87l-13.76,-120.4l-0.3225,-3.01h-27.1975v-6.88c0,-19.04094 -15.35906,-34.4 -34.4,-34.4zM86,10.32c15.35906,0 27.52,12.16094 27.52,27.52v6.88h-55.04v-6.88c0,-15.35906 12.16094,-27.52 27.52,-27.52zM30.6375,51.6h20.9625v7.8475c-2.05594,1.19594 -3.44,3.37281 -3.44,5.9125c0,3.80281 3.07719,6.88 6.88,6.88c3.80281,0 6.88,-3.07719 6.88,-6.88c0,-2.53969 -1.38406,-4.71656 -3.44,-5.9125v-7.8475h55.04v7.8475c-2.05594,1.19594 -3.44,3.37281 -3.44,5.9125c0,3.80281 3.07719,6.88 6.88,6.88c3.80281,0 6.88,-3.07719 6.88,-6.88c0,-2.53969 -1.38406,-4.71656 -3.44,-5.9125v-7.8475h20.9625l13.0075,113.52h-136.74z"></path></g></g></svg>
+                </div>
+        <div class="Logo w-md-25 text-center pl-md-3">
+              <img src="Assets/Logo.png" alt="Logo">
+          </div>
+        
           <nav>
               <ul>
+                  <li>
+                        <form role="search" action="/" method="get" class="search-form d-md-none">
+                            <label class="sr-only">Search</label>
+                            <span class="icon-search"></span><!-- .icon-search -->
+                            <input class="form-control" name="s" type="search" placeholder="Search" title="search"
+                                aria-label="Search" autocomplete="off">
+                        </form>
+                  </li>
                   <li><a href="index.html" class="active"><span>Home</span><span>Home</span></a></li>
                   <li><a href="Pages/About.html"><span>About</span><span>About</span></a></li>
                   <li><a href="Pages/Visit.html"><span>Visit Us</span><span>Visit Us</span></a></li>
                   <li><a href="Pages/Catalogue.html"><span>Catalogue</span><span>Catalogue</span></a></li>
               </ul>
           </nav>
-          <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+          <div class="menu-toggle "><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
       </header>
       <!-- making menu to slide -->
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

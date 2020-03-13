@@ -9,9 +9,11 @@ header{
     top: 0;
     left: 0;
     padding: 0;
-    background-color: #00BCD4;
+    background-color: white;
     width: 100%;
     box-sizing: border-box;
+    border-bottom: 2px solid black;
+  
 }
 
 header .Logo{
@@ -66,28 +68,32 @@ nav ul li a span:nth-child(2){
 
  nav ul li:hover a span:nth-child(2){
     transform: none;
-    color: #00BCD4;
+    color: rgb(131, 54, 204);
  }
  nav ul li:hover a span:nth-child(1){
     transform: none;
-    color: #00BCD4;
+    color: rgb(131, 54, 204);
  }
  @media (min-width: 760px){
     nav ul li:hover a span:nth-child(1){
         transform: translateY(-100%);
-        color: antiquewhite;
+        color: rgb(131, 54, 204);
      }
      nav ul li:hover a span:nth-child(2){
          transform: translateY(-100%);
-         color: antiquewhite;
+         color: rgb(131, 54, 204);
       }
  }
 
+ nav{
+    border-top: 2px solid black;
+ }
+
 .menu-toggle{
-    color: bisque;
+    color: black;
     float: right;
     line-height: 50px;
-    font-size: 24px;
+    font-size: 18px;
     cursor: pointer;
     display: none;
 }
@@ -103,7 +109,7 @@ nav ul li a span:nth-child(2){
         position: absolute;
         width:78%;
         height: calc(100vh - 50px);
-        background-color:bisque;
+        background-color:#fff8ef;
         top: 50px;
         left: -100%;
         transition: 1s;
@@ -133,4 +139,45 @@ nav ul li a {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.Cart svg{
+width: 18px;
+}
+.form-control {
+    background-image: url(https://img.icons8.com/android/24/000000/search.png);
+    background-repeat: no-repeat;
+    background-position: 2px;
+    background-size: 18px;
+}
+.search-form input {
+    background: 0 0;
+    border-right: 1px solid;
+    letter-spacing: .1em;
+    font-size: 0.8rem;
+    border: 0;
+    padding: 7px 0px 0px 20px;
+    padding-bottom: 0;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    height: 50px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.Logo a{
+    text-decoration: none;
 }
