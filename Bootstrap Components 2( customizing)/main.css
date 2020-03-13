@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: #00BCD4;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .Logo{
+    color: antiquewhite;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+    text-decoration: none;
+}
+nav ul li a span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+}
+nav ul li a span:nth-child(1){
+    color: #444;
+}
+nav ul li a span:nth-child(2){
+    color: antiquewhite;
+}
+
+
+ nav ul li:hover a span:nth-child(2){
+    transform: none;
+    color: #00BCD4;
+ }
+ nav ul li:hover a span:nth-child(1){
+    transform: none;
+    color: #00BCD4;
+ }
+ @media (min-width: 760px){
+    nav ul li:hover a span:nth-child(1){
+        transform: translateY(-100%);
+        color: antiquewhite;
+     }
+     nav ul li:hover a span:nth-child(2){
+         transform: translateY(-100%);
+         color: antiquewhite;
+      }
+ }
+
+.menu-toggle{
+    color: bisque;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 760px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        
+        position: absolute;
+        width:78%;
+        height: calc(100vh - 50px);
+        background-color:bisque;
+        top: 50px;
+        left: -100%;
+        transition: 1s;
+    }
+    header nav.active{
+        left: 0;
+    } 
+    header nav ul{
+        display: block;
+    }
+    a:before {
+        content: "";
+        background-color: black;
+        bottom: .12em;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        right: 0;
+    }
+    
+}
+
+
+nav ul li a {
+    color: inherit;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
