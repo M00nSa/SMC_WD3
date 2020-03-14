@@ -235,7 +235,7 @@ border: 2px solid #DEA644;
     }
 }
 
-.Cardcontainer{
+html{
     letter-spacing: .15rem;
 
 }
@@ -244,3 +244,38 @@ border: 2px solid #DEA644;
     color: white;
     background-color: #ABA399;
 }
+
+article p{
+    line-height: 30px;
+}
+
+article p::first-letter {
+    font-size: 300%;
+    color: #DEA644;
+    padding: 0 5px 20px 0;
+  }
+
+  article h2{
+color: white;
+text-shadow: 2px 2px black;
+  }
+
+  article h4{
+    color: #DEA644;
+    text-shadow: 2px 2px black;
+  }
+
+  header svg{
+    padding-top: 6px;
+  }
+
+  article .jumbotron{
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .paragraphs{
+    background-color: #32384F;
+    color: white;
+  }
