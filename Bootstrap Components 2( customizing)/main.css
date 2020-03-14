@@ -5,7 +5,7 @@ body{
 }
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 0;
@@ -13,7 +13,7 @@ header{
     width: 100%;
     box-sizing: border-box;
     border-bottom: 2px solid black;
-  
+    z-index: 50;
 }
 
 header .Logo{
@@ -59,7 +59,7 @@ nav ul li a span{
     transition: 0.5s;
 }
 nav ul li a span:nth-child(1){
-    color: #444;
+    color: black;
 }
 nav ul li a span:nth-child(2){
     color: antiquewhite;
@@ -68,20 +68,20 @@ nav ul li a span:nth-child(2){
 
  nav ul li:hover a span:nth-child(2){
     transform: none;
-    color: #ce3375;
+    color: #DEA644;
  }
  nav ul li:hover a span:nth-child(1){
     transform: none;
-    color: #ce3375;
+    color: #DEA644;
  }
  @media (min-width: 760px){
     nav ul li:hover a span:nth-child(1){
         transform: translateY(-100%);
-        color: #ce3375;
+        color: #DEA644;
      }
      nav ul li:hover a span:nth-child(2){
          transform: translateY(-100%);
-         color: #ce3375;
+         color: #DEA644;
       }
  }
 
@@ -106,7 +106,7 @@ nav ul li a span:nth-child(2){
         position: absolute;
         width:78%;
         height: calc(100vh - 50px);
-        background-color:#fff8ef;
+        background-color:#7D7770;
         top: 50px;
         left: -100%;
         transition: 1s;
@@ -186,7 +186,7 @@ width: 18px;
 
 .jumbotron h1,
 .jumbotron p{
-    color: #CE3375!important;
+    color: #DEA644!important;
     text-shadow: 2px 2px #000000;
 }
 
@@ -198,7 +198,7 @@ background-color: #00000054;
 }
 .jumbotron a{
 background-color: #ffffffba;
-border: 2px solid #ce3375;
+border: 2px solid #DEA644;
 }
 
 .jumbotron a:hover{
@@ -233,4 +233,14 @@ border: 2px solid #ce3375;
         font-size: 3rem;
         text-align: center;
     }
+}
+
+.Cardcontainer{
+    letter-spacing: .15rem;
+
+}
+.Cardcontainer .btn{
+    border: 2px solid #363D56;
+    color: white;
+    background-color: #ABA399;
 }
