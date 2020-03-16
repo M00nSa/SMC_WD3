@@ -295,9 +295,13 @@ html {
 }
 
 .Cardcontainer .btn {
-    border: 2px solid #363D56;
-    color: white;
-    background-color: #ABA399;
+    border: 2px solid #32384F;
+    color: black;
+    background-color: #ffffffba;
+}
+
+.Cardcontainer .btn:hover {
+    background-color: white;
 }
 
 article p {
@@ -345,6 +349,8 @@ article .jumbotron {
     border: 2px solid #32384F;
 }
 
-.Cataloguecontainer .card:hover {
-    background-color: rgb(175, 167, 158);
+.yellow::before,
+.blockquote-footer small,
+.card-text small{
+    color: #DEA644;
 }
