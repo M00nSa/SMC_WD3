@@ -267,6 +267,10 @@ nav ul li a {
     body header nav ul li a {
         padding: 0 9px 0 14px;
         }
+        .md-lg-long{
+            height: 530px;
+        }
+        
 }
 
 @media (min-width: 960px) {
@@ -277,6 +281,12 @@ nav ul li a {
     .container h1 {
         font-size: 3rem;
         text-align: center;
+    }
+    .md-lg-long{
+    height: 400px;
+    }
+    .lg-long{
+    height: 287px;
     }
 }
 
