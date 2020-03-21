@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Inter:300,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,500,600,700|Montserrat:300,400,600,700,800&display=swap');
 
 body {
     margin: 0;
@@ -15,17 +15,21 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
 h1{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
 
 p {
-    font-family: 'Inter', sans-serif;
+    font-family:'Montserrat', sans-serif;
+}
+.lead{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
 }
 
 header {
@@ -229,6 +233,7 @@ nav ul li a {
 .jumbotron h1 {
     color: #DEA644 !important;
     text-shadow: 2px 2px #000000;
+    font-weight: 400;
 }
 
 .jumbotron span {
@@ -239,7 +244,7 @@ nav ul li a {
     background-color: #00000054;
 }
 
-.jumbotron .lead{
+.jumbotron p{
    color: white;
 }
 .jumbotron a {
@@ -310,7 +315,7 @@ nav ul li a {
 }
 
 html {
-    letter-spacing: .15rem;
+    letter-spacing: .1rem;
 
 }
 
