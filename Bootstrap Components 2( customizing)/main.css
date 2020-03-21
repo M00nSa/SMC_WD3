@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,400,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,500,600,700|Montserrat:300,400,600,700,800&display=swap');
 
 body {
@@ -106,6 +106,10 @@ nav ul li:hover a span:nth-child(2) {
 nav ul li:hover a span:nth-child(1) {
     transform: none;
     color: #DEA644;
+}
+
+.Navcontainer a{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 @media (min-width: 760px) {
