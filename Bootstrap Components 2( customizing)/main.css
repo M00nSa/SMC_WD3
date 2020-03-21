@@ -110,6 +110,7 @@ nav ul li:hover a span:nth-child(1) {
 
 .Navcontainer a{
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
 }
 
 @media (min-width: 760px) {
