@@ -19,15 +19,16 @@ h6 {
     font-weight: 700;
 }
 
-h1{
+h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
 
 p {
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-.lead{
+
+.lead {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 800;
 }
@@ -108,7 +109,7 @@ nav ul li:hover a span:nth-child(1) {
     color: #DEA644;
 }
 
-.Navcontainer a{
+.Navcontainer a {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
 }
@@ -249,11 +250,12 @@ nav ul li a {
     background-color: #00000054;
 }
 
-.jumbotron p{
-   color: white;
+.jumbotron p {
+    color: white;
 }
+
 .jumbotron a {
-    background-color: #ffffffba;
+    color: #DEA644;
     border: 2px solid #DEA644;
     font-weight: 700;
 }
@@ -270,8 +272,17 @@ nav ul li a {
 .Navcontainer .active {
     z-index: 98;
 }
+
 .jumbotron .container a {
     margin-left: 18px;
+}
+
+.Index-jumbo {
+    margin-top: 80px;
+}
+
+.Cataloguecontainer {
+    margin-top: 120px;
 }
 
 @media (min-width: 720px) {
@@ -283,13 +294,15 @@ nav ul li a {
     .btn-lg {
         font-size: 1rem;
     }
+
     body header nav ul li a {
         padding: 0 9px 0 14px;
-        }
-        .md-lg-long{
-            height: 530px;
-        }
-        
+    }
+
+    .md-lg-long {
+        height: 530px;
+    }
+
 }
 
 @media (min-width: 960px) {
@@ -301,11 +314,13 @@ nav ul li a {
         font-size: 3rem;
         text-align: center;
     }
-    .md-lg-long{
-    height: 400px;
+
+    .md-lg-long {
+        height: 400px;
     }
-    .lg-long{
-    height: 287px;
+
+    .lg-long {
+        height: 287px;
     }
 
 }
@@ -381,10 +396,108 @@ article .jumbotron {
 
 .yellow::before,
 .blockquote-footer small,
-.card-text small{
+.card-text small {
     color: #DEA644;
 }
 
-footer p{
+footer p {
     font-size: .7rem;
+}
+
+
+
+/* About page slide show starts*/
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 70px auto;
+
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 5rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* About page slide show ends*/
+
+section .label:before {
+
+    content: '';
+    width: 5.41667vw;
+    margin-right: 2.91667vw;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+    background: currentColor;
+    vertical-align: middle;
+    top: -1px;
+}
+
+section h1 {
+    font-weight: 500;
+}
+
+.about-text a {
+    text-decoration: underline;
+    color: black;
+}
+
+.text-wrap {
+    background-color: #32384F;
+}
+
+.text-wrap p:first-child {
+    color: #DEA644;
+}
+
+.mySlides img{
+    width: 100%;
+}
+
+.mySlides .text{
+    text-shadow: 7px 3px 3px black;
+    color: #DEA644;
 }

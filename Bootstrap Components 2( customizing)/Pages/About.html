@@ -53,22 +53,100 @@
         </div>
     </header>
     <!--Navigation Ends-->
-    <!--Jumbo Starts-->
-    <div class="jumbotron jmb-about jumbotron-fluid my-5" style="background-image: url(../Assets/about.jpg);">
+    <!--main content starts here-->
+    <main>
+        <section>
 
-        <div class="container  px-0 pt-md-3">
-            <p class=" text-center p-4 mb-md-3 mb-lg-0">About us</p>
+            <div class="slideshow-container">
 
-           
-        </div>
-    </div>
+                <div class="mySlides slide">
+                    <img src="../Assets/VIN1.jpg" >
+                    <div class="text">About</div>
+                </div>
 
-    <!--Jumbo Endss-->
+                <div class="mySlides slide">
+                    <img src="../Assets/VIN2.jpg" >
+                    <div class="text">About</div>
+                </div>
+
+                <div class="mySlides slide">
+                    <img src="../Assets/VIN3.jpg" >
+                    <div class="text">About</div>
+                </div>
+
+            </div>
+        </section>
+        <section class="text-center mb-5">
+            <h1>Pose Theme</h1>
+            <p class="label">Beauty and inspiration</p>
+        </section>
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-md-6 col-lg-4 about-text mb-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore POSE THEME et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit. Sit amet
+                        risus nullam eget felis eget nunc lobortis mattis. </p>
+
+                    <p>Est placerat in egestas erat imperdiet sed euismod nisi. <a href="Visit.html">Locations</a> Massa
+                        tincidunt dui ut ornare lectus sit amet est placerat. Nibh tortor id aliquet lectus.</p>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-wrap text-light p-3">
+                        <p>Our Three beliefs:</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <img src="../Assets/VINN.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <div class="row">
+                        <p class="card-text col-md-6">This is a wider card with supporting text below as a natural
+                            lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text col-md-6">This is a wider card with supporting text below as a natural
+                            lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+
+    </main>
+
+    <!--main content Endss-->
 
     <hr>
     <footer>
         <p class="text-center mt-4">©2020 Pose Theme, Inc. All rights reserved.</p>
     </footer>
+
+
+
+    <!--Top page slide show-->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+    <!-- end of slide show -->
+
 
 
 
@@ -82,6 +160,8 @@
         })
     </script>
     <!-- end of slide menu -->
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
