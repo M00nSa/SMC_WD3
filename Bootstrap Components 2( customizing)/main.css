@@ -245,6 +245,7 @@ nav ul li a {
 .jumbotron a {
     background-color: #ffffffba;
     border: 2px solid #DEA644;
+    font-weight: 700;
 }
 
 .jumbotron a:hover {
@@ -372,4 +373,8 @@ article .jumbotron {
 .blockquote-footer small,
 .card-text small{
     color: #DEA644;
+}
+
+footer p{
+    font-size: .7rem;
 }
