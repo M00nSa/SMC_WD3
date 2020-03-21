@@ -9,7 +9,7 @@ body {
 
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -17,6 +17,11 @@ h5,
 h6 {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
 }
 
 p {
@@ -217,11 +222,11 @@ nav ul li a {
 
 .jumbotron {
     height: 419px;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.jumbotron h1,
-.jumbotron p {
+.jumbotron h1 {
     color: #DEA644 !important;
     text-shadow: 2px 2px #000000;
 }
@@ -234,6 +239,9 @@ nav ul li a {
     background-color: #00000054;
 }
 
+.jumbotron .lead{
+   color: white;
+}
 .jumbotron a {
     background-color: #ffffffba;
     border: 2px solid #DEA644;
@@ -251,15 +259,15 @@ nav ul li a {
 .Navcontainer .active {
     z-index: 98;
 }
+.jumbotron .container a {
+    margin-left: 18px;
+}
 
 @media (min-width: 720px) {
     .jumbotron {
         height: 571px;
     }
 
-    .jumbotron h1 {
-        font-size: 5rem;
-    }
 
     .btn-lg {
         font-size: 1rem;
@@ -288,6 +296,7 @@ nav ul li a {
     .lg-long{
     height: 287px;
     }
+
 }
 
 
