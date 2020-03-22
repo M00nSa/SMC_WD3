@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,400,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,500,600,700|Montserrat:300,400,600,700,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,500,600,700|Jura:300,400,500,600,700|Montserrat:300,400,600,700,800&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -486,7 +486,8 @@ section .label:before {
 }
 
 section h1 {
-    font-weight: 500;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
 }
 
 .about-text a {
