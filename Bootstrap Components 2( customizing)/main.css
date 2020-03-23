@@ -127,23 +127,14 @@ nav ul li:hover a span:nth-child(1) {
 }
 
 
-.menu-toggle {
-    color: black;
-    float: right;
-    line-height: 50px;
-    font-size: 18px;
-    cursor: pointer;
-    display: none;
-}
+
 
 @media (max-width: 760px) {
     header {
         padding: 0 20px;
     }
 
-    .menu-toggle {
-        display: block;
-    }
+  
 
     header nav {
 
@@ -302,9 +293,7 @@ nav ul li a {
     .md-lg-long {
         height: 530px;
     }
-
-
-
+   
 }
 
 @media (min-width: 960px) {
@@ -526,3 +515,39 @@ section h1 {
 .slideshow-container{
     overflow: hidden;
 }
+
+
+/* animated Hamburger menu starts*/
+.toggle span{
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    right: 0;
+    top: 52%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    border-radius: 5px;
+    transition: .5s;
+    box-shadow: 0 2px 2px rgba(0,0,0,.20);
+}
+
+.toggle span:nth-child(1){
+    transform: translate(-50%,-50%) translateY(-9px);
+}
+
+.toggle span:nth-child(4){
+    transform: translate(-50%,-50%) translateY(9px);
+}
+
+.toggle:hover span:nth-child(1){
+    transform: translate(-50%,-50%) translateX(0px);
+}
+
+.toggle:hover span:nth-child(4){
+    transform: translate(-50%,-50%) translateX(0px);
+}
+
+header{
+    text-decoration: none;
+}
+/* animated Hamburger menu ends*/
