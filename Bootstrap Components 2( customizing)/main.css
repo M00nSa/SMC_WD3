@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,400,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,500,600,700|Montserrat:300,400,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,500,600,700|Jura:300,400,500,600,700|Montserrat:300,400,600,700,800&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -46,18 +47,8 @@ header {
     font-family: 'Inter', sans-serif;
 }
 
-header .Logo {
-    color: antiquewhite;
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-    float: left;
-    font-weight: bold;
-}
 
-header nav {
-    float: right;
-}
+
 
 header nav ul {
     margin: 0;
@@ -67,6 +58,8 @@ header nav ul {
 
 header nav ul li {
     list-style: none;
+    border-bottom: 2px solid #32384F;
+    height: 50px;
 }
 
 header nav ul li a {
@@ -124,6 +117,10 @@ nav ul li:hover a span:nth-child(1) {
         transform: translateY(-100%);
         color: #DEA644;
     }
+
+    header nav ul li {
+        border-bottom: none;
+    }
 }
 
 
@@ -134,7 +131,7 @@ nav ul li:hover a span:nth-child(1) {
         padding: 0 20px;
     }
 
-  
+
 
     header nav {
 
@@ -155,15 +152,7 @@ nav ul li:hover a span:nth-child(1) {
         display: block;
     }
 
-    a:before {
-        content: "";
-        background-color: #32384F;
-        bottom: .12em;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        right: 0;
-    }
+
 
 }
 
@@ -237,7 +226,7 @@ nav ul li a {
     color: #96DFE4;
 }
 
-.jumbotron p {
+.container .row:nth-child(2) {
     background-color: #00000054;
 }
 
@@ -293,7 +282,7 @@ nav ul li a {
     .md-lg-long {
         height: 530px;
     }
-   
+
 }
 
 @media (min-width: 960px) {
@@ -317,10 +306,14 @@ nav ul li a {
     .col-lg-7 {
         column-count: 2;
     }
-    .index-about{
+
+    .index-about {
         column-count: 4;
     }
 
+    .jumbotron a {
+        box-shadow: 3px 3px #8888882b;
+    }
 }
 
 
@@ -512,42 +505,62 @@ section h1 {
     display: inline-block;
 }
 
-.slideshow-container{
+.slideshow-container {
     overflow: hidden;
 }
 
 
 /* animated Hamburger menu starts*/
-.toggle span{
+.toggle span {
     height: 4px;
     width: 25px;
     position: absolute;
     right: 0;
     top: 52%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: black;
     border-radius: 5px;
     transition: .5s;
-    box-shadow: 0 2px 2px rgba(0,0,0,.20);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
 }
 
-.toggle span:nth-child(1){
-    transform: translate(-50%,-50%) translateY(-9px);
+.toggle span:nth-child(1) {
+    transform: translate(-50%, -50%) translateY(-9px);
 }
 
-.toggle span:nth-child(4){
-    transform: translate(-50%,-50%) translateY(9px);
+.toggle span:nth-child(4) {
+    transform: translate(-50%, -50%) translateY(9px);
 }
 
-.toggle:hover span:nth-child(1){
-    transform: translate(-50%,-50%) translateX(0px);
+.toggle:hover span:nth-child(1) {
+    transform: translate(-50%, -50%) translateX(0px);
 }
 
-.toggle:hover span:nth-child(4){
-    transform: translate(-50%,-50%) translateX(0px);
+.toggle:hover span:nth-child(4) {
+    transform: translate(-50%, -50%) translateX(0px);
 }
 
-header{
-    text-decoration: none;
-}
 /* animated Hamburger menu ends*/
+
+.Navcontainer {
+    height: 64px;
+    padding: 8px;
+}
+
+.Logo img {
+    height: 42px;
+}
+
+.articleT {
+    background-color: #32384F;
+    color: white;
+}
+
+.articleT h2 {
+    line-height: 49px;
+    padding: 13px 46px;
+}
+
+.BottomContainer h5 {
+    margin: 40px 0px;
+}
