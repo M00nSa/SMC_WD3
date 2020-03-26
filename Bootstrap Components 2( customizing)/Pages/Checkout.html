@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- main CSS -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../main.js">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.png">
+    <title>Welcome to Pose Theme!</title>
+
+</head>
+
+<body>
+    <!--Navigation Starts-->
+    <header>
+
+        <div class="Navcontainer d-flex justify-content-between py-2">
+            <div class=" d-md-none Cart mt-3">
+                <a href="index.html"><img src="https://img.icons8.com/ios/50/000000/edit-calendar.png" /></a>
+            </div>
+            <div class="Logo w-md-25 text-center pl-md-3">
+                <img src="../Assets/Logo.png" alt="Logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <form role="search" action="/" method="get" class="search-form d-md-none">
+                            <label class="sr-only">Search</label>
+                            <span class="icon-search"></span><!-- .icon-search -->
+                            <input class="form-control" name="s" type="search" placeholder="Search" title="search"
+                                aria-label="Search" autocomplete="off">
+                        </form>
+                    </li>
+                    <li><a href="../index.html"><span>Home</span><span>Home</span></a></li>
+                    <li><a href="About.html"><span>About</span><span>About</span></a></li>
+                    <li><a href="Shop.html" class="active"><span>Shop</span><span>Shop</span></a></li>
+                    <li><a href="Catalogue.html"><span>Catalogue</span><span>Catalogue</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="toggle mt-4 d-md-none">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!--Navigation Ends-->
+
+    <main>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col">
+                    <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationServer01">First name</label>
+                                <input type="text" class="form-control is-valid" id="validationServer01"
+                                    placeholder="First name" value="Mark" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationServer02">Last name</label>
+                                <input type="text" class="form-control is-valid" id="validationServer02"
+                                    placeholder="Last name" value="Otto" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationServerUsername">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                    </div>
+                                    <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                                        placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationServer03">City</label>
+                                <input type="text" class="form-control is-invalid" id="validationServer03"
+                                    placeholder="City" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationServer04">State</label>
+                                <input type="text" class="form-control is-invalid" id="validationServer04"
+                                    placeholder="State" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationServer05">Zip</label>
+                                <input type="text" class="form-control is-invalid" id="validationServer05"
+                                    placeholder="Zip" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                                    required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <hr>
+    <footer>
+        <p class="text-center mt-4">©2020 Pose Theme, Inc. All rights reserved.</p>
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- making menu to slide -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    <!-- end of slide menu -->
+
+    <script>
+        $('#demo1_thumbs').desoSlide({
+            main: {
+                container: '#demo1_main_image',
+                cssClass: 'img-responsive'
+            },
+            caption: true
+        });
+    </script>
+</body>
+
+</html>

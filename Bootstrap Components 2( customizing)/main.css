@@ -584,3 +584,52 @@ section h1 {
 .Product-info a:hover{
     color: rgb(85, 85, 85);
 }
+
+.ridge{
+    border-radius: 7px;
+    border-style: ridge;
+}
+
+.list-inline li a img{
+    width: 100%;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.desoSlide-overlay {
+    height: 36px;
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    color: rgb(175, 175, 175);
+    font-weight: bold;
+    background-color: black;
+    padding: 8px;
+    opacity: 0;
+    filter: alpha(opacity=100);
+    left: 0px;
+    top: 340px;
+    width: 150px;
+    opacity: 0.7;
+}
+.desoSlide-controls.prev {
+    width: 16px;
+    height: 16px;
+    background-position: 0 -54px;
+}
+
+.desoSlide-controls {
+    display: inline-block;
+    background-image: url(../img/desoSlide_controls.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.ridge h5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
