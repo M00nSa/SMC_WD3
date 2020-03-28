@@ -170,7 +170,7 @@ nav ul li a {
 }
 
 
-.form-control {
+.form-control1 {
     background-image: url(https://img.icons8.com/android/24/000000/search.png);
     background-repeat: no-repeat;
     background-position: 20px;
@@ -226,9 +226,6 @@ nav ul li a {
     color: #96DFE4;
 }
 
-.container .row:nth-child(2) {
-    background-color: #00000054;
-}
 
 .jumbotron p {
     color: white;
@@ -632,4 +629,36 @@ section h1 {
 .ridge h5{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
+}
+
+main h2{
+    font-size: 1.2rem;
+}
+
+.content-box__row {
+    display: table;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.custom-control-label, .radio__label__primary{
+    display: table-cell;
+    width: 100%;
+}
+
+.price{
+    display: table-cell;
+}
+
+.table th{
+    color: gray;
+}
+
+.table td:nth-child(3){
+    font-size: .75rem;
+}
+
+.table-container{
+    border: 1px dashed rgb(177, 175, 175);
+    border-radius: 5px;
 }
