@@ -83,14 +83,16 @@
 
                             <div class="col-md-4 mb-2">
                                 <label for="billing_name"></label>
-                                <input type="text" class="form-control" id="billing_name" placeholder="First name" required>
+                                <input type="text" class="form-control" id="billing_name" placeholder="First name"
+                                    required>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">This field cannot be empty!</div>
                             </div>
 
                             <div class="col-md-4 mb-2">
                                 <label for="billing_lastname"></label>
-                                <input type="text" class="form-control" id="billing_lastname" placeholder="Last name" required>
+                                <input type="text" class="form-control" id="billing_lastname" placeholder="Last name"
+                                    required>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">This field cannot be empty!</div>
                             </div>
@@ -165,14 +167,16 @@
 
                             <div class="col-md-4 mb-2">
                                 <label for="shipping_name"></label>
-                                <input type="text" class="form-control" id="shipping_name" placeholder="First name" required>
+                                <input type="text" class="form-control" id="shipping_name" placeholder="First name"
+                                    required>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">This field cannot be empty!</div>
                             </div>
 
                             <div class="col-md-4 mb-2">
                                 <label for="shipping_lastname"></label>
-                                <input type="text" class="form-control" id="shipping_lastname" placeholder="Last name" required>
+                                <input type="text" class="form-control" id="shipping_lastname" placeholder="Last name"
+                                    required>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">This field cannot be empty!</div>
                             </div>
@@ -238,17 +242,18 @@
 
                         <div class="form-group mt-4">
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                              <label class="form-check-label" for="invalidCheck">
-                                Agree to terms and conditions
-                              </label>
-                              <div class="invalid-feedback">You must agree before submitting.</div>
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">You must agree before submitting.</div>
                             </div>
-                          </div>
+                        </div>
 
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="save_forminfo">
-                            <label class="form-check-label" for="save_forminfo">Save this information for next time.</label>
+                            <label class="form-check-label" for="save_forminfo">Save this information for next
+                                time.</label>
                         </div>
 
 
@@ -337,16 +342,15 @@
             });
         });
     </script>
-<script>
-    $("form.needs-validation").submit(function(event){
-      event.preventDefault();
+    <script>
+        $("form.needs-validation").submit(function (event) {
+            event.preventDefault();
 
-      if($("input.form-control").val() === "" ){
-        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
-      }
-    })
-
-</script>
+            if ($("input.form-control").val() === "") {
+                $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+            }
+        })
+    </script>
 
 
 
