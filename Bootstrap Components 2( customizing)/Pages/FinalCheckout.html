@@ -60,7 +60,7 @@
     <main>
 
         <fieldset class="container mt-5 pt-5">
-            <div class="table-container mb-3">
+            <div class="table-container m-md-5">
                 <table class="table">
                     <tbody>
                         <tr>
@@ -88,40 +88,104 @@
                 </table>
             </div>
 
-            <div class="row">
-                <div class="col my-3 ">
-                    <h2 class="pb-3">Shipping Method</h2>
-                    <div class="content-box__row">
-                        <div class=" form custom-control custom-radio mb-3">
-                            <input type="radio" class="custom-control-input" id="customControlValidation2"
-                                name="radio-stacked" required>
-                            <label class="custom-control-label" for="customControlValidation2">Free Shipping over
-                                $500.</label>
-                            <label class="price" for="">Free </label>
-                        </div>
-                        <div class=" form custom-control custom-radio mb-3">
-                            <input type="radio" class="custom-control-input" id="customControlValidation3"
-                                name="radio-stacked" required>
-                            <label class="custom-control-label" for="customControlValidation3">Regular(5-7 Business
-                                Days)</label>
-                            <label class="price" for="">$17.00 </label>
-                        </div>
-                        <div class=" form custom-control custom-radio mb-3">
-                            <input type="radio" class="custom-control-input" id="customControlValidation4"
-                                name="radio-stacked" required>
-                            <label class="custom-control-label" for="customControlValidation4">Express 2 Day</label>
-                            <label class="price" for="">$30.00 </label>
+            <form action="" method="POST" enctype="multipart/form-data" class="needs-validation m-md-5 px-md-5" novalidate>
+                <div class="form-row">
+                    <div class="col-12 my-5">
+                        <h2 class="pb-3">Shipping Method</h2>
+                        <div class="content-box__row">
+                            <div class=" form custom-control custom-radio mb-3">
+                                <input type="radio" class="custom-control-input" id="customControlValidation2"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlValidation2">Free Shipping over
+                                    $500.</label>
+                                <label class="price" for="">Free </label>
+                            </div>
+                            <div class=" form custom-control custom-radio mb-3">
+                                <input type="radio" class="custom-control-input" id="customControlValidation3"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlValidation3">Regular(5-7 Business
+                                    Days)</label>
+                                <label class="price" for="">$17.00 </label>
+                            </div>
+                            <div class=" form custom-control custom-radio mb-3">
+                                <input type="radio" class="custom-control-input" id="customControlValidation4"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlValidation4">Express 2 Day</label>
+                                <label class="price" for="">$30.00 </label>
+                            </div>
                         </div>
                     </div>
-                    <a href="FinalCheckout.html" class="btn btn-dark text-light">Submit your order</a>
                 </div>
 
+
+       <div class="form-row payment-card p-4">
+            <h2 class="col-12 pb-3">Confirm Purchase</h2>
+            <div class="form-group col-md-6 col-lg-4 mb-3">
+                <label for="Credit_card_name">Name on the card</label>
+                <input type="text" class="form-control" id="Credit_card_name" required>
+                <div class="invalid-feedback">Please provide card holders name.</div>
             </div>
 
+            <div class=" form-group col-md-6 col-lg-4">
+                <label for="CVV_number">CVV</label>
+                <input type="text" class="form-control mb-3" id="CVV_number" required>
+                <div class="invalid-feedback">Please provide a correct CVV located at the back of your card.
+                </div>
+            </div>
+
+
+
+            <div class=" form-group col-12 col-lg-4 mb-3">
+                <label for="Card-number">Card Number</label>
+                <input type="text" class="form-control" id="Card-number" required>
+                <div class="invalid-feedback">Please check your card number again.</div>
+            </div>
+
+
+            <div class="form-row col-12">
+                <h2 class="pb-3 col-12">Expiration Date</h2>
+
+                <div class="col-6 col-lg-3">
+                    <select class="custom-select my-1 mr-sm-2 " id="inlineFormCustomSelectPref">
+                        <option selected>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+                </div>
+
+                <div class="col-6  col-lg-3 mb-4">
+                    <select class="custom-select my-1 mr-sm-2 " id="inlineFormCustomSelectPref">
+                        <option selected>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                    </select>
+                </div>
+           
+
+
+
+               
+
+            </div>
+            <button type="submit" class="btn btn-dark text-light mt-3">Submit your order</button>
+            </form>
+
+        </div>
         </fieldset>
 
-
-       
     </main>
 
     <hr>
@@ -165,6 +229,17 @@
             caption: true
         });
     </script>
+
+<script>
+    $("form.needs-validation").submit(function (event) {
+        event.preventDefault();
+
+        if ($("input.form-control").val() === "") {
+            $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+        }
+    })
+</script>
+
 </body>
 
 </html>

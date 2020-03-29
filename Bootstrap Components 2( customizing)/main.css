@@ -662,3 +662,8 @@ main h2{
     border: 1px dashed rgb(177, 175, 175);
     border-radius: 5px;
 }
+
+.payment-card{
+    border: 1px solid gray;
+    border-radius: 12px;
+}
