@@ -85,8 +85,8 @@
 
                                 <div class="col-md-4 mb-2">
                                     <label for="billing_name"></label>
-                                    <input type="text" class="form-control" id="billing_name" placeholder="First name"
-                                        required>
+                                    <input type="text" class="form-control" id="billing_name" name="billing_name"
+                                        placeholder="First name" required>
                                     <div class="valid-feedback">Looks good!</div>
                                     <div class="invalid-feedback">This field cannot be empty!</div>
                                 </div>
@@ -328,35 +328,63 @@
     </script>
 
     <script>
+        // $(document).ready(function () {
+        // $("#same_shipping").live("click", function () {
+        //   if ($("#same_shipping").attr("checked")) {
+
+        //   var billing_name = $('#billing_name').val();
+        //  var billing_lastname = $('#billing_lastname').val();
+        //    var billing_address = $('#billing_address').val();
+        //   var billing_apartment = $('#billing_apartment').val();
+        //   var billing_city = $('#billing_city').val();
+        //  var billing_state = $('#billing_state').val();
+        // var billing_zip = $('#billing_zip').val();
+
+        //   $("#shipping_name").val('#billing_name');
+        // $('#shipping_lastname').val('#billing_lastname');
+        // $('#shipping_address').val('#billing_address');
+        //   $('#shipping_apartment').val('#billing_apartment');
+        // $('#shipping_city').val('#billing_city');
+        // $('#shipping_state').val('#billing_state');
+        //  $('#shipping_zip').val('#billing_zip');
+        // } else {
+        // $("#shipping_name").val('');
+        //  $('#shipping_lastname').val('');
+        // $('#shipping_address').val('');
+        //   $('#shipping_apartment').val('');
+        //   $('#shipping_city').val('');
+        //  $('#shipping_state').val('');
+        //  $('#shipping_zip').val('');
+        // }
+        //  });
+        // });
+
         $(document).ready(function () {
-            $("#same_shipping").live("click", function () {
-                if ($("#same_shipping").attr("checked")) {
 
-                    var billing_name = $('#billing_name').val();
-                    var billing_lastname = $('#billing_lastname').val();
-                    var billing_address = $('#billing_address').val();
-                    var billing_apartment = $('#billing_apartment').val();
-                    var billing_city = $('#billing_city').val();
-                    var billing_state = $('#billing_state').val();
-                    var billing_zip = $('#billing_zip').val();
+            $('#same_shipping').click(function () {
 
-                    $("shipping_name").val(billing_name);
-                    $('#shipping_lastname').val(billing_lastname);
-                    $('#shipping_address').val(billing_address);
-                    $('#shipping_apartment').val(billing_apartment);
-                    $('#shipping_city').val(billing_city);
-                    $('#shipping_state').val(billing_state);
-                    $('#shipping_zip').val(billing_zip);
-                } else {
-                    $("shipping_name").val('');
-                    $('#shipping_lastname').val('');
-                    $('#shipping_address').val('');
-                    $('#shipping_apartment').val('');
-                    $('#shipping_city').val('');
-                    $('#shipping_state').val('');
-                    $('#shipping_zip').val('');
-                }
+                if ($('#same_shipping').is(":checked")) {
+                    $('#shipping_name').val($('#billing_name').val());
+                    $('#shipping_lastname').val($('#billing_lastname').val());
+                    $('#shipping_address').val($('#billing_address').val());
+                    $('#shipping_apartment').val($('#billing_apartment').val());
+                    $('#shipping_city').val($('#billing_city').val());
+                    $('#shipping_state').val($('#billing_state').val());
+                    $('#shipping_zip').val($('#billing_zip').val());
+                    //var country = $('#country option:selected').val();
+                    // $('#country_billing option[value=' + country + ']').attr('selected','selected');
+                } else { //Clear on uncheck
+                    $('#shipping_name').val("");
+                    $('#shipping_lastname').val("");
+                    $('#shipping_address').val("");
+                    $('#shipping_apartment').val("");
+                    $('#shipping_city').val("");
+                    $('#shipping_state').val("");
+                    $('#shipping_zip').val("");
+                    //$('#country_billing option[value=""]').attr('selected','selected');
+                };
             });
+
         });
     </script>
     <script>
