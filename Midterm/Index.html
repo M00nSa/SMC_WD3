@@ -23,7 +23,7 @@
 <body>
     <!--Navigation Starts-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class=" fixed-top navbar navbar-expand-md navbar-light">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
             </button>
 
 
-            <a class="navbar-brand" href="#"><img src="Assets/Artboard 4.png" width="150" alt=""></a>
+
 
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -73,17 +73,92 @@
 
         <div class="container">
             <div class="row">
-                <div class="First col-md-6">
-                    <div class="img-container">
-                        <img src="Assets/Artboard 4.png" alt="">
-                    </div>
+                <div class="First col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="Assets/Artboard 4.png" alt="">
                 </div>
 
-                <div class="Second col-md-6">
+                <div class="Second col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="text-wrap">
+                        <div class="lead text-center mt-md-5">
+                            <p>Welcome</p>
+                        </div>
+                        <div class="welcome-paragraph mt-md-5 pl-3">
+                            <p>We're a small, dedicated team of programming and graphic design professionals with a
+                                strict attention to detail. We exceed standards in the majority aspects of web design,
+                                development, graphic design and social media management.</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
+
+        <!-- START THE FEATURETTES -->
+        <div class="container">
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette py-4">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading ">Web Design </h2>
+                    <h3>LAYOUT, CONTENT, & STYLING</h3>
+                    <p class="lead">Your website will be the first place new customers look. Nail that important first impression by putting our experience and knowledge to work for you.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <picture class="rounded">
+                        <source media="(min-width: 1200px)" srcset="assets/story500.jpg">
+                        <source media="(min-width: 768px)" srcset="assets/story270.jpg">
+                        <img src="assets/story345.jpg" alt="PCTStory" class="rounded-circle">
+                    </picture>
+                </div>
+            </div>
+
+
+
+            <div class="row featurette py-4">
+                <div class="col-md-7 order-md-2 ml-md-5 pl-md-5">
+                    <h2 class="featurette-heading">Web Development</h2>
+                    <h3>DATA & FUNCTIONALITY</h3>
+                    <p class="lead">Custom features and functionality from the ground up, fitted to our customers unique situation and project goals. No cookie-cutter solutions.</p>
+
+                    <a class="btn mb-2 mt-md-5" href="#" role="button" target="_blank">Discover more..</a>
+                </div>
+
+                <div class="col-md-4">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="assets/coffee500.jpg">
+                        <source media="(min-width: 768px)" srcset="assets/coffee270.jpg">
+                        <img src="assets/coffee345.jpg" alt="MostWanted" class="rounded-circle">
+                    </picture>
+                </div>
+
+            </div>
+
+
+
+            <div class="row featurette py-4">
+                <div class="col-md-7 ">
+                    <h2 class="featurette-heading">Graphic Design</h2>
+                    <h3>LOGO, POSTER, BROCHURE </h3>
+                    <p class="lead">We like graphic design that is concise, contemporary, and attention grabbing. Our Team will work from concept to completionand will be giving advice along the way beacuse we think communication is a key to success.</p>
+                </div>
+                <div class="col-md-4">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="assets/office500.jpg">
+                        <source media="(min-width: 768px)" srcset="assets/office270.jpg">
+                        <img src="assets/office345.jpg" alt="OfficeCoffee" class="rounded-circle">
+                    </picture>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+
+        </div>
+        <!-- /END THE FEATURETTES -->
+
+
 
 
     </main>
