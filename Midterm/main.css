@@ -21,7 +21,7 @@ body {
 }
 
 .Second{
-  background-color: #3c3b6e;
+  background-color: #12174f;
   height: 400px;
 }
 
@@ -80,5 +80,5 @@ nav:hover{
 .product-container .btn-primary{
   
     background-color: #B22234;
-    border: 2px solid #3C3B6E;
+    border: 2px solid #12174f;
 }
