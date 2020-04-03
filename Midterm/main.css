@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,600,700,800,900&display=swap');
 
-  .navbar-light .navbar-nav .nav-link:hover,
-  .dropdown-item:hover{
+body {
+    margin: 0;
+    padding: 0;
+}
+  .navbar-light .navbar-nav .nav-link:hover{
       /*background-color: #f7f7f7bf;*/
-      border-left: 2px solid white;
-      font-size: small;
+      /*border-left: 2px solid #F02D3A;*/
+      font-size: .90rem;
       color: #353740;
   }
+
+ 
   .navbar-light .navbar-nav .nav-link {
       color: black;
   }
@@ -51,4 +57,22 @@ body{
     display: block;
     background: #F02D3A;
     width: 100px;
+}
+
+nav{
+    background-color: #ffffffd1;
+}
+
+nav:hover{
+    background-color: #fff;
+}
+
+.about-p{
+    text-indent: 85px;
+}
+
+.about-text-wrapper .lead{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
 }
