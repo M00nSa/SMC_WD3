@@ -21,7 +21,7 @@ body {
 }
 
 .Second{
-  background-color: #296BFF;
+  background-color: #3c3b6e;
   height: 400px;
 }
 
@@ -55,7 +55,7 @@ body{
     left: 0;
     content: '';
     display: block;
-    background: #F02D3A;
+    background: #B22234;
     width: 100px;
 }
 
@@ -75,4 +75,10 @@ nav:hover{
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
+}
+
+.product-container .btn-primary{
+  
+    background-color: #B22234;
+    border: 2px solid #3C3B6E;
 }
