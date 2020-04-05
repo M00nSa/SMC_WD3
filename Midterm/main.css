@@ -1,84 +1,156 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,600,700,800,900&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-}
-  .navbar-light .navbar-nav .nav-link:hover{
-      /*background-color: #f7f7f7bf;*/
-      /*border-left: 2px solid #F02D3A;*/
-      font-size: .90rem;
-      color: #353740;
-  }
-
- 
-  .navbar-light .navbar-nav .nav-link {
-      color: black;
-  }
-  
-  .First{
-    height: 400px;
+  margin: 0;
+  padding: 0;
 }
 
-.Second{
+.navbar-light .navbar-nav .nav-link:hover {
+  /*background-color: #f7f7f7bf;*/
+  /*border-left: 2px solid #F02D3A;*/
+  font-size: .90rem;
+  color: #353740;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.First {
   background-color: #12174f;
-  height: 400px;
+  height: 280px;
 }
 
-.img-container{
+
+.img-container {
   text-align: center;
 }
 
-.lead p, h2{
+.lead p,
+h2,
+.jumbotron .header {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 500;
 }
 
-.text-wrap{
+.text-wrap {
   color: white;
 }
 
-body{
-    letter-spacing: 0.5px;
+body {
+  letter-spacing: 0.5px;
   line-height: 28px;
 }
 
-.featurette a{
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
+.featurette a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
 }
+
 .featurette a:after {
-    transition: all 300ms;
-    height: 1px;
+  transition: all 300ms;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background: #B22234;
+  width: 110px;
+}
+
+nav {
+  background-color: #ffffffd1;
+}
+
+nav:hover {
+  background-color: #fff;
+}
+
+.about-p {
+  text-indent: 85px;
+}
+
+.about-text-wrapper .lead {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.product-container .btn-primary {
+
+  background-color: #B22234;
+  border: none;
+}
+
+.Logo img {
+  height: 50px;
+}
+
+.jumbotron {
+  background-image: linear-gradient(#00000042, #000000d9), url(Assets/carousel-7.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 18px;
+}
+
+.hero-image {
+  background-image: linear-gradient(#00000042, #000000d9), url(Assets/Jumbo-3.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+
+@media only screen and (min-width: 320px) {
+  .jumbotron .header {
+    font-size: 2rem;
+  }
+
+  .navbar-collapse {
+    padding-top: 29px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .jumbotron .header {
+    font-size: 3rem;
+  }
+
+  .navbar-collapse {
+    padding-top: initial;
+  }
+}
+
+.jumbotron .header {
+  font-weight: 300;
+}
+
+.discover-container a {
+  letter-spacing: 4px;
+  text-decoration: none;
+}
+
+.socialmedia-icons img {
+  height: 15px;
+}
+
+
+.figure-caption{
+  position: absolute;
     bottom: 0;
-    left: 0;
-    content: '';
-    display: block;
-    background: #B22234;
-    width: 100px;
-}
-
-nav{
-    background-color: #ffffffd1;
-}
-
-nav:hover{
-    background-color: #fff;
-}
-
-.about-p{
-    text-indent: 85px;
-}
-
-.about-text-wrapper .lead{
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 900;
-    font-size: 1.5rem;
-}
-
-.product-container .btn-primary{
+    color: black;
+    background-color: #ffffffa3;
+    width: 100%;
   
-    background-color: #B22234;
-    border: 2px solid #12174f;
+}
+
+.figure{
+  height: 280px;
+  position: relative;
 }
