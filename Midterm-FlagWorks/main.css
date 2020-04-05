@@ -89,7 +89,7 @@ nav:hover {
 }
 
 .jumbotron {
-  background-image: linear-gradient(#00000042, #000000d9), url(Assets/carousel-7.jpg);
+  background-image: linear-gradient(#00000042, #000000), url(Assets/Jumbo-4.jpg);
   background-size: cover;
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -154,3 +154,4 @@ nav:hover {
   height: 280px;
   position: relative;
 }
+
