@@ -308,3 +308,17 @@ h2{
 .Blog-Card .card-deck .col{
     margin-right: 0px;
 }
+
+
+.jumbotron {
+    background-image: linear-gradient(#000000bd, #000000bd), url(Assets/About-Jombo3.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 18px;
+}
+
+.About-wrap h2{
+    font-weight: 500;
+}
