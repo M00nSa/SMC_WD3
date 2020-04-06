@@ -22,7 +22,7 @@
     <!--Navigation Starts-->
     <header>
 
-        <div class="Navcontainer d-flex align-items-center justify-content-between ">
+        <div class="Navcontainer d-flex align-items-center justify-content-between scrolling-navbar">
             <!-- <div class=" d-md-none Cart">
                 <a href="https://calendar.google.com/calendar" target="_blank"><img src="https://img.icons8.com/ios/50/000000/edit-calendar.png" /></a>
             </div>-->
@@ -127,46 +127,53 @@
 
     <!-- blog cards starts-->
 
-<div class="container mt-4 Blog-Card">
-    <div class="card-deck row row-cols-1 row-cols-md-3">
+    <div class="container mt-4 Blog-Card">
+        <div class="card-deck row row-cols-1 row-cols-md-3">
 
-        <div class="col card mb-4">
-            <img src="Assets/LA-Times.jpg" class="card-img-top mt-4" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Los Angeles Times Article</h5>
-                <p class="card-text">This last autumn, we got an email out of the blue from Edmund Vallance, a writer
-                    for the Los Angeles times. He asked for an interview and we accepted.</p>
+            <div class="col card mb-4">
+                <img src="Assets/LA-Times.jpg" class="card-img-top mt-4" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Los Angeles Times Article</h5>
+                    <p class="card-text">This last autumn, we got an email out of the blue from Edmund Vallance, a
+                        writer
+                        for the Los Angeles times. He asked for an interview and we accepted.</p>
+                </div>
+                <a href="#" class="bg-primary btn text-light active btn-sm ml-2 mb-4" target="_blank" role="button"
+                    aria-pressed="true">Read More</a>
+
             </div>
-            <a href="#" class="bg-primary btn text-light active btn-sm ml-2 mb-4" target="-blank" role="button"
-                aria-pressed="true">Read More</a>
-           
-        </div>
 
 
-        <div class="col card mb-4">
-            <img src="Assets/pool-training.jpg" class="card-img-top mt-4" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Pool training</h5>
-                <p class="card-text">Here's some tips, useful not only to freedivers who have no history of pool training,  but also for freedivers who may be quite at home in a lap swim but looking for the best way to train.</p>
+            <div class="col card mb-4">
+                <img src="Assets/pool-training.jpg" class="card-img-top mt-4" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pool training</h5>
+                    <p class="card-text">Here's some tips, useful not only to freedivers who have no history of pool
+                        training, but also for freedivers who may be quite at home in a lap swim but looking for the
+                        best way to train.</p>
+                </div>
+                <a href="#" class="bg-primary btn text-light active btn-sm ml-2 mb-4" target="-blank" role="button"
+                    aria-pressed="true">Read More</a>
             </div>
-            <a href="#" class="bg-primary btn text-light active btn-sm ml-2 mb-4" target="-blank" role="button"
-            aria-pressed="true">Read More</a>
-        </div>
 
 
-        <div class="col card mb-4">
-            <img src="Assets/Pro-Tips.png" class="card-img-top mt-4" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">You need to know more</h5>
-                <p class="card-text">The Pro-tips section that is password protected and for safety reasons only accessible to divers who have completed their certification through us. </p>
+            <div class="col card mb-4">
+                <img src="Assets/Pro-Tips.png" class="card-img-top mt-4" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">You need to know more</h5>
+                    <p class="card-text">The Pro-tips section that is password protected and for safety reasons only
+                        accessible to divers who have completed their certification through us. </p>
+                </div>
+                <a href="#" class="bg-warning btn text-dark active btn-sm ml-2 mb-4" target="-blank" role="button"
+                    aria-pressed="true">Join Us</a>
             </div>
-            <a href="#" class="bg-warning btn text-dark active btn-sm ml-2 mb-4" target="-blank" role="button"
-                aria-pressed="true">Join Us</a>
         </div>
     </div>
-</div>
 
     <!-- needed blog cards ends-->
+
+
+
 
 
     <hr>
@@ -175,19 +182,37 @@
     </footer>
 
 
-
-    <!-- making menu to slide -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.toggle').click(function () {
-                $('nav').toggleClass('active')
-            })
-        })
-    </script>
-    <!-- end of slide menu -->
-
-    <!-- Optional JavaScript -->
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-warning text-uppercase">Get Notified </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-light">
+                    <p class="pb-4">Join over 5,000 VIP members to get updates and special deals only available via
+                        email.</p>
+                    <form action="" method="GET">
+                        <fieldset>
+                            <div class="form-group  pl-0 mb-2">
+                                <label for="exampleInputEmail1">Name</label>
+                               <input type="email" class="form-control mb-4" id="exampleInputEmail1"  aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group  pl-0 mb-2">
+                                <label for="exampleInputEmail1">Email</label>
+                               <input type="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-warning text-dark Subscribe" data-dismiss="modal">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -198,6 +223,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
