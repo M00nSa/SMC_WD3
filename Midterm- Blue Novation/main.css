@@ -107,7 +107,7 @@ nav ul li:hover a span:nth-child(1) {
         position: absolute;
         width: 100%;
         height: calc(100vh - 50px);
-        background-color: black;
+        background-color:#343a40;
         top: 50px;
         left: -100%;
         transition: 1s;
@@ -325,7 +325,7 @@ h2{
 
 .Welcome-Container .btn{
     border-radius: 9px;
-    width: 60px;
+    width: 80px;
 }
 
 
@@ -412,4 +412,8 @@ input[type="name"]::placeholder {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.Carousel-Service-Btn button{
+    width: 89px;
 }
