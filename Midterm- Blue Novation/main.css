@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
 
 body{
     background-color: #F0EDEA;
@@ -176,12 +177,21 @@ nav ul li a {
     z-index: 98;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
 
     body header nav ul li a {
         padding: 0 9px 0 14px;
     }
-    
+
+    .Team-Header{
+        font-size: 50px!important;
+    }
+}
+
+@media (min-width: 992px) {
+.Team-Header {
+    font-size: 68px!important;
+}
 }
 
 
@@ -386,3 +396,20 @@ input[type="name"]::placeholder {
     letter-spacing: 7px;
 }
   
+.Team-Header{
+    letter-spacing: 2px;
+    font-size: 23px;
+    font-family: 'Archivo Black', sans-serif;
+    /*color: #449BB6;*/
+}
+
+.Staff-Bio a{
+    width: 100px;
+}
+
+.Team-Jumbotron {
+    background-image:url(Assets/Team-mainpic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
