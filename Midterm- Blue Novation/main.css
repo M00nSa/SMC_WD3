@@ -106,7 +106,7 @@ nav ul li:hover a span:nth-child(1) {
         position: absolute;
         width: 100%;
         height: calc(100vh - 50px);
-        background-color: #4192d6;
+        background-color: black;
         top: 50px;
         left: -100%;
         transition: 1s;
@@ -306,7 +306,7 @@ nav ul li a {
 
 
 .Logo img{
-    width: 97px;
+    width: 190px;
 }
 
 h2{
@@ -331,7 +331,6 @@ h2{
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: right;
-    background-position-y: 18px;
 }
 
 .About-wrap h2{
@@ -353,20 +352,37 @@ h2{
 /*service card effect end*/
 
 .modal-content{
-    background-color: rgba(0, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.69);
 }
 
 .modal-header, .modal-footer{
     border: none;
 }
-.form-control{
-    background-color: #183b4ab3;
-    border: 1px solid #183b4a;
+.close{
+    color: white;
 }
 
 .modal-footer .btn{
-    width: 200px;
+    width: 300px;
 }
 
+input[type="email"]::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+} 
 
+input[type="name"]::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+} 
+
+.modal-content input{
+    width: 300px;
+}
+
+.modal-header h5{
+    letter-spacing: 7px;
+}
   

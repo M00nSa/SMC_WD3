@@ -21,3 +21,28 @@ $(document).ready(function(){
     });
   });
 
+
+
+  //Service carousel and btns:
+
+  $(document).ready(function(){
+    //we write everything here
+
+    $('#myCarousel').carousel({
+        interval: 500
+    });
+
+    $('#carouselControl').click(function(){
+        
+        if( $('#carouselControl').hasClass('paused') ){
+            $('#myCarousel').carousel('cycle');
+            $('#carouselControl').text('Pause');
+        }
+        else {
+            $('#myCarousel').carousel('pause');
+            $('#carouselControl').text('Play');
+        }
+
+        $('#carouselControl').toggleClass('paused');
+    });
+});
