@@ -96,9 +96,7 @@ nav ul li:hover a span:nth-child(1) {
 
 
 @media (max-width: 760px) {
-    header {
-        padding: 0 20px;
-    }
+  
 
 
 
