@@ -18,11 +18,7 @@ $(document).ready(function () {
         alert("Welcome to the unlimited Blue world!");
       });
 
-      $('#myCarousel').carousel({
-        interval: 2000,
-        cycle: true,
-        pause: null
-    });
+    
 
     $('#carouselControl').click(function(){
         
