@@ -34,6 +34,15 @@ $(document).ready(function () {
         $('#carouselControl').toggleClass('paused');
     });
 
+    $('.carousel').carousel({
+        interval: 5000,
+        pause: false,
+        ride: "carousel"
+        
+
+
+      })
+
 })
 
 
