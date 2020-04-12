@@ -38,17 +38,17 @@ $(document).ready(function () {
         interval: 5000,
         pause: false,
         ride: "carousel"
-        
+      });
 
 
-      })
+   
 
-})
-
-
+});
 
 
-$(window).scroll(function(){
+
+
+/*$(window).scroll(function(){
     var CarouselHeight = $("#myCarousel").height();
     if($(this).scrollTop() > CarouselHeight){
         $('.scrolling-navbar').addClass('scrolled');
@@ -56,28 +56,6 @@ $(window).scroll(function(){
     else{
         $('.scrolling-navbar').removeClass('scrolled');
     }
-    });
-
-    $(window).scroll(function(){
-        var CarouselHeight = $("#MyJumbo").height();
-        if($(this).scrollTop() > CarouselHeight){
-            $('.scrolling-navbar').addClass('scrolled');
-        }
-        else{
-            $('.scrolling-navbar').removeClass('scrolled');
-        }
-        });
+    });*/
 
 
-
-       
-
-        $(window).scroll(function(){
-            var CarouselHeight = $("#TeamContainer").height();
-            if($(this).scrollTop() > CarouselHeight){
-                $('.scrolling-navbar').addClass('scrolled');
-            }
-            else{
-                $('.scrolling-navbar').removeClass('scrolled');
-            }
-            });
