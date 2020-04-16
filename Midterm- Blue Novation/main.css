@@ -447,9 +447,7 @@ input[type="name"]::placeholder {
     /*color: #449BB6;*/
 }
 
-.Staff-Bio a{
-    width: 100px;
-}
+
 
 .Team-Jumbotron {
     background-image:url(Assets/Team-mainpic.jpg);
@@ -504,6 +502,19 @@ input[type="name"]::placeholder {
     color: #00214a;
 }
 
-.featurette h2{
+.featurette h2,h5{
     font-family: deluce;
+}
+
+#BookSurfing h4{
+    font-size: 1.5rem !important;
+    font-family: deluce;
+}
+
+.alert{
+    display: none;
+}
+
+.alert h5{
+    text-transform: uppercase;
 }
