@@ -555,3 +555,6 @@ nav ul li .active {
     color: #007bff;
     text-decoration: none;
 }
+.jumbotron h1{
+    font-family: deluce;
+}
