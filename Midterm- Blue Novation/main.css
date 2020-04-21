@@ -454,10 +454,10 @@ input[type="name"]::placeholder {
 }
 
 .Team-Header {
-    letter-spacing: 2px;
-    font-size: 23px;
-    font-family: 'Archivo Black', sans-serif;
-    /*color: #449BB6;*/
+    letter-spacing: 7px;
+    font-family: deluce;
+    /* color: #449BB6; */
+    font-weight: bold;
 }
 
 
@@ -557,4 +557,16 @@ nav ul li .active {
 }
 .jumbotron h1{
     font-family: deluce;
+}
+
+.alert-dismissable h5{
+    letter-spacing: 6.2px;
+}
+
+.Index-Attention-Getter h1, .Blog-Posts h4, .Services-Attention-Getter h1{
+    font-family: deluce;
+}
+
+.Team_Text_wrap p{
+    line-height: 29px;
 }
