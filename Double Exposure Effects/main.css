@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    position: relative;
+    width: 600px;
+    height: 790px;
+    background:  url(girl.png), url(58330.jpg);
+    background-position: center;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    margin: auto;
+}
