@@ -112,9 +112,9 @@ nav ul li:hover a span:nth-child(1) {
         border-bottom: none;
     }
 
-    header nav ul li {
+    /*header nav ul li {
         height: 34px;
-    }
+    }*/
 }
 
 
@@ -371,6 +371,7 @@ nav ul li a {
 
 .Logo img {
     width: 190px;
+    margin-top: -8px;
 }
 
 h2 {
@@ -386,6 +387,11 @@ h2 {
 
 .Blog-Card .card-deck .col {
     margin-right: 0px;
+}
+.carousel-caption{
+    transform: translateY(50%);
+    font-size: 4rem;
+    margin-bottom: 166px;
 }
 
 
@@ -505,8 +511,7 @@ input[type="name"]::placeholder {
 }
 
 .About-Jumbo-P {
-    font-size: .9rem;
-    line-height: 25px;
+    font-size: 3rem;
 }
 
 .Blue-Novation {
