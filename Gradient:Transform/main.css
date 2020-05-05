@@ -10,7 +10,7 @@ body{
 .navbar {
     background: rgb(141,252,251);
 background: linear-gradient(90deg, rgb(251, 172, 33) 5%, rgb(254, 79, 133) 94%);
-padding-bottom: 0px;
+
 
 }
 
@@ -22,7 +22,7 @@ nav .Header{
 }
 
 h1{
-    transform: translatey(-21%);
+    transform: translatey(-1%);
     font-family: 'Libre Caslon Display', serif;
     font-style: italic;
     line-height: 36px;
@@ -158,7 +158,11 @@ h1{
     margin: auto;
 }
 }
-    
+@media only screen and (min-width: 768px) {
+.navbar-nav{
+    padding: 0 !important;
+}
+}
     
 
 .card{
@@ -234,3 +238,22 @@ h2{
     font-family:'Libre Caslon Display', serif;
 }
 
+#header2, #header2-2{
+    transition: all 2s ease 0s;
+}
+
+.CultureContent{
+    text-align: center;
+    position: relative;
+}
+.CultureContent p{
+    background-color: white;
+    font-family: 'Libre Caslon Display', serif;
+    position: relative;
+    top: 43px;
+    top: 55px;
+    font-size: 2rem;
+}
+.navbar-nav{
+    padding: 14px 0 0 14px;
+}
