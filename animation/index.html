@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Animation</title>
+    <style>
+body{
+    margin: 0;
+    overflow: hidden;
+    animation: ColorBody 3s;
+}
+
+@keyframes ColorBody{
+    0%  {background-color: hsl(0, 100%, 50%);}
+    18% {background-color: hsl(70, 100%, 50%);}
+    35% {background-color: hsl(130, 100%, 50%);}
+    50% {background-color: hsl(180, 100%, 50%);}
+    65% {background-color: hsl(240, 100%, 50%);}
+    83% {background-color: hsl(300, 100%, 50%);}
+    100%{background-color: hsl(360, 100%, 50%);}
+}
+
+.circle{
+    background-color: hsl(0, 100%, 50%);
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: CircleAnimate 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2500ms;
+}
+
+@keyframes CircleAnimate{
+    from{
+        background-color: hsl(0,100%,100%);
+        width: 0vw;
+        height: 0vh;
+    }
+    to{
+        background-color: hsl(0,100%,50%);
+        width: max(200vw,200vw);
+        height: max(200vw,200vw);
+    }
+}
+
+main{
+    width: 960px;
+    margin: 0px auto;
+    opacity: 0;
+    animation: popTheMain 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+main p{
+    columns: 2;
+}
+
+@keyframes popTheMain{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <section>
+        <div class="strip1"></div>
+        <div class="strip2"></div>
+        <div class="strip3"></div>
+        <div class="strip4"></div>
+    </section>
+
+    <main>
+        <h1>What is Lorem Ipsum?</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

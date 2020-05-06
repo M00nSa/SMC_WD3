@@ -21,12 +21,11 @@ nav .Header{
     justify-content: center;
 }
 
-h1{
-    transform: translatey(-1%);
+h3{
+  
     font-family: 'Libre Caslon Display', serif;
     font-style: italic;
-    line-height: 36px;
-   
+   color: black;
 }
 
 .dropdown-menu {
@@ -120,13 +119,15 @@ h1{
 
 .gradient-button:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    margin: 8px 10px 12px;
 }
 .gradient-button1 {
     background-image: linear-gradient(to right, rgb(255, 88, 140) 6%, #f8a91f 38%);
+    position: relative;
 }
 .gradient-button1:hover { 
-    background-position: right center; }
+    background-position: right center; 
+    top: 5px;
+}
 
 .WrappingButton{
     text-align: center;
@@ -257,9 +258,7 @@ h2{
     top: 55px;
     font-size: 2rem;
 }
-.navbar-nav{
-    padding: 14px 0 0 14px;
-}
+
 
 .Shop-Container{
     background-image: url(assets/shoppping.jpg);
@@ -279,7 +278,7 @@ h2{
 }
 
 .Purchase-Button .gradient-button:hover{
-    margin: 0 10px 0;
+    margin: 0 2px 0;
 }
 
 .modal-content {
@@ -292,12 +291,7 @@ background-color: #7f2842d6;
 .modal-title{
     letter-spacing: 15px;
 }
-.modal-content input {
-    width: 300px;
-}
-.modal-footer .btn {
-    width: 300px;
-}
+
 
 .modal-footer{
     border: none;
@@ -305,4 +299,12 @@ background-color: #7f2842d6;
 
 .purchase-alert h5{
     height: 70px;
+}
+
+fieldset{
+    padding: .75rem;
+}
+
+.navbar-toggler{
+    padding: 0;
 }
