@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap');
+
+body{
+    letter-spacing: 1px;
+}
+.Translate .Original {
+    position: relative;
+}
+
+.navbar {
+    background: rgb(141,252,251);
+background: linear-gradient(90deg, rgb(251, 172, 33) 5%, rgb(254, 79, 133) 94%);
+
+
+}
+
+nav .Header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+  
+    font-family: 'Libre Caslon Display', serif;
+    font-style: italic;
+   color: black;
+}
+
+.dropdown-menu {
+    background-color: #bddbfb75;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.hash {
+    background-image: repeating-linear-gradient(-45deg,
+            #ccc 0 2px,
+            transparent 0 9px)
+}
+
+.Index-Card{
+    background-color: white;
+}
+
+.background-img {
+    height: 500px;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#BI1 {
+    background-image: linear-gradient(rgb(0, 0, 0) 100%, rgb(35, 75, 91) 80%), linear-gradient(to right, rgb(18, 24, 53) 104%, rgb(4, 99, 154) 70%), url(man1.jpg), url(landscape-photography-tom-archer-2.jpg);
+}
+
+#BI2 {
+    background-image: linear-gradient(rgb(0, 0, 0) 100%, rgb(35, 75, 91) 80%), linear-gradient(to right, rgb(18, 24, 53) 104%, rgb(4, 99, 154) 70%), url(man3.jpg), url(landscape-photography-tom-archer-2.jpg);
+}
+
+.bg-color {
+    background-color: #1c2126;
+}
+
+#h1 {
+    background-image: repeating-linear-gradient(45deg, #ccc 0 2px, transparent 0 9px);
+}
+
+#pb {
+    padding-top: 40px;
+}
+
+#pb2 {
+    padding-bottom: 24px !important;
+}
+
+
+#Content{
+    display: none;
+}
+
+
+
+
+.MainB{
+    border: 2px solid #9c9c9c;
+    border-radius: 57px;
+    background-color: transparent;
+    letter-spacing: 3px;
+}
+
+.MainB:hover{
+    background-color: linear-gradient( rgba(141,252,251,1) 5%, rgba(237,186,251,1) 94%);
+}
+
+.gradient-button {
+   
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 11px;
+    text-align: center;
+    background-size: 200% auto;
+    color: black;
+    box-shadow: 0 0 20px #eee;
+    width: 129px;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    display: inline-block;
+}
+
+.gradient-button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.gradient-button1 {
+    background-image: linear-gradient(to right, rgb(255, 88, 140) 6%, #f8a91f 38%);
+    position: relative;
+}
+.gradient-button1:hover { 
+    background-position: right center; 
+    top: 5px;
+}
+
+.WrappingButton{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: width .3s;
+    
+}
+
+.nav-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+@media only screen and (max-width: 766px) {
+.navbar-nav .nav-item .nav-link{
+    width: 123px;
+}
+.Index-Card{
+    width: 200px;
+    margin: auto;
+}
+}
+@media only screen and (min-width: 768px) {
+.navbar-nav{
+    padding: 0 !important;
+}
+.container-fluid .Shop-Container{
+  
+    background-position: center -46px;
+}
+}
+    
+
+.Index-Card{
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
+}
+
+
+
+.Index-Card .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+.Index-Card:hover .imgbox{
+    transform:rotateY(-135deg);
+}
+.Index-Card:hover{
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
+}
+
+.Index-Card .card-body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.cart img{
+    width: 30px;
+}
+
+
+
+
+
+#pic7{
+    background-image: url(assets/7.jpg);
+    height: 351px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+#pic8{
+    background-image: url(assets/8.jpg);
+    height: 351px;
+    background-repeat: no-repeat;
+}
+
+.About-Text{
+    font-family: 'Libre Caslon Display', serif;
+}
+
+.About-FollowButton{
+    text-align: center;
+}
+
+.About-FollowButton .gradient-button{
+    width: 100px;
+    padding: 3px;
+}
+h2{
+    font-family:'Libre Caslon Display', serif;
+}
+
+#header2, #header2-2{
+    transition: all 2s ease 0s;
+}
+
+.CultureContent{
+    text-align: center;
+    position: relative;
+}
+.CultureContent p{
+    background-color: white;
+    font-family: 'Libre Caslon Display', serif;
+    position: relative;
+    top: 43px;
+    top: 55px;
+    font-size: 2rem;
+}
+
+
+.Shop-Container{
+    background-image: url(assets/shoppping.jpg);
+    height: 351px;
+    background-size: cover;
+    background-position: center;
+}
+
+.Purchase-Button{
+    width: 100%;
+    text-align: center;
+}
+
+.Purchase-Button .gradient-button{
+    padding: 3px;
+    width: 100%;
+}
+
+.Purchase-Button .gradient-button:hover{
+    margin: 0 2px 0;
+}
+
+.modal-content {
+background-color: #7f2842d6;
+}
+.alert {
+    display: none;
+}
+
+.modal-title{
+    letter-spacing: 15px;
+}
+
+
+.modal-footer{
+    border: none;
+}
+
+.purchase-alert h5{
+    height: 70px;
+}
+
+fieldset{
+    padding: .75rem;
+}
+
+.navbar-toggler{
+    padding: 0;
+}
