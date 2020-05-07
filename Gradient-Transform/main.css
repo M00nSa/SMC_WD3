@@ -131,7 +131,7 @@ h3{
 
 .WrappingButton{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 60px;
 }
 
@@ -206,7 +206,7 @@ h3{
 }
 
 .cart img{
-    width: 30px;
+    width: 34px;
 }
 
 
@@ -307,4 +307,33 @@ fieldset{
 
 .navbar-toggler{
     padding: 0;
+}
+
+.Circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    position: absolute;
+    left: 22px;
+    top: -5px;
+}
+
+.cart{
+    position: relative;
+}
+
+.count{
+    display: inline;
+    position: absolute;
+    top: 11px;
+    left: 42px;
+    z-index: 1;
+    font-size: 18px;
+    color: white;
+}
+
+#index-header2 h2{
+    position: absolute;
+    width: 100%;
 }

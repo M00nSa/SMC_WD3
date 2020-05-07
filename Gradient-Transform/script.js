@@ -28,6 +28,17 @@ $(document).ready(function() {
         });
 
 
+    $("#Longan-Btn").click(function() {
+
+        if ($('body:has(h1.count)').length > 0) {
+            var number = parseInt($('h1.count').text()) + 1;
+            $('h1.count').text(number);
+        } else {
+            $('body').prepend("<h1 class='count'>1</h1>");
+        }
+    });
+
+
 
 
     $("form.needs-validation").submit(function(event) {
@@ -44,6 +55,14 @@ $(document).ready(function() {
     }, 2000);
 
 
+    $(".Circle").css({
+        display: "none"
+    });
+    $(".order").click(function() {
+        $(".Circle").css({
+            display: "block"
+        });
+    })
 
 
     /*newModalForm.addEventListener('input', () => {
@@ -69,15 +88,14 @@ $(document).ready(function() {
 
 
 
-    $('.Subscribe').attr('disabled',true);
-    $('.Subscribe').on('keyup',function(){
-        if($('form.was-validated:has(input:valid)')){
-            $('.Subscribe').attr('disabled',false);
+    $('.Subscribe').attr('disabled', true);
+    $('.Subscribe').on('keyup', function() {
+        if ($('form.was-validated:has(input:valid)')) {
+            $('.Subscribe').attr('disabled', false);
             $('.alert').show();
-        }
-        else{
-            $('.Subscribe').attr('disabled',true);
-            
+        } else {
+            $('.Subscribe').attr('disabled', true);
+
         }
     });
 
@@ -85,23 +103,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
-
-$("#Order").click(function() {
-    var productId = $("#productId").val();
-    var productName = $("#productName").val();
-    var productQuantity = $("#productQuantity").val();
-    var data = {
-        'product_id': productId,
-        'product_name': productName,
-        'quantity': productQuantity
-    };
-
-    $.post("/cart/add", data, showDone);
-});
-
-var showDone = function() {
-    /* Make something happen here*/
-}
