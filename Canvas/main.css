@@ -1,0 +1,9 @@
+.C{
+    background-color: var(--info);
+    text-align: center;
+}
+
+#canvas{
+    border:3px solid black;
+    margin: 109px auto;
+}
