@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 
-    $("#Present").click(function() {
+    $("#Present").click(function () {
         $("#Content").toggle("slow")
 
     });
@@ -10,25 +10,25 @@ $(document).ready(function() {
 
     var size = $("#header2").css("fontSize")
     $("#header2").hover(
-        function() {
+        function () {
             $(this).css("fontSize", "2.5rem");
         },
-        function() {
+        function () {
             $(this).css("fontSize", size);
         });
 
 
     var size = $("#header2-2").css("fontSize")
     $("#header2-2").hover(
-        function() {
+        function () {
             $(this).css("fontSize", "2.5rem");
         },
-        function() {
+        function () {
             $(this).css("fontSize", size);
         });
 
 
-    $("#Longan-Btn").click(function() {
+    $("#Longan-Btn").click(function () {
 
         if ($('body:has(h1.count)').length > 0) {
             var number = parseInt($('h1.count').text()) + 1;
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-    $("form.needs-validation").submit(function(event) {
+    $("form.needs-validation").submit(function (event) {
         event.preventDefault();
 
         if ($("input.form-control").val() === "") {
@@ -50,7 +50,7 @@ $(document).ready(function() {
         }
     });
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('#exampleModal').modal('show');
     }, 2000);
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
     $(".Circle").css({
         display: "none"
     });
-    $(".order").click(function() {
+    $(".order").click(function () {
         $(".Circle").css({
             display: "block"
         });
@@ -74,30 +74,59 @@ $(document).ready(function() {
     });*/
 
 
-    /*$('.Subscribe').click(function() {
+    
+    $('.Subscribe').click(function() {
         if ($('form.was-validated:has(input:invalid)')) {
-
+            $('.alert').addClass('hidden');
         } else {
-            console.log("AlertNotWorking");
-            $('.alert').show();
-
+            if ($('form.was-validated:has(input:valid)')) {
+                $('.alert').show();
+               
+            }
         }
 
-    });*/
+    });
 
 
 
 
-    $('.Subscribe').attr('disabled', true);
-    $('.Subscribe').on('keyup', function() {
+    $('input').on('click', function() {
         if ($('form.was-validated:has(input:valid)')) {
-            $('.Subscribe').attr('disabled', false);
-            $('.alert').show();
+            $('.Subscribe').prop('disabled', false); 
         } else {
-            $('.Subscribe').attr('disabled', true);
-
+            $('.Subscribe').prop('disabled', 'disabled');
         }
     });
+    
+    $("#newModalForm").validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 4
+            },
+            email: {
+                required: true,
+                email: true
+            }
+        }
+    });
+
+    
+    
+
+
+
+
+    /* $('.Subscribe').attr('disabled', true);
+     $('.Subscribe').on('click', function() {
+         if ($('form.was-validated:has(input:valid)')) {
+             $('.Subscribe').removeAttr('disabled');
+             $('.alert').show();
+         } else {
+             $('.Subscribe').attr('disabled', true);
+
+         }
+     });*/
 
 
 
