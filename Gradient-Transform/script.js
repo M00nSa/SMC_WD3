@@ -74,30 +74,28 @@ $(document).ready(function () {
     });*/
 
 
-    
-    $('.Subscribe').click(function() {
+
+    $('.Subscribe').click(function () {
         if ($('form.was-validated:has(input:invalid)')) {
             $('.alert').addClass('hidden');
         } else {
             if ($('form.was-validated:has(input:valid)')) {
                 $('.alert').show();
-               
+
             }
         }
 
     });
 
 
-
-
-    $('input').on('click', function() {
+    $('input').on('click', function () {
         if ($('form.was-validated:has(input:valid)')) {
-            $('.Subscribe').prop('disabled', false); 
+            $('.Subscribe').prop('disabled', false);
         } else {
             $('.Subscribe').prop('disabled', 'disabled');
         }
     });
-    
+
     $("#newModalForm").validate({
         rules: {
             name: {
@@ -111,8 +109,8 @@ $(document).ready(function () {
         }
     });
 
-    
-    
+
+
 
 
 
