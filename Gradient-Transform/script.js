@@ -48,6 +48,9 @@ $(document).ready(function () {
             $("form.needs-validation").removeClass('needs-validation').addClass(
                 'was-validated');
         }
+
+       /* $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  event.preventDefault();*/
     });
 
     setTimeout(function () {
@@ -75,18 +78,25 @@ $(document).ready(function () {
 
 
 
-    $('.Subscribe').click(function () {
+    /* $('.Subscribe').click(function () {
+         if ($('form.was-validated:has(input:invalid)')) {
+             $('.alert').addClass('hidden');
+         } else {
+             if ($('form.was-validated:has(input:valid)')) {
+                 $('.alert').show();
+
+             }
+         }
+
+     });*/
+
+   /* $('.Subscribe').click(function () {
         if ($('form.was-validated:has(input:invalid)')) {
-            $('.alert').addClass('hidden');
+            $('.alert').hide();
         } else {
-            if ($('form.was-validated:has(input:valid)')) {
-                $('.alert').show();
-
-            }
+            $('.alert').show();
         }
-
-    });
-
+    });*/
 
     $('input').on('click', function () {
         if ($('form.was-validated:has(input:valid)')) {
@@ -95,20 +105,20 @@ $(document).ready(function () {
             $('.Subscribe').prop('disabled', 'disabled');
         }
     });
-
-    $("#newModalForm").validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 4
-            },
-            email: {
-                required: true,
-                email: true
+    /*$(function () {
+        $("#newModalForm").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 4
+                },
+                email: {
+                    required: true,
+                    email: true
+                }
             }
-        }
-    });
-
+        });
+    });*/
 
 
 
