@@ -49,7 +49,7 @@ $(document).ready(function () {
                 'was-validated');
         }
 
-       /* $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+        /* $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
   event.preventDefault();*/
     });
 
@@ -90,13 +90,13 @@ $(document).ready(function () {
 
      });*/
 
-   /* $('.Subscribe').click(function () {
-        if ($('form.was-validated:has(input:invalid)')) {
-            $('.alert').hide();
-        } else {
-            $('.alert').show();
-        }
-    });*/
+    /* $('.Subscribe').click(function () {
+         if ($('form.was-validated:has(input:invalid)')) {
+             $('.alert').hide();
+         } else {
+             $('.alert').show();
+         }
+     });*/
 
     $('input').on('click', function () {
         if ($('form.was-validated:has(input:valid)')) {
@@ -105,6 +105,9 @@ $(document).ready(function () {
             $('.Subscribe').prop('disabled', 'disabled');
         }
     });
+
+
+
     /*$(function () {
         $("#newModalForm").validate({
             rules: {
@@ -121,7 +124,16 @@ $(document).ready(function () {
     });*/
 
 
+    $('.Subscribe').click(function () {
+       if ($('input.form-control').val().length != 0){
+            $('.alert').show();
+        } else {
+            $('.alert').hide();
+        }
+    });
 
+   
+ 
 
 
 

@@ -271,15 +271,17 @@
                         <fieldset>
                             <div class="form-group  pl-0 mb-2">
                                 <input type="name" class="form-control  ModalValidate" id="ModalName"
-                                    aria-describedby="emailHelp" placeholder="Enter Your Name" name="name" id="Name"  required>
+                                    aria-describedby="emailHelp" placeholder="Enter Your Name" name="name" id="Name" minlength="2" required>
                                 <div class="invalid-feedback">
-                                    Please choose a name.
+                                    Your name is required.
                                 </div>
                             </div>
                             <div class="form-group  pl-0 mb-2">
                                 <input type="email" class="form-control ModalValidate" id="ModalEmail"
                                     aria-describedby="emailHelp" placeholder="Enter Your Email" name="email" id="Email"  required>
-                                    <span></span>
+                                    <div class="invalid-feedback">
+                                        Your email is required.
+                                    </div>
                             </div>
                         </fieldset>
                         <!-- Subscribtion Alert Starts-->
