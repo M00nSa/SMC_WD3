@@ -33,11 +33,30 @@ var animate = function () {
 
 animate();
 
-canvas.addEventListener("click", function (event) {
+/*canvas.addEventListener("click", function (event) {
     var distX = Math.abs(ballPosX - event.offsetX);
     var distY = Math.abs(ballPosY - event.offsetY);
 
     if (distX < ballRadius && distY < ballRadius) {
         console.log("FIRE!!!");
     }
-})
+})*/
+
+var button = document.getElementById("timesclicked"),
+  count = 0;
+  canvas.onclick = function() {
+  var distX = Math.abs(ballPosX - event.offsetX);
+  var distY = Math.abs(ballPosY - event.offsetY);
+  if(distX < ballRadius && distY < ballRadius){
+    count += 1;
+    button.innerHTML = "Yes!!!!!!!!!! You won " + count + " time/times ";
+  }
+};
+
+const randomColor = () => {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    ballColor = "#" + randomColor;
+    color.innerHTML = "#" + randomColor;
+  }
+  ColorChangeBtn.addEventListener("click", randomColor);
+  randomColor();

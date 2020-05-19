@@ -13,7 +13,7 @@
     <title>Catch the ball!</title>
 
     <style>
-        .container {
+        main {
             height: 100vh;
         }
 
@@ -21,11 +21,21 @@
             border: 4px double black;
         }
 
-        h1{
+        h1 {
             font-family: monospace;
         }
-        body{
+
+        body {
             background-color: antiquewhite;
+        }
+
+        p {
+            font-family: fantasy;
+            font-size: 46px;
+        }
+
+        #ColorChangeBtn {
+            box-shadow: 2px 2px dimgrey;
         }
     </style>
 </head>
@@ -35,15 +45,21 @@
 
 
     <main>
-        
+
         <div class="container align-items-center d-flex justify-content-center">
             <div class="row">
-                <div class="col">
-                    <h1 class="text-center mb-5">Catch me!</h1>
+                <div class="col-12">
+                    <h1 class="text-center my-5">- Catch me -</h1>
                     <canvas width="600" height="600" id="canvasGame" class="bg-white"></canvas>
+                    <p class="col-12 text-center mt-4" id="timesclicked">Are you a winner? </p>
+                    <button id="ColorChangeBtn" class="col-12 btn-block bg-info">Your favorite color is here!!
+                        </button>
                 </div>
             </div>
+
         </div>
+
+
     </main>
 
 
