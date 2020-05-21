@@ -44,7 +44,7 @@ $(document).ready(function () {
     $("form.needs-validation").submit(function (event) {
         event.preventDefault();
 
-        if (username_length < 3 && pattern.test($("#ModalEmail").val())) {
+        if ($('form.was-validated:has(input:valid)')) {
             $("form.needs-validation").removeClass('needs-validation').addClass(
                 'was-validated');
         }
@@ -98,7 +98,13 @@ $(document).ready(function () {
          }
      });*/
 
-    
+    $('input').on('click', function () {
+        if ($('input.form-control').val().length > 3 && error_name == false && error_email == false ) {
+            $('.Subscribe').prop('disabled', false);
+        } else {
+            $('.Subscribe').prop('disabled', 'disabled');
+        }
+    });
 
 
 
@@ -118,7 +124,14 @@ $(document).ready(function () {
     });*/
 
 
-    
+   /* $('.Subscribe').click(function () {
+        console.log(error_name == false);
+        if ($('input.form-control').val().length > 3 && error_name == false && error_email == false ){
+            $('.alert').show();
+        } else {
+            $('.alert').hide();
+        }
+    });*/
 
 
 
@@ -202,35 +215,13 @@ $(document).ready(function () {
 		check_email();
 		
 		if(error_name == false && error_email == false) {
-            return true;
+            $('.alert').show();
 		} else {
-            return false;	
+            $('.alert').hide ();
 		}
 
     });
-    
 
-
-
-    $('.Subscribe').click(function () {
-        console.log($('input.form-control').val().length);
-        if ($('input.form-control').val().length > 3 && $('form.was-validated:has(input:valid)')){
-            $('.alert').show();
-        } else {
-            $('.alert').hide();
-        }
-    });
-
-
-
-    $('input').on('click', function () {
-        if ($('form.was-validated:has(input:valid)')) {
-            $('.Subscribe').prop('disabled', false);
-        } else {
-            $('.Subscribe').prop('disabled', 'disabled');
-        }
-    });
 
 
 });
-
