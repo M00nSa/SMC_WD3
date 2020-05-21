@@ -44,7 +44,7 @@ $(document).ready(function () {
     $("form.needs-validation").submit(function (event) {
         event.preventDefault();
 
-        if ($("input.form-control").val() === "") {
+        if ($("input.form-control").val().length <= 2) {
             $("form.needs-validation").removeClass('needs-validation').addClass(
                 'was-validated');
         }
@@ -125,7 +125,8 @@ $(document).ready(function () {
 
 
     $('.Subscribe').click(function () {
-       if ($('input.form-control').val().length != 0){
+        console.log($('input.form-control').val().length);
+       if ($('input.form-control').val().length > 2){
             $('.alert').show();
         } else {
             $('.alert').hide();
