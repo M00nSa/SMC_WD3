@@ -44,7 +44,7 @@ $(document).ready(function () {
     $("form.needs-validation").submit(function (event) {
         event.preventDefault();
 
-        if ($("input.form-control").val().length <= 2) {
+        if (username_length < 3 && pattern.test($("#ModalEmail").val())) {
             $("form.needs-validation").removeClass('needs-validation').addClass(
                 'was-validated');
         }
@@ -98,13 +98,7 @@ $(document).ready(function () {
          }
      });*/
 
-    $('input').on('click', function () {
-        if ($('form.was-validated:has(input:valid)')) {
-            $('.Subscribe').prop('disabled', false);
-        } else {
-            $('.Subscribe').prop('disabled', 'disabled');
-        }
-    });
+    
 
 
 
@@ -124,17 +118,10 @@ $(document).ready(function () {
     });*/
 
 
-    $('.Subscribe').click(function () {
-        console.log($('input.form-control').val().length);
-       if ($('input.form-control').val().length > 2){
-            $('.alert').show();
-        } else {
-            $('.alert').hide();
-        }
-    });
+    
 
-   
- 
+
+
 
 
 
@@ -152,4 +139,98 @@ $(document).ready(function () {
 
 
 
+
+    /*New script for button*/
+
+    $("#name_error_message").hide();
+    $("#email_error_message").hide();
+
+    var error_name = false;
+    var error_email = false;
+
+    
+    $("#ModalName").focusout(function() {
+
+		check_name();
+		
+    });
+    
+    function check_name() {
+	
+		var username_length = $("#ModalName").val().length;
+		
+		if(username_length < 3 || username_length > 15) {
+			$("#name_error_message").html("Name should be between 3-15 characters");
+			$("#name_error_message").show();
+			error_name = true;
+		} else {
+			$("#name_error_message").hide();
+		}
+	
+    }
+    
+
+
+    $("#ModalEmail").focusout(function() {
+
+		check_email();
+		
+    });
+
+    function check_email() {
+
+		var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+	
+		if(pattern.test($("#ModalEmail").val())) {
+			$("#email_error_message").hide();
+		} else {
+			$("#email_error_message").html("Invalid email address");
+			$("#email_error_message").show();
+			error_email = true;
+		}
+	
+	}
+  
+
+    
+    $("#newModalForm").submit(function() {
+											
+		error_name = false;
+		error_email = false;
+											
+		check_name();
+		check_email();
+		
+		if(error_name == false && error_email == false) {
+            return true;
+		} else {
+            return false;	
+		}
+
+    });
+    
+
+
+
+    $('.Subscribe').click(function () {
+        console.log($('input.form-control').val().length);
+        if ($('input.form-control').val().length > 3 && $('form.was-validated:has(input:valid)')){
+            $('.alert').show();
+        } else {
+            $('.alert').hide();
+        }
+    });
+
+
+
+    $('input').on('click', function () {
+        if ($('form.was-validated:has(input:valid)')) {
+            $('.Subscribe').prop('disabled', false);
+        } else {
+            $('.Subscribe').prop('disabled', 'disabled');
+        }
+    });
+
+
 });
+
