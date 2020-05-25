@@ -228,6 +228,17 @@ nav ul li a {
     font-family: serif;
   }
   
+  .carousel-indicators li {
+    border-radius: 12px;
+    width: 6px;
+    height: 6px;
+   border: 1px solid #002366;
+   background-color: transparent;
+}
+
+.carousel-indicators > li {
+    border-radius: 50%;
+  }
 
 /* Styling Discover Button*/
   .BtnWrap {
