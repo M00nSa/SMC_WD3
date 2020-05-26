@@ -39,4 +39,24 @@ $(document).ready(function () {
         $item.height($wHeight);
     });*/
 
+
+
+    
+/* styling border bottom of nav link*/
+    $('.js-track-underline').mouseenter( 
+        function(e){
+          var x = e.pageX - this.offsetLeft;
+          var thisW = $(this).outerWidth();
+          var originPercent = 100*(x/thisW) + "%";
+          $('#underline').html('.link--underline-slide:after{transform-origin:' + originPercent + ' 50% 0px;}');
+        }  
+      ).mouseleave(
+        function(e){
+          var x = e.pageX - this.offsetLeft;
+          var thisW = $(this).outerWidth();
+          var originPercent = 100*(x/thisW) + "%";
+          $('#underline').html('.link--underline-slide:after{transform-origin:' + originPercent + ' 50% 0px;}');
+        }  
+      );
+
 })
