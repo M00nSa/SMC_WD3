@@ -323,9 +323,6 @@ aside.diamond:hover{
     font-family: 'Cormorant Garamond', serif;
   }
 
-  #Engagemnet-Page h3{
-    font-weight: 600;
-  }
 
   p{
     font-family: sans-serif;
@@ -333,38 +330,10 @@ aside.diamond:hover{
 
 
 
-  .frame {
-    position: absolute;
-    z-index: 2;
-    top: 100%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-
-  .box h4 {
-    position: absolute;
-    color: rgb(170, 170, 170);
-    z-index: 2;
-    width: 100%;
-    transition: opacity 0.2s, transform 0.3s;
-    font-size: 2.2em;
-    margin-bottom: 8px
-  }
-
-  #Engagemnet-Page .row .box:hover {
-    transition: all .3s ease-in-out;
-    color: #b5a663;
-  }
   
-  #Engagemnet-Page .row a{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
+  
+  
+  
 .Colored-Body{
     background: #021231;
     color: white;
