@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+
+
 body{
     letter-spacing: 1px;
     line-height: 30px;
     margin: 0;
+    padding-top:50px
 }
 
 header {
@@ -25,8 +30,16 @@ header {
 
 
 
-.navbar-light .navbar-nav .nav-link, .active {
+.navbar-light .navbar-nav .nav-link {
     color: rgb(255, 255, 255) !important;
+}
+
+.active{
+    color: #fae7a1;
+}
+
+li .active{
+    background-color: transparent !important;
 }
 
 header nav ul {
@@ -65,6 +78,16 @@ nav ul li a span {
     width: 50px;
     height: 40px;
 }
+
+nav a:hover{
+    color: #fae7a1 !important;
+}
+
+.dropdown-item:hover{
+background-color: transparent;
+}
+
+
 
 @media (min-width: 760px) {
     header nav ul li {
@@ -240,6 +263,10 @@ nav ul li a {
     border-radius: 50%;
   }
 
+.carousel-caption{
+    margin-bottom: 0px;
+}
+
 /* Styling Discover Button*/
   .BtnWrap {
     width: 100px;
@@ -255,7 +282,7 @@ nav ul li a {
   }
 
   aside.diamond:after, aside.diamond:before {
-  border-color: transparent #B2B5EE;
+  border-color: transparent #002366;
 }
 aside.diamond:before {
   left: -17px;
@@ -266,7 +293,7 @@ aside.diamond:after {
   border-width: 17px 0 17px 17px;
 }
 aside.diamond {
-    background-color: #B2B5EE;
+    background-color:#002366; 
   }
 
   aside:before, aside:after {
@@ -277,3 +304,62 @@ aside.diamond {
     border-style: solid;
     border-width: 0;
   }
+
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  #Engagemnet-Page h3{
+    font-weight: 600;
+  }
+
+  p{
+    font-family: sans-serif;
+  }
+
+
+
+  .frame {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .box h4 {
+    position: absolute;
+    color: rgb(170, 170, 170);
+    z-index: 2;
+    width: 100%;
+    transition: opacity 0.2s, transform 0.3s;
+    font-size: 2.2em;
+    margin-bottom: 8px
+  }
+
+  #Engagemnet-Page .row .box:hover {
+    transition: all .3s ease-in-out;
+    color: #b5a663;
+  }
+  
+  #Engagemnet-Page .row a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.Colored-Body{
+    background: #021231;
+    color: white;
+}
+
+.Seperator{
+    width: 220px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: solid 1px #4b4a4b;
+}
