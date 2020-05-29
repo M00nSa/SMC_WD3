@@ -14,16 +14,16 @@
 
 </head>
 
-<body class="Colored-Body">
+<body>
 
     <header>
-        <div class="Navcontainer d-flex align-items-center justify-content-between scrolling-navbar">
+        <div class="Navcontainer d-flex align-items-center justify-content-between scrolling-navbar wrapper">
 
             <div class="Logo text-center pl-3">
                 <a href="../index.html"><img src="../Assets/LOGO2.png" alt="Logo"></a>
             </div>
 
-            <nav>
+            <nav class="dropdown-container">
                 <ul>
                     <li>
                         <form role="search" action="/" method="get" class="search-form d-md-none">
@@ -36,11 +36,11 @@
 
                     <li><a href="../index.html" class="link link--underline-slide">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link link link--underline-slide" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link link link--underline-slide menu-link" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Products
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-content" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item link link--underline-slide" href="engagement.html">Engagement</a>
                             <a class="dropdown-item link link--underline-slide" href="jewelry.html">Jewelry</a>
                             <a class="dropdown-item link link--underline-slide active" href="#">Time Pieces</a>
