@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            background: lightpink;
+        }
+
+        h2{
+            position: absolute;
+            top: 360px;
+            color: white;
+            left: 375px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="myCanvas"></canvas>
+    <h2>THREE JS</h2>
+
+    <script src="https://threejs.org/build/three.js"></script>
+    <script>
+        var rendrer,
+            scene,
+            camera,
+            myCanvas = document.getElementById('myCanvas');
+
+        //Renderer
+
+        renderer = new THREE.WebGLRenderer({
+            canvas: myCanvas,
+            antialias: true
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setClearColor(0x000000);
+
+        //Camera
+        camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 300, 10000);
+        camera.position.set(10,-30,100);
+
+        //Scene
+        scene = new THREE.Scene();
+
+        //Lights
+        const light1 = new THREE.AmbientLight(0xffffff, .65);
+        scene.add(light1);
+        const light2 = new THREE.PointLight(0xffffff, .65);
+        scene.add(light2);
+
+        //Material
+        const material = new THREE.MeshNormalMaterial({
+            wireframe: true,
+            wireframeLinewidth: 5,
+            wireframeLinejoin: 'round',
+            wireframeLinecap: 'round'
+        });
+
+
+        //Geometry
+
+        const geometry = new THREE.BoxGeometry(30, 30, 30);
+        const mesh = new THREE.Mesh(geometry, material);
+        mesh.position.z = -1000;
+        mesh.position.x = 150;
+        mesh.position.y = 250;
+        scene.add(mesh);
+
+
+
+        const geometry1 = new THREE.SphereGeometry(150, 0, 0);
+        /*const geometry = new THREE.DodecahedronGeometry(100,0);
+           const geometry = new THREE.SphereGeometry(50,20,20);
+           /*const geometry = new THREE.BoxGeometry(100, 100, 100);*/
+        const material1 = new THREE.MeshPhongMaterial({
+            color: 0xfdf459,
+            specular: 0xffffff,
+            shininess: 1,
+            normalMap: new THREE.TextureLoader().load('texture.jpg')
+        });
+
+        const mesh1 = new THREE.Mesh(geometry1, material1);
+        mesh1.position.z = -1500;
+        mesh1.position.x = 0;
+        mesh1.position.y = 320;
+        scene.add(mesh1);
+
+
+
+
+
+        const geometry2 = new THREE.BoxGeometry(30, 30, 30);
+        const mesh2 = new THREE.Mesh(geometry2, material);
+        mesh2.position.z = -500;
+        mesh2.position.x = -100;
+        mesh1.position.y = 200;
+        scene.add(mesh2);
+
+
+
+        const geometry3 = new THREE.PlaneGeometry(1200, 200000, 15, 1);
+        const material2 = new THREE.MeshNormalMaterial({
+            color: 0x858AE3,
+            transparent: true,
+            opacity: 1,
+            wireframe: true,
+            wireframeLinewidth: 5
+        });
+        const mesh3 = new THREE.Mesh(geometry3, material2);
+        mesh3.rotation.x = -90 * Math.PI / 180;
+        mesh3.position.y = -100;
+        scene.add(mesh3);
+
+
+
+        const geometry4 = new THREE.BoxGeometry(50, 50, 50);
+        const mesh4 = new THREE.Mesh(geometry, material);
+        mesh4.position.z = -1500;
+        mesh4.position.x = -250;
+        mesh4.position.y = 250;
+        scene.add(mesh4);
+
+
+
+        const geometry5 = new THREE.BoxGeometry(40, 40, 40);
+        const mesh5 = new THREE.Mesh(geometry, material);
+        mesh5.position.z = -1200;
+        mesh5.position.x = 300;
+        mesh5.position.y = 100;
+        scene.add(mesh5);
+
+
+
+
+        //Render
+        render();
+
+        requestAnimationFrame(render);
+
+        function render() {
+            mesh.rotation.x += 0.001
+            mesh.rotation.y +=0.001
+            mesh1.rotation.y += 0.03
+            mesh2.rotation.x += 0.001
+            mesh2.rotation.y += 0.001
+            mesh4.rotation.x += 0.001
+            mesh4.rotation.y += 0.001
+            mesh5.rotation.x += 0.001
+            mesh5.rotation.y += 0.001
+
+
+            renderer.render(scene, camera);
+            requestAnimationFrame(render);
+
+        }
+
+        renderer.render(scene, camera);
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
