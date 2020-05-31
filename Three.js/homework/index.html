@@ -22,19 +22,15 @@
             background: lightpink;
         }
 
-        h2{
-            position: absolute;
-            top: 360px;
-            color: white;
-            left: 375px;
-            letter-spacing: 1px;
-        }
+       
     </style>
 </head>
 
 <body>
+
     <canvas id="myCanvas"></canvas>
-    <h2>THREE JS</h2>
+   
+
 
     <script src="https://threejs.org/build/three.js"></script>
     <script>
@@ -54,7 +50,7 @@
 
         //Camera
         camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 300, 10000);
-        camera.position.set(10,-30,100);
+        camera.position.set(10, -30, 100);
 
         //Scene
         scene = new THREE.Scene();
@@ -156,7 +152,7 @@
 
         function render() {
             mesh.rotation.x += 0.001
-            mesh.rotation.y +=0.001
+            mesh.rotation.y += 0.001
             mesh1.rotation.y += 0.03
             mesh2.rotation.x += 0.001
             mesh2.rotation.y += 0.001
