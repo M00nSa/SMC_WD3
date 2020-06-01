@@ -17,16 +17,20 @@
 
 
     <header>
-        <div class="Navcontainer d-flex align-items-center justify-content-between scrolling-navbar wrapper">
+        <div
+            class="Navcontainer d-flex align-items-center justify-content-between scrolling-navbar wrapper flex-column justify-conent-lg-start">
 
-            <div class=" d-md-none Cart">
-                <a href="#" target="_blank"><img src="assets/cart.png"/></a>
-            </div>
-            <div class="Logo text-center">
-                <a href="index.html"><img src="Assets/LOGO2.png" alt="Logo"></a>
+            <div class="Logo text-center mr-md-auto ">
+                <a href="index.html"><img src="Assets/LOGO2.png" alt="Logo" class="pl-2 p-0 pt-md-4 d-md-none"></a>
+                <a href="index.html"><img src="Assets/LOGO1.png" alt="Logo"
+                        class="pl-2 p-0 pt-md-4 d-none d-md-block"></a>
             </div>
 
-            <nav class="dropdown-container">
+            <div class="Cart" id="small-screen-cart">
+                <a href="#" target="_blank"><img src="assets/cart.png" class="d-md-none"></a>
+            </div>
+            
+            <nav class="dropdown-container justify-content-start w-100">
                 <ul>
                     <li>
                         <form role="search" action="/" method="get" class="search-form d-md-none">
@@ -36,21 +40,26 @@
                                 title="search" aria-label="Search" autocomplete="off">
                         </form>
                     </li>
-                    
+
                     <li><a href="index.html" class="active link link--underline-slide">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link link  link--underline-slide menu-link" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link link  link--underline-slide menu-link" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Products
                         </a>
                         <div class="dropdown-content" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item link link--underline-slide" href="pages/engagement.html">Engagement</a>
+                            <a class="dropdown-item link link--underline-slide"
+                                href="pages/engagement.html">Engagement</a>
                             <a class="dropdown-item link link--underline-slide" href="pages/jewelry.html">Jewelry</a>
-                            <a class="dropdown-item link link--underline-slide" href="pages/timepieces.html">Time Pieces</a>
+                            <a class="dropdown-item link link--underline-slide" href="pages/timepieces.html">Time
+                                Pieces</a>
 
                     </li>
                     <li><a href="Pages/education.html" class="link link--underline-slide">Education</a></li>
                     <li><a href="Pages/Location.html" class="link link--underline-slide">Location</a></li>
+                    <div class="Cart ml-auto">
+                        <a href="#" target="_blank"><img src="assets/cart-b.png" class="d-none d-md-block"></a>
+                    </div>
                 </ul>
             </nav>
             <div class="toggle d-md-none">
@@ -82,8 +91,8 @@
 
                         <div class="carousel-caption d-md-block ">
                             <h2 class="">Monarch Royalty</h2>
-                            <p class="d-none d-md-block">Spring is here! We are celebrating this beautiful season with
-                                Royal's special set. Please visit the Gallery to check out this stunning set. </p>
+                            <h3 class="d-none d-md-block"> Monarch is designed to be worn, admired and enjoyed forever.
+                            </h3>
                             <div class="Text-center BtnWrap">
                                 <aside class='diamond'>Discover</aside>
                             </div>
@@ -94,8 +103,8 @@
                         <div class="carousel-caption d-md-block ">
 
                             <h2 class="">Spring Awakaning</h2>
-                            <p class="d-none d-md-block">Spring is here! We are celebrating this beautiful season with
-                                Royal's special set. Please visit the Gallery to check out this stunning set. </p>
+                            <h3 class="d-none d-md-block">We are celebrating this beautiful season with
+                                Royal's deep blue Sapphires. </h3>
                             <div class="Text-center BtnWrap">
                                 <aside class='diamond'>Discover</aside>
                             </div>
@@ -103,12 +112,12 @@
                     </div>
 
                     <div class="carousel-item" id="Carousel-3">
-                       
+
                         <div class="carousel-caption d-md-block ">
 
                             <h2 class="">Dazzle of Royalty</h2>
-                            <p class="d-none d-md-block">Spring is here! We are celebrating this beautiful season with
-                                Royal's special set. Please visit the Gallery to check out this stunning set. </p>
+                            <h3 class="d-none d-md-block">Royal Blue is pleased to welcome you to rejoice in life’s most
+                                brilliant moments. </h3>
                             <div class="Text-center BtnWrap">
                                 <aside class='diamond'>Discover</aside>
                             </div>

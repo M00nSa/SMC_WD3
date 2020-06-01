@@ -17,15 +17,17 @@
 <body>
 
     <header>
-        <div class="Navcontainer d-flex align-items-center justify-content-between scrolling-navbar wrapper">
-            <div class=" d-md-none Cart">
-                <a href="#" target="_blank"><img src="../assets/cart.png"/></a>
-            </div>
-            <div class="Logo text-center">
-                <a href="../index.html"><img src="../Assets/LOGO2.png" alt="Logo"></a>
+        <div class="Navcontainer d-flex align-items-center justify-content-between scrolling-navbar wrapper flex-column justify-conent-lg-start">
+            <div class="Logo text-center mr-md-auto ">
+                <a href="../index.html"><img src="../assets/LOGO2.png" alt="Logo" class="pl-2 p-0 pt-md-4 d-md-none"></a>
+                <a href="../index.html"><img src="../assets/LOGO1.png" alt="Logo"
+                        class="pl-2 p-0 pt-md-4 d-none d-md-block"></a>
             </div>
 
-            <nav class="dropdown-container">
+            <div class="Cart" id="small-screen-cart">
+                <a href="#" target="_blank"><img src="../assets/cart.png" class="d-md-none"></a>
+            </div>
+            <nav class="dropdown-container justify-content-start w-100">
                 <ul>
                     <li>
                         <form role="search" action="/" method="get" class="search-form d-md-none">
@@ -50,6 +52,9 @@
                     </li>
                     <li><a href="#" class="active link link--underline-slide">Education</a></li>
                     <li><a href="Location.html" class="link link--underline-slide">Location</a></li>
+                    <div class="Cart ml-auto">
+                        <a href="#" target="_blank"><img src="../assets/cart-b.png" class="d-none d-md-block"></a>
+                    </div>
                 </ul>
             </nav>
             <div class="toggle d-md-none">
@@ -65,7 +70,7 @@
         <div class="container my-5 my-md-0" id="Education-Page">
             <div class="row">
                 <div class="col-12 text-center mt-5">
-                    <h1>Education</h1>
+                    <h1 class="mt-5">Education</h1>
                     <hr class="Seperator mt-5">
                     <p class="col-10 col-md-9 mx-auto mt-5">Become an Expert with Royal Blue education and guidance.</p>
                 </div>
