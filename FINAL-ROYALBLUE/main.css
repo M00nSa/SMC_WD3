@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
 
 
 
 body {
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     line-height: 30px;
     margin: 0;
     /*padding-top:50px;*/
     background: linear-gradient(to bottom, rgba(252, 229, 203), rgba(250, 231, 161) 70.71%);
     height: 100%;
     overflow-x: hidden;
+
 }
 
 header {
@@ -567,6 +569,14 @@ p {
     height: 100vh;
 }
 
+.carousel a:hover{
+    text-decoration: none;
+}
+
+.carousel a{
+    color: white;
+}
+
 @media (max-width: 480px) {
     #Carousel-1 {
         background-image: url(assets/1.png);
@@ -768,6 +778,9 @@ p {
     .dropdown-content a:hover {
         color: white !important;
     }
+    #TopContainer {
+        margin-top: 9.3rem !important;
+    }
 }
 
 #small-screen-cart {
@@ -776,10 +789,23 @@ p {
     top: 16px;
 }
 
-nav ul li{
+nav ul li {
     font-size: 18px;
 }
 
-#Jewelry-Page{
+#Jewelry-Page {
     margin-top: 80px;
+}
+
+.card-body p {
+    line-height: 2.3rem;
+    font-family: 'Antic', sans-serif;
+}
+
+#TopContainer {
+    margin-top: 5rem;
+}
+
+#TopContainer small {
+    color: #959076;
 }
