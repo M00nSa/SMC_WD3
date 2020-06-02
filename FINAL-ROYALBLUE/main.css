@@ -793,6 +793,9 @@ p {
     header{
         position: relative;
     }
+    footer .footer-nav{
+        flex-direction: row;
+    }
 }
 
 #small-screen-cart {
@@ -838,12 +841,15 @@ footer{
 
 
 .footer-nav{
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     justify-content: space-between;
     list-style:none;
     font-family: 'Cormorant Garamond', serif;
     font-size: .7rem;
+}
+.footer-nav li{
+color: black;
 }
 
 .footer-nav a{
@@ -857,3 +863,5 @@ footer{
 #Spring-Awakaning-Page a{
     text-decoration: none;
 }
+
+
