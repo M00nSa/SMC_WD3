@@ -78,7 +78,10 @@
                     <hr class="Seperator mt-5">
                 </div>
                 <div class="col mb-4 mt-5">
-                    <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+
+                    <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="myForm" novalidate>
+                       
+                       
                         <fieldset>
                             <div class="form-group col-md-8 pl-0 mb-5">
                                 <h2>Contact Information</h2>
@@ -474,8 +477,23 @@
 
 
                             <div class="BtnWrap w-100">
-                                <button class="diamond text-white px-2">submit</button>
+                                <button  type="submit" class="diamond text-white px-2" disabled>submit</button>
                             </div>
+                            <div class="alert alert-danger alert-dismissible fade" role="alert" id="badForm">
+                                Please fill out the form correctly.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+            
+                            <div class="alert alert-success alert-dismissible fade" role="alert" id="goodForm">
+                                Thank you for subscribing!
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <button type="button" class="back-to-top"></button>
 
                         </fieldset>
                     </form>

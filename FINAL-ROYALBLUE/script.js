@@ -20,7 +20,7 @@ $(document).ready(function () {
         $('#carouselControl').toggleClass('paused');
     });
 
-    $('.carousel').carousel({
+    $('.carousel #myCarousel').carousel({
         interval: 5000,
         pause: false,
         ride: "carousel"
@@ -62,13 +62,13 @@ $(document).ready(function () {
 
 
     /*form validation*/
-    $("form.needs-validation").submit(function (event) {
+   /* $("form.needs-validation").submit(function (event) {
         event.preventDefault();
 
         if ($("input.form-control").val() === "") {
             $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
         }
-    })
+    })*/
 
 
     $('#same_shipping').click(function () {
@@ -113,4 +113,70 @@ $(document).ready(function () {
 
 
 
+
+
+
+    
+
+
 })
+
+/* scroll to top button*/
+
+// Back to top
+var amountScrolled = 200;
+var amountScrolledNav = 25;
+
+$(window).scroll(function() {
+  if ( $(window).scrollTop() > amountScrolled ) {
+    $('button.back-to-top').addClass('show');
+  } else {
+    $('button.back-to-top').removeClass('show');
+  }
+});
+
+$('button.back-to-top').click(function() {
+  $('html, body').animate({
+   
+    scrollTop: 0
+  }, 800);
+  return false;
+});
+
+
+/* form validation*/ 
+
+var form = $("form.needs-validation").get(0);
+
+        $("input").keypress(function () {
+            console.log(document.getElementById("myForm").checkValidity());
+
+            if (form.checkValidity()) {
+                $("[type=submit]").prop("disabled", false);
+                form.classList.add("was-validated");
+            } else {
+                if ($("#shipping_name").val().length < 2) {
+                    $("#shipping_name")
+                        .get(0)
+                        .setCustomValidity("Name must have at least two characters");
+                    form.reportValidity();
+                } else {
+                    $("#shipping_name").get(0).setCustomValidity("");
+                }
+            }
+        });
+
+        $('input[type="email"]').blur(function () {
+            console.log(form.checkValidity());
+            if (form.checkValidity()) {
+                $("[type=submit]").prop("disabled", false);
+            }
+            form.classList.add("was-validated");
+        });
+
+        $('[type="submit"]').click(function (event) {
+            if (form.checkValidity()) {
+                event.preventDefault();
+                $("#goodForm").addClass("show").alert();
+            }
+        });
