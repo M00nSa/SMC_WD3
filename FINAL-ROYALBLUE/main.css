@@ -302,7 +302,8 @@ nav ul li a {
     margin: 25px auto;
 }
 
-aside {
+aside,
+.BtnWrap button{
     margin: 20px 0;
     line-height: 34px;
     position: relative;
@@ -311,11 +312,11 @@ aside {
 }
 
 aside.diamond:after,
-aside.diamond:before {
+aside.diamond:before{
     border-color: transparent #030f4e;
 }
 
-aside.diamond:before {
+aside.diamond:before{
     left: -17px;
     border-width: 17px 17px 17px 0;
 }
@@ -325,7 +326,8 @@ aside.diamond:after {
     border-width: 17px 0 17px 17px;
 }
 
-aside.diamond {
+aside.diamond,
+button.diamond {
     background-color: #030f4e;
     box-shadow: 10px 15px 40px #012233;
     text-align: center;
@@ -335,13 +337,14 @@ aside.diamond a{
     color: white;
 }
 
-aside.diamond:hover {
+aside.diamond:hover,
+button.diamond:hover{
     box-shadow: 10px 20px 40px rgba(1, 34, 51, 0.5);
 }
 
 
 aside:before,
-aside:after {
+aside:after{
     content: '';
     position: absolute;
     height: 0;
@@ -790,12 +793,32 @@ p {
         color: white !important;
     }
 
-    header{
-        position: relative;
-    }
+    
     footer .footer-nav{
         flex-direction: row;
     }
+
+    #cart-md .Circle {
+        width: 16px;
+        height: 16px;
+        border-radius: 10px;
+        background-color: #936BC8;
+        position: absolute;
+        right: 30px;
+        top: 90px;
+    }
+
+    #cart-md .count{
+        position: absolute;
+        right: 32px !important;
+        top: 89px !important;
+        z-index: 100;
+        font-family: none;
+        font-size: 16px;
+        color: white;
+    }
+    
+    
 }
 
 #small-screen-cart {
@@ -808,10 +831,16 @@ nav ul li {
     font-size: 18px;
 }
 
-#Jewelry-Page {
+#Jewelry-Page, #Education-Page, #Engagemnet-Page, #Spring-Awakaning-Page, #Checkout-Page  {
     margin-top: 80px;
 }
+#butterfly-earring-Page {
+    margin-top: 200px;
+}
 
+header{
+    position: absolute;
+}
 .card-body p {
     line-height: 2.3rem;
     font-family: 'Antic', sans-serif;
@@ -846,7 +875,7 @@ footer{
     justify-content: space-between;
     list-style:none;
     font-family: 'Cormorant Garamond', serif;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 .footer-nav li{
 color: black;
@@ -865,3 +894,252 @@ color: black;
 }
 
 
+.Circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: #936BC8;
+    position: absolute;
+    right: 18px;
+    top: -3px;
+}
+
+.count{
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    z-index: 100;
+    font-family: none;
+    font-size: 16px;
+    color: white;
+}
+
+
+/* custom radio button starts*/
+
+.custom-form{
+    --width: 300px;
+    --height: 140px;
+    --text: #414856;
+  --radio: #7C96B2;
+  --radio-checked: var(--green);
+  --radio-size: 20px;
+  --height: 140px;
+  --border-radius: 10px;
+  color: var(--text);
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: auto var(--radio-size);
+  -webkit-box-align: center;
+          align-items: center;
+}
+.custom-form label {
+    cursor: pointer;
+  }
+
+  .custom-form input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    height: var(--radio-size);
+    width: var(--radio-size);
+    outline: none;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid var(--radio);
+    background: transparent;
+    border-radius: 50%;
+    display: grid;
+    justify-self: end;
+    justify-items: center;
+            align-items: center;
+    overflow: hidden;
+    transition: border .5s ease;
+  }
+  .custom-form input[type="radio"]::before, .custom-form input[type="radio"]::after {
+    content: "";
+    display: flex;
+    justify-self: center;
+    border-radius: 50%;
+  }
+  .custom-form input[type="radio"]::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: var(--opacity, 1);
+  }
+  .custom-form input[type="radio"]::after {
+    position: relative;
+    width: calc(100% /2);
+    height: calc(100% /2);
+    background: var(--radio-checked);
+    top: var(--y, 100%);
+    transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63);
+  }
+  .custom-form input[type="radio"]:checked {
+    --radio: var(--green);
+  }
+  .custom-form input[type="radio"]:checked::after {
+    --y: 0%;
+            animation: stretch-animate .3s ease-out .17s;
+  }
+  .custom-form input[type="radio"]:checked::before {
+    --opacity: 0;
+  }
+  .custom-form input[type="radio"]:checked ~ input[type="radio"]::after {
+    --y: -100%;
+  }
+  .custom-form input[type="radio"]:not(:checked)::before {
+    --opacity: 1;
+    transition: opacity 0s linear .5s;
+  }
+  
+  @-webkit-keyframes stretch-animate {
+    0% {
+              transform: scale(1, 1);
+    }
+    28% {
+              transform: scale(1.15, 0.85);
+    }
+    50% {
+              transform: scale(0.9, 1.1);
+    }
+    100% {
+              transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes stretch-animate {
+    0% {
+              transform: scale(1, 1);
+    }
+    28% {
+              transform: scale(1.15, 0.85);
+    }
+    50% {
+              transform: scale(0.9, 1.1);
+    }
+    100% {
+              transform: scale(1, 1);
+    }
+  }
+
+  .custom-form span{
+    position: absolute;
+    right: 44px;
+  }
+
+  /* custom radio button ends*/
+
+  #Checkout-Btn{
+    margin: 35px 20px;
+  }
+  .form-control, .custom-select{
+      background-color: transparent;
+  }
+  
+  .app ul {
+    margin: 0;
+    padding: 0;
+  }
+  .app ul li {
+    list-style: none;
+  }
+  .app .card {
+   
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    padding: 5%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .app .heading {
+    opacity: .6;
+    margin: 0px auto 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .app #list {
+    display: flex;
+    flex-direction: column;
+  }
+  .app #list .item {
+    display: flex;
+    flex-direction: row;
+  }
+  .app #list .item .text {
+   /* opacity: 0.4;*/
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: ease all .2s;
+    -webkit-transition: ease all .2s;
+  }
+ /* #app #list .item:hover .text {
+    opacity: 1;
+  }*/
+  .app #list .item:hover .custom-checkbox .check {
+    stroke-dashoffset: 0;
+  }
+  
+  .custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  .custom-checkbox .background {
+    fill: #ccc;
+    transition: ease all .6s;
+    -webkit-transition: ease all .6s;
+  }
+  .custom-checkbox .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all .6s;
+    -webkit-transition: ease all .6s;
+  }
+  .custom-checkbox .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all .6s;
+    -webkit-transition: ease all .6s;
+  }
+  .custom-checkbox input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    -webkit-appearance: none;
+  }
+  .custom-checkbox input[type=checkbox]:hover {
+    cursor: pointer;
+  }
+  .custom-checkbox input[type=checkbox]:checked + svg .background {
+    fill: #6cbe45;
+  }
+  .custom-checkbox input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+  }
+  .custom-checkbox input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+  }
+  
