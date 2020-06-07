@@ -3,7 +3,9 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     letter-spacing: 1.5px;
     line-height: 30px;
@@ -1201,68 +1203,42 @@ footer {
 
 /* custom checkbox ends*/
 
+
+
+
 /* back to top button*/
-button.back-to-top {
-    margin: 0 !important;
-    padding: 0 !important;
-    background: transparent;
-    height: 0px;
-    width: 0px;
-    overflow: hidden;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    color: transparent;
-    clear: both;
-    visibility: hidden;
+
+
+a.back-to-top-link {
     position: fixed;
-    cursor: pointer;
-    display: block;
-    border: none;
-    right: 50px;
-    bottom: 75px;
-    font-size: 0px;
-    outline: 0 !important;
-    z-index: 99;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: 100px;
+    right: 2px;
     transition: all .3s ease-in-out;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding-top: 3px;
 }
 
-button.back-to-top:hover,
-button.back-to-top:active,
-button.back-to-top:focus {
+
+a.back-to-top-link:hover {
     outline: 0 !important;
+    box-shadow: 0px 6px 8px 2px rgba(0, 0, 0, 0.25);
     color: #959076;
 }
 
-button.back-to-top::before {
+a.back-to-top-link::before {
     content: "\f077";
     font-family: "FontAwesome";
     display: block;
     vertical-align: middle;
     margin: -5px 0 auto;
 }
-
-button.back-to-top.show {
-    display: block;
-    background: transparent;
-    color: black;
-    font-size: 18px;
-    right: 25px;
-    bottom: 80px;
-    height: 30px;
-    width: 30px;
-    visibility: visible;
-    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-}
-
-button.back-to-top.show:active {
-    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-}
-
 /* back to top button ends*/
 
 
