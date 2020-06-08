@@ -73,17 +73,30 @@ $(document).ready(function () {
 
 
 
+
+    /* cart*/
     $(".cart-icon").css("display", "none");
+    $(".Circle-md").css("display", "none");
     $(".Circle").css("display", "none");
     $('.add-cart').click(function () {
-        $(".cart-icon").css("display", "block");
-        $(".Circle").css("display", "block");
 
-        if ($('body:has(h3.count)').length > 0) {
+        if ($(window).width() < 767) {
+            $(".cart-icon").css("display", "block");
+            $(".Circle").css("display", "block");
+            $(".count").css('top', '14px');
+            $(".count").css('left', '39px');
+        } else {
+            $(".cart-icon").css("display", "block");
+            $(".Circle-md").css("display", "block");
+            $(".count").css('top', '90px');
+            $(".count").css('right', '52px');
+        }
+
+        if ($('html:has(h3.count)').length > 0) {
             var number = parseInt($('h3.count').text()) + 1;
             $('h3.count').text(number);
         } else {
-            $('body').prepend("<h3 class='count'>1</h3>");
+            $('html').prepend("<h3 class='count'>1</h3>");
         }
     })
 
@@ -93,11 +106,14 @@ $(document).ready(function () {
 
 
 
+
+
 /* Scroll to Top*/
 window.onscroll = function () {
     scrollFunction()
 };
-document.getElementById("mybtn").style.display = "none";
+
+$("#mybtn").css("display", "none");
 
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 && $(window).width() > 767) {
@@ -111,8 +127,6 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-
 
 
 
@@ -156,6 +170,7 @@ $('[type="submit"]').click(function (event) {
     if (form.checkValidity()) {
         event.preventDefault();
         console.log("Not submitting! Alert!");
+        $("#Checkout-Page").css ('display', 'none');
         $("#goodForm").addClass("show").alert();
     }
 });

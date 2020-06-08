@@ -79,9 +79,9 @@
                 </div>
                 <div class="col mb-4 mt-5">
 
-                    <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" id="myForm" novalidate>
-                       
-                       
+                    <form action="" method="POST" class="needs-validation" id="myForm" novalidate>
+
+
                         <fieldset>
                             <div class="form-group col-md-8 pl-0 mb-5">
                                 <h2>Contact Information</h2>
@@ -477,7 +477,7 @@
 
 
                             <div class="BtnWrap w-100">
-                                <button  type="submit" class="diamond text-white px-2" disabled>submit</button>
+                                <button type="submit" class="diamond text-white px-2" disabled>submit</button>
                             </div>
                             <div class="alert alert-danger alert-dismissible fade" role="alert" id="badForm">
                                 Please fill out the form correctly.
@@ -485,25 +485,35 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-            
-                            <div class="alert alert-success alert-dismissible fade" role="alert" id="goodForm">
-                                Thank you for subscribing!
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
 
-                           
+
+
+
 
                         </fieldset>
                     </form>
-                    <div class="back-to-top-wrapper">
-                        <a href="#" class="back-to-top-link" id="mybtn" onclick="topFunction()"></a>
-                      </div>
                 </div>
             </div>
         </div>
 
+        <div class="container">
+            <div class="row ">
+                <div class=" col-md-10 mx-auto">
+                    <div class="alert fade mt-5 pt-5" role="alert" id="goodForm">
+                        <h3 class="text-center my-5 pt-5">Thank you!</h3>
+                        <p>We are pleased to let you know that We have received your order and are preparing it for a
+                            safe shipment. If you have any question regarding your order please <a href="location.html"
+                                class="font-italic">Contact Us</a>.</p>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-to-top-wrapper">
+            <a href="#" class="back-to-top-link" id="mybtn" onclick="topFunction()"></a>
+        </div>
 
     </main>
 
