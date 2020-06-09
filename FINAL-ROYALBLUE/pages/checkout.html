@@ -104,16 +104,16 @@
 
                                 <div class="col-md-4 mb-2">
                                     <label for="shipping_name"></label>
-                                    <input type="text" class="form-control" id="shipping_name" placeholder="First name"
-                                        required>
+                                    <input type="text" class="form-control valid-charachter-number" id="shipping_name"
+                                        placeholder="First name" required>
                                     <div class="valid-feedback">Looks good!</div>
                                     <div class="invalid-feedback">This field cannot be empty!</div>
                                 </div>
 
                                 <div class="col-md-4 mb-2">
                                     <label for="shipping_lastname"></label>
-                                    <input type="text" class="form-control" id="shipping_lastname"
-                                        placeholder="Last name" required>
+                                    <input type="text" class="form-control valid-charachter-number"
+                                        id="shipping_lastname" placeholder="Last name" required>
                                     <div class="valid-feedback">Looks good!</div>
                                     <div class="invalid-feedback">This field cannot be empty!</div>
                                 </div>
@@ -131,22 +131,22 @@
                             <div class="form-row">
                                 <div class="col-md-4 mb-2">
                                     <label for="shipping_address"></label>
-                                    <input type="text" class="form-control" id="shipping_address" placeholder="Address"
-                                        required>
+                                    <input type="text" class="form-control valid-charachter-number"
+                                        id="shipping_address" placeholder="Address" required>
                                     <div class="invalid-feedback">Please provide a valid Address.</div>
                                 </div>
 
                                 <div class="col-md-4 mb-2">
                                     <label for="shipping_apartment"></label>
-                                    <input type="text" class="form-control" id="shipping_apartment"
-                                        placeholder="Apartment, Suite, etc.">
+                                    <input type="text" class="form-control valid-charachter-number"
+                                        id="shipping_apartment" placeholder="Apartment, Suite, etc.">
                                     <small id="emailHelp" class="form-text text-muted">Optional</small>
                                 </div>
 
                                 <div class="col-md-4 mb-2">
                                     <label for="shipping_city"></label>
-                                    <input type="text" class="form-control" id="shipping_city" placeholder="City"
-                                        required>
+                                    <input type="text" class="form-control valid-charachter-number" id="shipping_city"
+                                        placeholder="City" required>
                                     <div class="invalid-feedback">Please provide a valid city.</div>
                                 </div>
                             </div>
@@ -157,8 +157,8 @@
 
                                 <div class="col-md-4 mb-2">
                                     <label for="shipping_state"></label>
-                                    <input type="text" class="form-control" id="shipping_state" placeholder="State"
-                                        required>
+                                    <input type="text" class="form-control valid-charachter-number" id="shipping_state"
+                                        placeholder="State" required>
                                     <div class="invalid-feedback">Please provide a valid state.</div>
                                 </div>
 
@@ -181,10 +181,6 @@
 
 
                         </fieldset>
-
-
-
-
 
 
 
@@ -226,10 +222,13 @@
                         <label class="form-check-label" for="same_shipping">Billing same as shipping address</label>
                     </div>-->
 
-                        <fieldset>
 
 
-                            <!--Billing address starts-->
+
+                        <!--Billing address starts-->
+
+
+                        <fieldset id="Billing-Address-Section">
 
                             <h2 class="mt-3">Billing Address</h2>
                             <div class="form-row">
@@ -287,15 +286,7 @@
                                     <label for="billing_state"></label>
                                     <input type="text" class="form-control" id="billing_state" placeholder="State"
                                         required>
-                                    <!--If used as selection-->
-                                    <!--<label for="exampleFormControlSelect2">Example multiple select</label>
-                                <select multiple class="form-control" id="exampleFormControlSelect2">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>-->
+
                                     <div class="invalid-feedback">Please provide a valid state.</div>
                                 </div>
 
@@ -313,193 +304,166 @@
                                 </div>
 
                             </div>
-
-
-
-
-                            <!--shipping method and credit card info-->
-
-
-                            <!--<div class="form-row custom-form">
-                                <div class="col-12 my-5">
-                                    <h2 class="pb-3">Shipping Method</h2>
-                                    <div class="content-box__row">
-                                        <div class=" form custom-control custom-radio mb-3">
-                                            <input type="radio" class="custom-control-input"
-                                                id="customControlValidation2" name="radio-stacked" required>
-                                            <label class="custom-control-label" for="customControlValidation2">Free
-                                                Shipping over
-                                                $500.</label>
-                                            <label class="price" for="">Free </label>
-                                        </div>
-                                        <div class=" form custom-control custom-radio mb-3">
-                                            <input type="radio" class="custom-control-input"
-                                                id="customControlValidation3" name="radio-stacked" required>
-                                            <label class="custom-control-label"
-                                                for="customControlValidation3">Regular(5-7 Business
-                                                Days)</label>
-                                            <label class="price" for="">$17.00 </label>
-                                        </div>
-                                        <div class=" form custom-control custom-radio mb-3">
-                                            <input type="radio" class="custom-control-input"
-                                                id="customControlValidation4" name="radio-stacked" required>
-                                            <label class="custom-control-label" for="customControlValidation4">Express 2
-                                                Day</label>
-                                            <label class="price" for="">$30.00 </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
-                            <div class="col-12 my-5 p-0">
-                                <h2 class="pb-3">Shipping Method</h2>
-                                <div class="custom-form">
-                                    <label for="01">FreeShipping over $15000 <span>Free</span></label>
-                                    <input id="01" type="radio" name="r" value="1" checked required>
-                                    <label for="02">Regular(5-7 Business Days) <span>$400</span></label>
-                                    <input id="02" type="radio" name="r" value="2" required>
-                                    <label for="03">Express 2 Day <span>$800</span></label>
-                                    <input id="03" type="radio" name="r" value="3" required>
-                                </div>
-                            </div>
-
-                            <div class="form-row payment-card ">
-                                <h2 class="col-12 pb-3">Confirm Purchase</h2>
-                                <div class="form-group col-md-6 col-lg-4 mb-3">
-                                    <label for="Credit_card_name">Name on the card</label>
-                                    <input type="text" class="form-control" id="Credit_card_name" required>
-                                    <div class="invalid-feedback">Please provide card holders name.</div>
-                                </div>
-
-                                <div class=" form-group col-md-6 col-lg-4">
-                                    <label for="CVV_number">CVV</label>
-                                    <input type="number" class="form-control mb-3" id="CVV_number" required>
-                                    <div class="invalid-feedback">Please provide a correct CVV located at the
-                                        back
-                                        of your card.
-                                    </div>
-                                </div>
-
-
-
-                                <div class=" form-group col-12 col-lg-4 mb-3">
-                                    <label for="Card-number">Card Number</label>
-                                    <input type="number" class="form-control" id="Card-number" required>
-                                    <div class="invalid-feedback">Please check your card number again.</div>
-                                </div>
-
-
-                                <div class="form-row col-12">
-                                    <h2 class="pb-3 col-12">Expiration Date</h2>
-
-                                    <div class="col-6 col-lg-3">
-                                        <select class="custom-select my-1 mr-sm-2 " id="inlineFormCustomSelectPref">
-                                            <option selected>Jan</option>
-                                            <option>Feb</option>
-                                            <option>Mar</option>
-                                            <option>Apr</option>
-                                            <option>May</option>
-                                            <option>June</option>
-                                            <option>July</option>
-                                            <option>Aug</option>
-                                            <option>Sep</option>
-                                            <option>Oct</option>
-                                            <option>Nov</option>
-                                            <option>Dec</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-6  col-lg-3 mb-4">
-                                        <select class="custom-select my-1 mr-sm-2 " id="inlineFormCustomSelectPref">
-                                            <option selected>2020</option>
-                                            <option>2021</option>
-                                            <option>2022</option>
-                                            <option>2023</option>
-                                            <option>2024</option>
-                                            <option>2025</option>
-                                            <option>2026</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!--Custom checkbox-->
-
-                            <div class="app">
-
-
-                                <ul id="list">
-                                    <li class="item col-12 p-0">
-
-                                        <div class="custom-checkbox pr-3 mt-2">
-                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
-                                                required>
-                                            <svg viewBox="0 0 35.6 35.6">
-                                                <circle class="background" cx="17.8" cy="17.8" r="17.8">
-                                                </circle>
-                                                <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
-                                                </circle>
-                                                <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
-                                                </polyline>
-                                            </svg>
-                                        </div>
-                                        <label class=" text form-check-label" for="invalidCheck">
-                                            Agree to terms and conditions
-                                        </label>
-                                        <div class="invalid-feedback">You must agree before submitting.
-                                        </div>
-                                    </li>
-
-
-                                    <li class="item col-12 mt-3 p-0">
-                                        <div class="custom-checkbox pr-3 mt-2">
-                                            <input type="checkbox" />
-                                            <svg viewBox="0 0 35.6 35.6">
-                                                <circle class="background" cx="17.8" cy="17.8" r="17.8">
-                                                </circle>
-                                                <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
-                                                </circle>
-                                                <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
-                                                </polyline>
-                                            </svg>
-                                        </div>
-
-                                        <label for="save_forminfo" class="text">Save this information for
-                                            next
-                                            time.</label>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-
-
-
-
-                            <div class="BtnWrap w-100">
-                                <button type="submit" class="diamond text-white px-2" disabled>submit</button>
-                            </div>
-                            <div class="alert alert-danger alert-dismissible fade" role="alert" id="badForm">
-                                Please fill out the form correctly.
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-
-
-
-
-
                         </fieldset>
+
+
+
+
+
+
+                        <div class="col-12 my-5 p-0">
+                            <h2 class="pb-3">Shipping Method</h2>
+                            <div class="custom-form">
+                                <label for="01">FreeShipping over $15000 <span>Free</span></label>
+                                <input id="01" type="radio" name="r" value="1" checked required>
+                                <label for="02">Regular(5-7 Business Days) <span>$400</span></label>
+                                <input id="02" type="radio" name="r" value="2" required>
+                                <label for="03">Express 2 Day <span>$800</span></label>
+                                <input id="03" type="radio" name="r" value="3" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row payment-card ">
+                            <h2 class="col-12 pb-3">Confirm Purchase</h2>
+                            <div class="form-group col-md-6 col-lg-4 mb-3">
+                                <label for="Credit_card_name">Name on the card</label>
+                                <input type="text" class="form-control valid-charachter-number" id="Credit_card_name"
+                                    required>
+                                <div class="invalid-feedback">Please provide card holders name.</div>
+                            </div>
+
+                            <div class=" form-group col-md-6 col-lg-4">
+                                <label for="CVV_number">CVV</label>
+                                <input type="number" class="form-control mb-3" id="CVV_number" required>
+                                <div class="invalid-feedback">Please provide a correct CVV located at the
+                                    back
+                                    of your card.
+                                </div>
+                            </div>
+
+
+
+                            <div class=" form-group col-12 col-lg-4 mb-3">
+                                <label for="Card-number">Card Number</label>
+                                <input type="number" class="form-control" id="Card-number" required>
+                                <div class="invalid-feedback">Please check your card number again.</div>
+                            </div>
+
+
+                            <div class="form-row col-12">
+                                <h2 class="pb-3 col-12">Expiration Date</h2>
+
+                                <div class="col-6 col-lg-3">
+                                    <select class="custom-select my-1 mr-sm-2 " id="inlineFormCustomSelectPref">
+                                        <option selected>Jan</option>
+                                        <option>Feb</option>
+                                        <option>Mar</option>
+                                        <option>Apr</option>
+                                        <option>May</option>
+                                        <option>June</option>
+                                        <option>July</option>
+                                        <option>Aug</option>
+                                        <option>Sep</option>
+                                        <option>Oct</option>
+                                        <option>Nov</option>
+                                        <option>Dec</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-6  col-lg-3 mb-4">
+                                    <select class="custom-select my-1 mr-sm-2 " id="inlineFormCustomSelectPref">
+                                        <option selected>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!--Custom checkbox-->
+
+                        <div class="app">
+
+
+                            <ul id="list">
+                                <li class="item col-12 p-0">
+
+                                    <div class="custom-checkbox pr-3 mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                            </circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+                                    <label class=" text form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">You must agree before submitting.
+                                    </div>
+                                </li>
+
+
+                                <li class="item col-12 mt-3 p-0">
+                                    <div class="custom-checkbox pr-3 mt-2">
+                                        <input type="checkbox" />
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                            </circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+
+                                    <label for="save_forminfo" class="text">Save this information for
+                                        next
+                                        time.</label>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+
+
+
+                        <div class="BtnWrap w-100">
+                            <button type="submit" class="diamond text-white px-2" disabled>submit</button>
+                        </div>
+                        <div class="alert alert-danger alert-dismissible fade" role="alert" id="badForm">
+                            Please fill out the form correctly.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+
+
+
+
+
                     </form>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row ">
+        <div class="container mb-5">
+            <div class="row mb-5">
                 <div class=" col-md-10 mx-auto">
-                    <div class="alert fade mt-5 pt-5" role="alert" id="goodForm">
+                    <div class="alert fade my-5 pt-5" role="alert" id="goodForm">
                         <h3 class="text-center my-5 pt-5">Thank you!</h3>
                         <p>We are pleased to let you know that We have received your order and are preparing it for a
                             safe shipment. If you have any question regarding your order please <a href="location.html"

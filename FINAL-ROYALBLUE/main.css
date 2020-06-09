@@ -1260,3 +1260,12 @@ input[type=number] {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
 }
+
+.Ed-Guide-P{
+    font-family: 'Antic', sans-serif;
+    color: dimgrey;
+}
+.Ed-Guide-h5{
+    color: black;
+    font-size: 1.5rem;
+}

@@ -131,6 +131,16 @@ function topFunction() {
 
 
 
+/* Shipping same as Billing*/
+
+$("#Billing-Address-Section").css ('display', 'none');
+$("#same_shipping").click(function(event){
+    $("#Billing-Address-Section").css ('display', 'block');
+})
+
+
+
+
 /* form validation*/
 
 var form = $("form.needs-validation").get(0);
@@ -142,16 +152,18 @@ $("input").keypress(function () {
         $("[type=submit]").prop("disabled", false);
         form.classList.add("was-validated");
     } else {
-        if ($("#shipping_name").val().length < 2) {
-            $("#shipping_name")
+        if ($(".valid-charachter-number").val().length < 2) {
+            $(".valid-charachter-number") 
                 .get(0)
-                .setCustomValidity("Name must have at least two characters");
+                .setCustomValidity("You must enter at least two characters");
             form.reportValidity();
         } else {
-            $("#shipping_name").get(0).setCustomValidity("");
+            $(".valid-charachter-number").get(0).setCustomValidity("");
         }
     }
 });
+
+
 
 
 
