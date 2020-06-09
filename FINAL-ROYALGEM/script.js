@@ -103,7 +103,19 @@ $(document).ready(function () {
         }
     })
 
-    
+
+
+    setTimeout(function(){
+        $('#exampleModal').modal('show');
+            }, 2000);
+
+
+          
+                $('.Subscribe').click(function(){
+                    $('.alert').show()
+                }) 
+           
+
 
 })
 
@@ -138,9 +150,9 @@ function topFunction() {
 
 /* Shipping same as Billing*/
 
-$("#Billing-Address-Section").css ('display', 'none');
-$("#same_shipping").click(function(event){
-    $("#Billing-Address-Section").css ('display', 'block');
+$("#Billing-Address-Section").css('display', 'none');
+$("#same_shipping").click(function (event) {
+    $("#Billing-Address-Section").css('display', 'block');
 })
 
 
@@ -158,7 +170,7 @@ $("input").keypress(function () {
         form.classList.add("was-validated");
     } else {
         if ($(".valid-charachter-number").val().length < 2) {
-            $(".valid-charachter-number") 
+            $(".valid-charachter-number")
                 .get(0)
                 .setCustomValidity("You must enter at least two characters");
             form.reportValidity();
@@ -187,7 +199,7 @@ $('[type="submit"]').click(function (event) {
     if (form.checkValidity()) {
         event.preventDefault();
         console.log("Not submitting! Alert!");
-        $("#Checkout-Page").css ('display', 'none');
+        $("#Checkout-Page").css('display', 'none');
         $("#goodForm").addClass("show").alert();
     }
 });
@@ -221,63 +233,80 @@ function magnify(imgID, zoom) {
     /*and also for touch screens:*/
     glass.addEventListener("touchmove", moveMagnifier);
     img.addEventListener("touchmove", moveMagnifier);
-    function moveMagnifier(e) {
-      var pos, x, y;
-      /*prevent any other actions that may occur when moving over the image*/
-      e.preventDefault();
-      /*get the cursor's x and y positions:*/
-      pos = getCursorPos(e);
-      x = pos.x;
-      y = pos.y;
-      /*prevent the magnifier glass from being positioned outside the image:*/
-      if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-      if (x < w / zoom) {x = w / zoom;}
-      if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-      if (y < h / zoom) {y = h / zoom;}
-      /*set the position of the magnifier glass:*/
-      glass.style.left = (x - w) + "px";
-      glass.style.top = (y - h) + "px";
-      /*display what the magnifier glass "sees":*/
-      glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-    }
-    function getCursorPos(e) {
-      var a, x = 0, y = 0;
-      e = e || window.event;
-      /*get the x and y positions of the image:*/
-      a = img.getBoundingClientRect();
-      /*calculate the cursor's x and y coordinates, relative to the image:*/
-      x = e.pageX - a.left;
-      y = e.pageY - a.top;
-      /*consider any page scrolling:*/
-      x = x - window.pageXOffset;
-      y = y - window.pageYOffset;
-      return {x : x, y : y};
-    }
-  }
 
-  /* Initiate Magnify Function
+    function moveMagnifier(e) {
+        var pos, x, y;
+        /*prevent any other actions that may occur when moving over the image*/
+        e.preventDefault();
+        /*get the cursor's x and y positions:*/
+        pos = getCursorPos(e);
+        x = pos.x;
+        y = pos.y;
+        /*prevent the magnifier glass from being positioned outside the image:*/
+        if (x > img.width - (w / zoom)) {
+            x = img.width - (w / zoom);
+        }
+        if (x < w / zoom) {
+            x = w / zoom;
+        }
+        if (y > img.height - (h / zoom)) {
+            y = img.height - (h / zoom);
+        }
+        if (y < h / zoom) {
+            y = h / zoom;
+        }
+        /*set the position of the magnifier glass:*/
+        glass.style.left = (x - w) + "px";
+        glass.style.top = (y - h) + "px";
+        /*display what the magnifier glass "sees":*/
+        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+    }
+
+    function getCursorPos(e) {
+        var a, x = 0,
+            y = 0;
+        e = e || window.event;
+        /*get the x and y positions of the image:*/
+        a = img.getBoundingClientRect();
+        /*calculate the cursor's x and y coordinates, relative to the image:*/
+        x = e.pageX - a.left;
+        y = e.pageY - a.top;
+        /*consider any page scrolling:*/
+        x = x - window.pageXOffset;
+        y = y - window.pageYOffset;
+        return {
+            x: x,
+            y: y
+        };
+    }
+}
+
+/* Initiate Magnify Function
 with the id of the image, and the strength of the magnifier glass:*/
 magnify("myimage", 3);
 
-$('.img-magnifier-container').mouseover(function(){
+$('.img-magnifier-container').mouseover(function () {
 
-    if($(window).width() > 991){
+    if ($(window).width() > 991) {
         $('.img-magnifier-glass').show();
-        $('#myimage').css({ opacity: 0.3 });
-        $('#myimage').css({ 'filter': 'blur(1px)' });
-      }
-  });
-  
-  $('.img-magnifier-container').mouseout(function(){
-
-    if($(window).width() > 991){
-    $('.img-magnifier-glass').hide();
-    $('#myimage').css({ 'filter': 'blur(0px)'});
-    $('#myimage').css({ opacity: 1 });
+        $('#myimage').css({
+            opacity: 0.3
+        });
+        $('#myimage').css({
+            'filter': 'blur(1px)'
+        });
     }
-  });
+});
 
+$('.img-magnifier-container').mouseout(function () {
 
-
-  
-  
+    if ($(window).width() > 991) {
+        $('.img-magnifier-glass').hide();
+        $('#myimage').css({
+            'filter': 'blur(0px)'
+        });
+        $('#myimage').css({
+            opacity: 1
+        });
+    }
+});

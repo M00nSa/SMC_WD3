@@ -1361,4 +1361,35 @@ input[type=number] {
 }
 
 
+.alert{
+    display: none;
+}
+
+.ModalPic{
+    position: absolute;
+    top: -126px;
+    left: 102px;
+}
+
+.modal-content{
+    top: 100px;
+    background-color: #020828;
+}
+
+.Subscribe{
+    border: 1px solid lightgray;
+}
+
+.modal-body h1, .modal-body p{
+    color:#d8d7d7;
+}
+
+.close{
+    color: white;
+}
+
+.modal button{
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+}
 
