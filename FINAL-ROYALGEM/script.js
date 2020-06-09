@@ -85,11 +85,14 @@ $(document).ready(function () {
             $(".Circle").css("display", "block");
             $(".count").css('top', '14px');
             $(".count").css('left', '39px');
+            $(".count").css('color', '#002366');
+            $(".count").css("position", "fixed");
         } else {
             $(".cart-icon").css("display", "block");
             $(".Circle-md").css("display", "block");
             $(".count").css('top', '90px');
             $(".count").css('right', '52px');
+            $(".count").css('color', 'white');
         }
 
         if ($('html:has(h3.count)').length > 0) {
@@ -99,6 +102,8 @@ $(document).ready(function () {
             $('html').prepend("<h3 class='count'>1</h3>");
         }
     })
+
+    
 
 })
 
@@ -273,4 +278,6 @@ $('.img-magnifier-container').mouseover(function(){
   });
 
 
+
+  
   

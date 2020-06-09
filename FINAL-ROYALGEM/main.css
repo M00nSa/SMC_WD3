@@ -3,9 +3,11 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
+
 body {
     letter-spacing: 1.5px;
     line-height: 30px;
@@ -27,7 +29,7 @@ header {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     header {
         position: absolute;
     }
@@ -116,6 +118,7 @@ nav a:hover {
     header nav ul li {
         border-bottom: none;
     }
+
     .Cart img {
         padding-right: 14px;
         padding-left: 0;
@@ -521,7 +524,10 @@ p {
 
 /*styling link bottom border*/
 
-
+.footer-link:hover{
+    text-decoration: none;
+    color: initial;
+}
 .link--underline-slide,
 .footer-link {
     position: relative;
@@ -586,7 +592,7 @@ p {
 
 
 
-.link-wrap:hover{
+.link-wrap:hover {
     text-decoration: none;
     color: initial;
 }
@@ -812,7 +818,7 @@ p {
         flex-direction: row;
     }
 
-   
+
 
 
 }
@@ -835,9 +841,18 @@ nav ul li {
     margin-top: 80px;
 }
 
+
 #butterfly-earring-Page {
-    margin-top: 200px;
+    margin-top: 100px;
 }
+
+
+@media (min-width: 992px){
+    #butterfly-earring-Page {
+        margin-top: 200px;
+    }
+}
+
 
 
 .card-body p {
@@ -856,17 +871,18 @@ nav ul li {
     z-index: 10;
 }
 
-@media (min-width: 992px){
-   
+@media (min-width: 992px) {
 
-    .scale-effect{
+
+    .scale-effect {
         transition: transform 2s;
-        
+
     }
-    .scale-effect:hover{
+
+    .scale-effect:hover {
         transform: scale(1.1);
     }
-    
+
 }
 
 
@@ -904,15 +920,15 @@ small {
 }
 
 
-   .Circle{
+.Circle {
     width: 25px;
     height: 25px;
     border-radius: 22px;
-    background-color: #936BC8;
+    background-color: white;
     position: absolute;
     left: 31px;
     top: -4px;
-   } 
+}
 
 
 .count {
@@ -920,18 +936,21 @@ small {
     z-index: 100;
     font-family: none;
     font-size: 16px;
-    color: white;
+    color: #002366;
 }
 
-.Circle-md{
+.Circle-md {
     width: 25px;
     height: 25px;
     border-radius: 22px;
-    background-color: #936BC8;
+    background-color: #002366;
     position: absolute;
     right: 45px;
     top: 88px;
 }
+
+
+
 
 
 /* custom radio button starts*/
@@ -1221,7 +1240,7 @@ a.back-to-top-link {
     text-decoration: none;
     color: black;
     text-align: center;
-    
+
 }
 
 
@@ -1239,6 +1258,7 @@ a.back-to-top-link::before {
     font-size: 12px;
     margin: -5px 0px -5px 1px;
 }
+
 /* back to top button ends*/
 
 
@@ -1261,36 +1281,84 @@ input[type=number] {
 /* removing Arrows of number inputs ends*/
 
 
-.alert a{
+.alert a {
     color: black;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
 }
 
-.Ed-Guide-P{
+.Ed-Guide-P {
     font-family: 'Antic', sans-serif;
     color: dimgrey;
 }
-.Ed-Guide-h5{
+
+.Ed-Guide-h5 {
     color: black;
     font-size: 1.5rem;
 }
 
 
 
-    .img-magnifier-container {
-        position:relative;
-      }
-      
-      .img-magnifier-glass {
-        position: absolute;
-        border-radius: 50%;
-        cursor: none;
-        /*Set the size of the magnifier glass:*/
-        width: 100px;
-        height: 100px;
-        display:none;
-        box-shadow: 0 4px 4px grey;
-        z-index: 10;
-      }
+
+
+
+/*Styling Magnifier glass*/
+
+.img-magnifier-container {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+    display: none;
+    box-shadow: 0 4px 4px grey;
+    z-index: 10;
+}
+
+
+
+
+
+/*Styling Buttons*/
+
+.neo-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 36px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(115, 114, 115, 0.6);
+    transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.neo-button button a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.neo-button button {
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    outline: none;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+}
+
+
+
+.neo-button:active {
+    box-shadow: inset 10px 10px 10px rgba(187, 186, 187, 0.4), inset -10px -10px 12px rgb(251, 229, 202);
+    transform: scale(0.9);
+}
+
+
 
