@@ -77,29 +77,22 @@ $(document).ready(function () {
     /* cart*/
     $(".cart-icon").css("display", "none");
     $(".Circle-md").css("display", "none");
-    $(".Circle").css("display", "none");
+   
     $('.add-cart').click(function () {
+        $(".Circle-md").css("display", "block");
 
         if ($(window).width() < 767) {
-            $(".cart-icon").css("display", "block");
-            $(".Circle").css("display", "block");
-            $(".count").css('top', '14px');
-            $(".count").css('left', '39px');
-            $(".count").css('color', '#002366');
-            $(".count").css("position", "fixed");
+           
         } else {
-            $(".cart-icon").css("display", "block");
-            $(".Circle-md").css("display", "block");
-            $(".count").css('top', '90px');
-            $(".count").css('right', '52px');
-            $(".count").css('color', 'white');
+            $(".black-cart-icon").css("display", "block");
+           
         }
 
         if ($('html:has(h3.count)').length > 0) {
             var number = parseInt($('h3.count').text()) + 1;
             $('h3.count').text(number);
         } else {
-            $('html').prepend("<h3 class='count'>1</h3>");
+            $('.Circle-md').prepend("<h3 class='count'>1</h3>");
         }
     })
 
@@ -169,14 +162,16 @@ $("input").keypress(function () {
         $("[type=submit]").prop("disabled", false);
         form.classList.add("was-validated");
     } else {
-        if ($(".valid-charachter-number").val().length < 2) {
-            $(".valid-charachter-number")
-                .get(0)
-                .setCustomValidity("You must enter at least two characters");
-            form.reportValidity();
-        } else {
-            $(".valid-charachter-number").get(0).setCustomValidity("");
-        }
+
+        $(".valid-charachter-number").each(function(){
+            if ($(this).val().length < 2) {
+                this.setCustomValidity("You must enter at least two characters");
+                form.reportValidity();
+            } else {
+                this.setCustomValidity("");
+            }
+        })
+       
     }
 });
 
@@ -204,109 +199,4 @@ $('[type="submit"]').click(function (event) {
     }
 });
 
-
-
-
-
-
-/* magnify glass functionality*/
-
-
-function magnify(imgID, zoom) {
-    var img, glass, w, h, bw;
-    img = document.getElementById(imgID);
-    /*create magnifier glass:*/
-    glass = document.createElement("DIV");
-    glass.setAttribute("class", "img-magnifier-glass");
-    /*insert magnifier glass:*/
-    img.parentElement.insertBefore(glass, img);
-    /*set background properties for the magnifier glass:*/
-    glass.style.backgroundImage = "url('" + img.src + "')";
-    glass.style.backgroundRepeat = "no-repeat";
-    glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-    bw = 3;
-    w = glass.offsetWidth / 2;
-    h = glass.offsetHeight / 2;
-    /*execute a function when someone moves the magnifier glass over the image:*/
-    glass.addEventListener("mousemove", moveMagnifier);
-    img.addEventListener("mousemove", moveMagnifier);
-    /*and also for touch screens:*/
-    glass.addEventListener("touchmove", moveMagnifier);
-    img.addEventListener("touchmove", moveMagnifier);
-
-    function moveMagnifier(e) {
-        var pos, x, y;
-        /*prevent any other actions that may occur when moving over the image*/
-        e.preventDefault();
-        /*get the cursor's x and y positions:*/
-        pos = getCursorPos(e);
-        x = pos.x;
-        y = pos.y;
-        /*prevent the magnifier glass from being positioned outside the image:*/
-        if (x > img.width - (w / zoom)) {
-            x = img.width - (w / zoom);
-        }
-        if (x < w / zoom) {
-            x = w / zoom;
-        }
-        if (y > img.height - (h / zoom)) {
-            y = img.height - (h / zoom);
-        }
-        if (y < h / zoom) {
-            y = h / zoom;
-        }
-        /*set the position of the magnifier glass:*/
-        glass.style.left = (x - w) + "px";
-        glass.style.top = (y - h) + "px";
-        /*display what the magnifier glass "sees":*/
-        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-    }
-
-    function getCursorPos(e) {
-        var a, x = 0,
-            y = 0;
-        e = e || window.event;
-        /*get the x and y positions of the image:*/
-        a = img.getBoundingClientRect();
-        /*calculate the cursor's x and y coordinates, relative to the image:*/
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-        /*consider any page scrolling:*/
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
-        return {
-            x: x,
-            y: y
-        };
-    }
-}
-
-/* Initiate Magnify Function
-with the id of the image, and the strength of the magnifier glass:*/
-magnify("myimage", 3);
-
-$('.img-magnifier-container').mouseover(function () {
-
-    if ($(window).width() > 991) {
-        $('.img-magnifier-glass').show();
-        $('#myimage').css({
-            opacity: 0.3
-        });
-        $('#myimage').css({
-            'filter': 'blur(1px)'
-        });
-    }
-});
-
-$('.img-magnifier-container').mouseout(function () {
-
-    if ($(window).width() > 991) {
-        $('.img-magnifier-glass').hide();
-        $('#myimage').css({
-            'filter': 'blur(0px)'
-        });
-        $('#myimage').css({
-            opacity: 1
-        });
-    }
-});
+         
