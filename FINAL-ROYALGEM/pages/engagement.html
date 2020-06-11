@@ -20,8 +20,16 @@
         <div
             class="Navcontainer d-flex align-items-center justify-content-between scrolling-navbar wrapper flex-column justify-conent-lg-start">
             <div class="Logo text-center mr-md-auto ">
-                <a href="../index.html"><img src="../assets/LOGO2.png" alt="Logo"
-                        class="pl-2 p-0 pt-md-4 d-md-none"></a>
+                <div class="Accordin-wrap">
+
+                    <div class="Accordin-header"> <img src="../assets/LOGO2.png" class="pl-2 p-0 pt-md-4 d-md-none">
+                    </div>
+
+                    <div class="Accordin-body">
+                        <a href="tel:+1818.858.4221">+1 818.858.4221</a>
+                    </div>
+
+                </div>
                 <a href="../index.html"><img src="../assets/LOGO1.png" alt="Logo"
                         class="pl-2 p-0 pt-md-4 d-none d-md-block"></a>
             </div>
@@ -224,35 +232,45 @@
                     aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-               
-                <div class="modal-body">
-                    <img src="../assets/modal-pic.png" alt="..." class="w-50 ModalPic">
-                    <h1 >Enjoy $500 off</h1>
-                    <p class="py-4 px-5 "> Register with Royal Gem for exclusive offers, education, and more. And by more we mean <span class="font-weight-bold">up to $500 off </span>in savings to enjoy right away.</p>
+                <div class="modal-header">
+                    <div>
+                        <img src="../assets/modal-pic.png" alt="..." class="w-50 ModalPic">
+                    </div>
+                </div>
 
-                    <form action="" role="form" id="newModalForm" method="POST"
-                        class=" d-flex justify-content-center needs-validation" enctype="multipart/form-data"
-                        novalidate>
-                       
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-9 px-0">
-                                        <div class="form-group  pl-0 mb-2">
-                                            <input type="email" class="form-control ModalValidate" id="ModalEmail"
-                                                aria-describedby="emailHelp" placeholder="Enter Your Email" name="Email" required>
-                                            <div class="invalid-feedback">
-                                                Please write an email.
-                                            </div>
-                                        </div>
+                <div class="modal-body">
+
+                    <h1>Enjoy $500 off</h1>
+                    <p class="py-4 px-0 text-left"> Register with Royal Gem for exclusive offers, education, and more.
+                        And by
+                        more we mean <span class="font-weight-bold"><u>up to $500 off</u></span> in savings to enjoy
+                        right
+                        away.</p>
+
+                    <form action="" role="form" id="newModalForm"
+                        class=" d-flex justify-content-center needs-validation" novalidate>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8 col-md-9  px-0">
+
+                                    <div class="form-group  pl-0 mb-2">
+                                        <input type="email" class="form-control ModalValidate" id="ModalEmail"
+                                            aria-describedby="emailHelp" placeholder="Enter Your Email" name="Email"
+                                            required>
+                                        <div class="valid-feedback text-left">Looks good!</div>
+                                        <div class="invalid-feedback text-left">Please provide a valid email address.</div>
                                     </div>
-                                    <div class="col-3 px-0">
-                                        <button type="submit" class="btn text-dark Subscribe mb-2 bg-white text-white"
-                                    id="SubscribeButton">Subscribe</button>
-                                    </div>
+
+                                </div>
+                                <div class="col-4 col-md-3 pl-2  pr-0 ">
+                                    <button type="submit" class="btn text-dark  mb-2 bg-white text-white w-100 Subscribe"
+                                        disabled>Subscribe</button>
                                 </div>
                             </div>
-                           
-                      
+                        </div>
+
+
                     </form>
                 </div>
 
@@ -260,17 +278,21 @@
                 <!-- Subscribtion Alert Starts-->
 
 
-               
-                    
 
 
-                    <div class="alert alert-light text-info alert-dismissable" role="alert" id="SubscribeAlert">
-                        <h5><strong>Thank you! </strong></h5>
-                        <p>~Now you are a priority for
-                            any promotion or news~</p>
+
+
+                <div class="alert alert-dismissable container py-0 fade" role="alert" id="SubscribeAlert">
+                    <div class="row">
+                        <div class="col-10  col-md-11 p-3 mx-auto wrap">
+                            <h5><strong>Thank you! </strong></h5>
+                            <p class="mb-0">Now you can enjoy your exclusive offers and more! </p>
+                        </div>
                     </div>
 
-              
+                </div>
+
+
 
                 <!-- Subscribtion Alert Ends-->
 

@@ -77,15 +77,15 @@ $(document).ready(function () {
     /* cart*/
     $(".cart-icon").css("display", "none");
     $(".Circle-md").css("display", "none");
-   
+
     $('.add-cart').click(function () {
         $(".Circle-md").css("display", "block");
 
         if ($(window).width() < 767) {
-           
+
         } else {
             $(".black-cart-icon").css("display", "block");
-           
+
         }
 
         if ($('html:has(h3.count)').length > 0) {
@@ -97,22 +97,48 @@ $(document).ready(function () {
     })
 
 
-
-    setTimeout(function(){
+    /* Modal*/
+    setTimeout(function () {
         $('#exampleModal').modal('show');
-            }, 2000);
+    }, 2000);
 
 
-          
-                $('.Subscribe').click(function(){
-                    $('.alert').show()
-                }) 
-           
+
+    $('.Subscribe').click(function () {
+        $('.alert').show()
+    })
 
 
-})
+    /* Added phone number to the logo on small screen*/
+    $(".Accordin-header").click(function () {
+        $(this).toggleClass('active');
+    });
 
 
+});
+
+
+
+
+
+
+
+ /* Modal*/
+
+$('#ModalEmail').blur(function () {
+    console.log(form.checkValidity());
+    if (form.checkValidity()) {
+        $("[type=submit]").prop("disabled", false);
+    }
+    form.classList.add("was-validated");
+});
+
+$('[type="submit"]').click(function (event) {
+    if (form.checkValidity()) {
+        event.preventDefault();
+        $("#SubscribeAlert").addClass("show").alert();
+    }
+});
 
 
 
@@ -163,7 +189,7 @@ $("input").keypress(function () {
         form.classList.add("was-validated");
     } else {
 
-        $(".valid-charachter-number").each(function(){
+        $(".valid-charachter-number").each(function () {
             if ($(this).val().length < 2) {
                 this.setCustomValidity("You must enter at least two characters");
                 form.reportValidity();
@@ -171,9 +197,10 @@ $("input").keypress(function () {
                 this.setCustomValidity("");
             }
         })
-       
+
     }
 });
+
 
 
 
@@ -199,4 +226,6 @@ $('[type="submit"]').click(function (event) {
     }
 });
 
-         
+
+
+

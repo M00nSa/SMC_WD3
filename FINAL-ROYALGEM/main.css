@@ -26,7 +26,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     z-index: 50;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 6px 7px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 @media (min-width: 768px) {
@@ -138,7 +138,7 @@ nav a:hover {
         width: 100%;
         height: calc(100vh - 50px);
         background-color: #030f4e;
-        top: 46px;
+        top: 56px;
         left: -100%;
         transition: 1s;
         margin-top: 14px;
@@ -186,6 +186,7 @@ nav ul li a {
     padding-bottom: 0;
     border-radius: 0px;
     height: 50px;
+    border-bottom: 2px solid #959076;
 }
 
 .form-control {
@@ -213,7 +214,7 @@ nav ul li a {
 .scrolling-navbar {
     transition: 500ms ease;
     background-color: #030f4e !important;
-
+    border-bottom: 2px solid #959076;
 }
 
 .scrolling-navbar.scrolled {
@@ -492,11 +493,15 @@ p {
     transform: translateY(30px);
     transition: 600ms ease-in-out;
     transform-origin: bottom;
-    background-color: #030f4e;
+    background-color: #020b3a;
     padding: 0 0 20px;
 }
 
-
+@media (min-width:768px) {
+    .dropdown-content {
+        background-color: #030f4e;
+    }
+}
 
 .dropdown-content li:last-child {
     border-bottom: none;
@@ -524,10 +529,11 @@ p {
 
 /*styling link bottom border*/
 
-.footer-link:hover{
+.footer-link:hover {
     text-decoration: none;
     color: initial;
 }
+
 .link--underline-slide,
 .footer-link {
     position: relative;
@@ -618,7 +624,7 @@ p {
 }
 
 @media (max-width: 480px) {
-   .carousel #Carousel-1 {
+    .carousel #Carousel-1 {
         background-image: url(assets/1.png);
     }
 
@@ -628,7 +634,8 @@ p {
 
     .carousel #Carousel-3 {
         background-image: url(assets/3.png);
-    } 
+    }
+
     .carousel .carousel-item {
         width: 100%;
     }
@@ -647,23 +654,23 @@ p {
     #Carousel-3 {
         background-image: url(assets/555.png);
     }
-   
+
 }
 
 @media (min-width:768px) {
     #Carousel-1 {
         background-image: url(assets/5.png);
-       
+
     }
 
     #Carousel-2 {
         background-image: url(assets/55.png);
-       
+
     }
 
     #Carousel-3 {
         background-image: url(assets/555.png);
-        
+
     }
 
     .toggle {
@@ -679,18 +686,19 @@ p {
 @media (min-width:992px) {
     #Carousel-1 {
         background-image: url(assets/5.png);
-       
+
     }
 
     #Carousel-2 {
         background-image: url(assets/55.png);
-       
+
     }
 
     #Carousel-3 {
         background-image: url(assets/555.png);
-       
+
     }
+
     .carousel-item {
         width: 1000px;
         float: none;
@@ -701,17 +709,17 @@ p {
 @media (min-width: 1200px) {
     #Carousel-1 {
         background-image: url(assets/4.png);
-       
+
     }
 
     #Carousel-2 {
         background-image: url(assets/44.png);
-       
+
     }
 
     #Carousel-3 {
         background-image: url(assets/444.png);
-       
+
     }
 
     .carousel-item {
@@ -761,6 +769,7 @@ p {
 
     .scrolling-navbar {
         background-color: transparent !important;
+        border-bottom: none;
     }
 
     .Logo img {
@@ -796,7 +805,7 @@ p {
 #small-screen-cart {
     position: absolute;
     left: 0;
-    top: 16px;
+    top: 13px;
 }
 
 nav ul li {
@@ -817,7 +826,7 @@ nav ul li {
 }
 
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     #butterfly-earring-Page {
         margin-top: 200px;
     }
@@ -891,18 +900,18 @@ small {
 
 
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .count {
         color: white !important;
         left: 8px !important;
         top: 2px !important;
     }
-    
+
     .Circle-md {
         background-color: #002366 !important;
-       left: -5px !important;
-    top: -7px !important;
-        
+        left: -5px !important;
+        top: -7px !important;
+
     }
 }
 
@@ -938,7 +947,7 @@ small {
     --height: 140px;
     --text: #414856;
     --radio: #7C96B2;
-    --radio-checked: var(--green);
+    --radio-checked: #0425d2;
     --radio-size: 20px;
     --height: 140px;
     --border-radius: 10px;
@@ -1000,7 +1009,7 @@ small {
 }
 
 .custom-form input[type="radio"]:checked {
-    --radio: var(--green);
+    --radio: #0425d2;
 }
 
 .custom-form input[type="radio"]:checked::after {
@@ -1295,6 +1304,7 @@ input[type=number] {
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(115, 114, 115, 0.6);
     transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    background-color: #030f4e;
 }
 
 .neo-button button a:hover {
@@ -1314,40 +1324,136 @@ input[type=number] {
 
 
 .neo-button:active {
-    box-shadow: inset 10px 10px 10px rgba(187, 186, 187, 0.4), inset -10px -10px 12px rgb(251, 229, 202);
+    box-shadow: inset 4px 4px 4px rgb(187, 186, 187), inset -10px -10px 12px rgb(0, 35, 102);
     transform: scale(0.9);
 }
 
 
-.modal .alert{
+.modal-content,
+.modal .form-control,
+.modal button {
+    border-radius: 0;
+}
+
+
+.modal .form-control {
+    height: calc(1.5em + .75rem + 5px);
+    font-size: .9rem;
+}
+
+
+.modal .alert {
     display: none;
+    color: #959076;
+    padding: 12px 0;
 }
 
-.ModalPic{
+.modal .alert p {
+    font-size: .8rem;
+}
+
+.alert .wrap {
+    border: 1px solid;
+    border-radius: 0;
+}
+
+.ModalPic {
     position: absolute;
-    top: -126px;
-    left: 102px;
+    top: -59px;
+    left: 67px;
 }
 
-.modal-content{
-    top: 100px;
+@media (min-width:768px) {
+    .ModalPic {
+        top: -104px;
+        left: 100px;
+    }
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 0;
+}
+
+.modal-content {
+    top: 116px;
     background-color: #020828;
 }
 
-.Subscribe{
+.Subscribe {
     border: 1px solid lightgray;
 }
 
-.modal-body h1, .modal-body p{
-    color:#d8d7d7;
+.modal-body h1,
+.modal-body p {
+    color: #d8d7d7;
 }
 
-.close{
+.close {
     color: white;
 }
 
-.modal button{
+.modal button {
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 2px;
 }
 
+
+
+
+/*Styling LogoCall*/
+.Accordin-wrap {
+    padding-top: 4px;
+}
+
+.Accordin-body {
+    height: 0px;
+    background: #030f4edb;
+    transition: all ease 1s;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    left: 0;
+}
+
+.Accordin-body a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    color: #959076;
+    transform: translate(-50%, -50%);
+}
+
+.Accordin-header.active+.Accordin-body {
+    height: 50px;
+}
+
+
+
+/*hide search input styling*/
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+.Price {
+    line-height: 1.5;
+    display: inline;
+    background-image: linear-gradient(transparent 50%, #95907647 50%, #8d9ef3 85%, transparent 85%, transparent 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: animatedBackground 3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+}
+
+@keyframes animatedBackground {
+    to {
+        background-size: 100% 100%;
+    }
+}
