@@ -75,24 +75,30 @@ $(document).ready(function () {
 
 
     /* cart*/
-    $(".cart-icon").css("display", "none");
+    $(".Circle-sm").css("display", "none");
     $(".Circle-md").css("display", "none");
+    $(".black-cart-icon").css("display", "none");
 
     $('.add-cart').click(function () {
-        $(".Circle-md").css("display", "block");
+       
 
         if ($(window).width() < 767) {
-
+            $(".Circle-sm").css("display", "block");
         } else {
+           
+             $(".Circle-md").css("display", "block");
             $(".black-cart-icon").css("display", "block");
 
         }
 
         if ($('html:has(h3.count)').length > 0) {
             var number = parseInt($('h3.count').text()) + 1;
+            var number = parseInt($('h3.count-sm').text()) + 1;
             $('h3.count').text(number);
+            $('h3.count-sm').text(number);
         } else {
             $('.Circle-md').prepend("<h3 class='count'>1</h3>");
+            $('.Circle-sm').prepend("<h3 class='count-sm'>1</h3>");
         }
     })
 
@@ -177,12 +183,12 @@ $("#same_shipping").click(function (event) {
 
 
 
-/* form validation*/
+/* checkout-form validation*/
 
 var form = $("form.needs-validation").get(0);
 
 $("input").keypress(function () {
-    console.log(document.getElementById("myForm").checkValidity());
+    /*console.log(document.getElementById("myForm").checkValidity());*/
 
     if (form.checkValidity()) {
         $("[type=submit]").prop("disabled", false);
@@ -206,7 +212,7 @@ $("input").keypress(function () {
 
 
 
-/* form functionality*/
+/*  checkout-form functionality*/
 
 $('input#invalidCheck').blur(function () {
     console.log(form.checkValidity());
@@ -223,9 +229,58 @@ $('[type="submit"]').click(function (event) {
         console.log("Not submitting! Alert!");
         $("#Checkout-Page").css('display', 'none');
         $("#goodForm").addClass("show").alert();
+        
     }
 });
 
 
 
 
+/* contact-form validation*/
+
+
+
+$("input").keypress(function () {
+    console.log(document.getElementById("Contact-Form").checkValidity());
+
+    if (form.checkValidity()) {
+        $("[type=submit]").prop("disabled", false);
+        form.classList.add("was-validated");
+    } else {
+
+        $(".valid-charachter-number").each(function () {
+            if ($(this).val().length < 3) {
+                this.setCustomValidity("Please enter your full Name/Lastname (at least 3 characters)");
+                form.reportValidity();
+            } else {
+                this.setCustomValidity("");
+            }
+        })
+
+    }
+});
+
+
+
+
+/* contact-form functionality*/
+
+$('input#Terms-Conditions').blur(function () {
+    console.log(form.checkValidity());
+    if (form.checkValidity()) {
+        $('[type="submit"]').prop("disabled", false);
+    }
+   
+    form.classList.add("was-validated");
+    
+});
+
+$('[type="submit"]').click(function (event) {
+    console.log(event);
+    if (form.checkValidity()) {
+      
+        $("#disapper-alert").css('display', 'none');
+        $("#contactform").addClass("show").alert();
+        
+    }
+});

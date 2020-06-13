@@ -391,7 +391,7 @@ p {
     margin-top: 10px;
     margin-bottom: 20px;
     border: 0;
-    border-top: solid 1px #4b4a4b;
+    border-top: solid 1px #959076;
 }
 
 .card-title {
@@ -902,20 +902,28 @@ small {
 
 @media (min-width: 768px) {
     .count {
-        color: white !important;
-        left: 8px !important;
-        top: 2px !important;
+        position: absolute;
+        z-index: 100;
+        font-family: none;
+        font-size: 16px;
+        color: white;
+        left: 8px;
+        top: 2px;
     }
 
     .Circle-md {
-        background-color: #002366 !important;
-        left: -5px !important;
-        top: -7px !important;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 22px;
+        background-color: #002366;
+        left: -5px;
+        top: -7px;
 
     }
 }
 
-.count {
+.count-sm {
     position: absolute;
     z-index: 100;
     font-family: none;
@@ -925,14 +933,14 @@ small {
     top: 2px;
 }
 
-.Circle-md {
+.Circle-sm {
     width: 25px;
     height: 25px;
     border-radius: 22px;
     background-color: white;
     position: absolute;
     left: 33px;
-    top: -298px;
+    top: 0;
 }
 
 
@@ -1319,6 +1327,7 @@ input[type=number] {
     outline: none;
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 1px;
+    color: white;
 }
 
 
@@ -1443,6 +1452,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 
+/*animating price background*/
 .Price {
     line-height: 1.5;
     display: inline;
@@ -1456,4 +1466,33 @@ input[type="search"]::-webkit-search-results-decoration {
     to {
         background-size: 100% 100%;
     }
+}
+
+.MsgInput{
+width: 100%;
+background-color: transparent;
+border: none;
+outline: none;
+border-bottom: 1px solid #959076;
+color: black;
+font-size: 1rem;
+border-radius: 0;
+letter-spacing: 1px;
+}
+
+.contact-title, #Contact-Form{
+    transition: all 4s ease-in-out;
+}
+
+.contact-title{
+    margin-top: 100px;
+}
+#Contact-Form{
+    margin-top: 50px;
+}
+
+#Contact-Form #Message{
+    border: 1px solid #959076;
+    border-radius: 0;
+
 }
