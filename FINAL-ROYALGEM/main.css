@@ -812,25 +812,8 @@ nav ul li {
     font-size: 18px;
 }
 
-#Jewelry-Page,
-#Education-Page,
-#Engagemnet-Page,
-#Spring-Awakaning-Page,
-#Checkout-Page {
-    margin-top: 80px;
-}
 
 
-#butterfly-earring-Page {
-    margin-top: 100px;
-}
-
-
-@media (min-width: 992px) {
-    #butterfly-earring-Page {
-        margin-top: 200px;
-    }
-}
 
 
 
@@ -1309,7 +1292,7 @@ input[type=number] {
     width: 106px;
     height: 36px;
     margin: auto;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     box-shadow: 10px 10px 20px rgba(115, 114, 115, 0.6);
     transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     background-color: #030f4e;
@@ -1453,46 +1436,73 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 /*animating price background*/
-.Price {
-    line-height: 1.5;
-    display: inline;
-    background-image: linear-gradient(transparent 50%, #95907647 50%, #8d9ef3 85%, transparent 85%, transparent 100%);
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    animation: animatedBackground 3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+.Price::after {
+
+    background: linear-gradient(to right, #030f4e, #030f4e);
+    animation: animatedBottomBorder 3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+    position: absolute;
+    content: ' ';
+    height: 3px;
+    width: 0;
+
 }
 
-@keyframes animatedBackground {
+@keyframes animatedBottomBorder {
     to {
-        background-size: 100% 100%;
+        width: 100px;
     }
 }
 
-.MsgInput{
-width: 100%;
-background-color: transparent;
-border: none;
-outline: none;
-border-bottom: 1px solid #959076;
-color: black;
-font-size: 1rem;
-border-radius: 0;
-letter-spacing: 1px;
+.MsgInput {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #959076;
+    color: black;
+    font-size: 1rem;
+    border-radius: 0;
+    letter-spacing: 1px;
 }
 
-.contact-title, #Contact-Form{
+.contact-title,
+#Contact-Form {
     transition: all 4s ease-in-out;
 }
 
-.contact-title{
+.contact-title {
     margin-top: 100px;
 }
-#Contact-Form{
+
+#Contact-Form {
     margin-top: 50px;
 }
 
-#Contact-Form #Message{
+#Contact-Form #Message {
     border: 1px solid #959076;
     border-radius: 0;
 
+}
+
+.AddCartMessage {
+    border: 1px solid #959076;
+    border-radius: 0;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    box-shadow: 10px 10px 20px rgba(115, 114, 115, 0.6);
+    background-color:  #95907665;
+}
+
+.MarginTop{
+margin-top: 180px;
+}
+
+#Jewelry-Page,
+#Education-Page,
+#Engagemnet-Page,
+#Spring-Awakaning-Page,
+#Checkout-Page {
+    margin-top: 80px;
 }

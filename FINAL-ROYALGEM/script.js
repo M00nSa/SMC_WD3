@@ -144,8 +144,8 @@ $('[type="submit"]').click(function (event) {
         event.preventDefault();
         $("#SubscribeAlert").addClass("show").alert();
     }
-});
 
+});
 
 
 
@@ -284,3 +284,26 @@ $('[type="submit"]').click(function (event) {
         
     }
 });
+
+
+
+/* AddtoBagAlert */
+$(document).ready(function(){
+    $(".add-cart").click(function(){
+        window.scrollTo(0,0);
+        $(".AddCartMessage").show('fade');
+    
+        setTimeout(function(){
+            $('.AddCartMessage').hide('fade');
+        }, 2000);
+    });
+    $('#Close-Alert').click(function(){
+        setTimeout(function(){
+            $('.AddCartMessage').hide('fade');
+           
+        });
+    });
+        
+});
+
+
