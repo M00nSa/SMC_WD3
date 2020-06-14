@@ -307,3 +307,18 @@ $(document).ready(function(){
 });
 
 
+/* Contact Message rule */
+
+$('#Message').on('keyup',function() 
+{
+  var minlen = $(this).attr('minlength');
+  
+  var length = $(this).val().length;
+  if(length < (minlen-10) ){
+    $('#textarea_message').text('Min length should be at least '+minlen+' characters!')
+  }
+  else
+    {
+      $('#textarea_message').text('');
+    }
+});
