@@ -1523,3 +1523,11 @@ input[type="search"]::-webkit-search-results-decoration {
 .footer-nav li {
     color: black;
 }
+
+h6.card-title:hover{
+text-decoration: none;
+}
+
+#Product-grid-Page h6{
+    color: #959076;
+}
