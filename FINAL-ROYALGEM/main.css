@@ -1471,42 +1471,53 @@ input[type="search"]::-webkit-search-results-decoration {
     border: 1px solid #959076;
     border-radius: 0;
     position: absolute;
-    top: 150px;
+    top: 80px;
     left: 0;
     right: 0;
     box-shadow: 10px 10px 20px rgba(115, 114, 115, 0.6);
-    background-color:  #95907665;
+    background-color: #95907665;
 }
 
-@media (min-width:768px){
-    .MarginTop{
-        margin-top: 180px;
-        }
+@media (min-width:768px) {
+    .MarginTop {
+        margin-top: 110px;
+    }
+
+    .AddCartMessage {
+        top: 150px;
+    }
 }
 
 
 
 
 
- /* Footer */
- 
+/* Footer */
+
 #page-container {
     position: relative;
     min-height: 100vh;
-  }
+}
 
-  #content-wrap {
-    padding-bottom: 15rem;/* Footer height */
+#content-wrap {
+    padding-bottom: 23rem;
+    /* Footer height */
     padding-top: 5rem;
-  }
-  
-  #footer {
+}
+
+@media (min-width:768px) {
+    #content-wrap {
+        padding-bottom: 12rem;
+    }
+}
+
+#footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
+}
 
-  footer {
+footer {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
@@ -1524,10 +1535,31 @@ input[type="search"]::-webkit-search-results-decoration {
     color: black;
 }
 
-h6.card-title:hover{
-text-decoration: none;
+h6.card-title:hover {
+    text-decoration: none;
 }
 
-#Product-grid-Page h6{
+#Product-grid-Page h6 {
     color: #959076;
+}
+
+#Home-Link:after {
+    width: 50px;
+}
+
+#Education-Link:after {
+    width: 87px;
+}
+
+#Contactus-Link:after {
+    width: 97px;
+}
+
+#Jewelry-Link:after {
+    width: 63px;
+}
+
+#Engagement-Link:after,
+#Timepieces-Link:after {
+    width: 102px;
 }

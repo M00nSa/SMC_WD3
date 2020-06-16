@@ -55,22 +55,26 @@
                                 </form>
                             </li>
 
-                            <li><a href="../index.html" class="link link--underline-slide">Home</a></li>
+                            <li><a href="../index.html" class="link link--underline-slide" id="Home-Link">Home</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link link link--underline-slide menu-link" href="products.html"
                                     id="navbarDropdown">
                                     Products
                                 </a>
                                 <div class="dropdown-content" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item link link--underline-slide"
-                                        href="engagement.html">Engagement</a>
-                                    <a class="dropdown-item link link--underline-slide" href="jewelry.html">Jewelry</a>
-                                    <a class="dropdown-item link link--underline-slide" href="timepieces.html">Time
+                                    <a class="dropdown-item link link--underline-slide" href="engagement.html"
+                                        id="Engagement-Link">Engagement</a>
+                                    <a class="dropdown-item link link--underline-slide" id="Jewelry-Link"
+                                        href="jewelry.html">Jewelry</a>
+                                    <a class="dropdown-item link link--underline-slide" id="Timepieces-Link"
+                                        href="timepieces.html">Time
                                         Pieces</a>
 
                             </li>
-                            <li><a href="education.html" class="link link--underline-slide">Education</a></li>
-                            <li><a href="contactus.html" class="link link--underline-slide">Contact Us</a></li>
+                            <li><a href="education.html" class="link link--underline-slide"
+                                    id="Education-Link">Education</a></li>
+                            <li><a href="contactus.html" class="link link--underline-slide" id="Contactus-Link">Contact
+                                    Us</a></li>
                             <li class="Cart ml-auto" id="cart-md">
                                 <a href="checkout.html">
                                     <div class="Circle-md"></div><img src="../assets/cart-b.png"
@@ -89,9 +93,9 @@
             </header>
 
             <main id="Monarch-Page">
-                <div class="container MarginTop my-5 my-md-0">
+                <div class="container MarginTop my-md-0">
                     <div class="row">
-                        <div class="col-12 text-center mt-5" id="TopContainer">
+                        <div class="col-12 text-center mt-md-5" id="TopContainer">
                             <h1 class="mt-5">Dazzle of Royalty</h1>
                             <hr class="Seperator mt-5">
                             <small>Featuring Cushion cut Yellow Diamond</small>
@@ -100,10 +104,7 @@
                                 most beautiful sets.</p>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="container mt-5">
                     <div class="row my-5">
 
 
@@ -113,7 +114,7 @@
                             <div class="row mb-5">
 
                                 <div class="col-6 col-md-6 ">
-                                    <a href="butterfly.html" class="link-wrap">
+                                    <a href="#" class="link-wrap">
                                         <div class="text-center scale-effect">
                                             <img src="../assets/pngwing.com (1).png" class="card-img-top w-100"
                                                 alt="...">
@@ -228,61 +229,59 @@
 
 
                 </div>
-
                 <div class="back-to-top-wrapper">
                     <a href="#" class="back-to-top-link" id="mybtn" onclick="topFunction()"></a>
                 </div>
-
-
             </main>
-        </div>
+           
 
 
-        <footer id="footer">
 
-            <div class="container">
-                <div class="row text-center text-white">
-                    <div class="col">
-                        <ul class="footer-nav m-0 py-3">
+            <footer id="footer">
 
-                            <li class="footer-item order-1 order-md-1">
-                                <a class="footer-link" href="#">Change Language <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="footer-item order-2 order-md-2">
-                                <a class="footer-link" href="#">Catalogs <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="footer-item order-5 order-md-3">
-                                ©2020 Royal Gem, Inc.
-                            </li>
-                            <li class="footer-item order-3 order-md-4">
-                                <a class="footer-link" href="#">Follow Us <span class="sr-only">(current)</span></a>
-                            </li>
+                <div class="container">
+                    <div class="row text-center text-white">
+                        <div class="col">
+                            <ul class="footer-nav m-0 py-3">
 
-                            <li class="footer-item order-4 order-md-5">
-                                <a class="footer-link" href="#">Privacy Policy</a>
-                            </li>
-                        </ul>
+                                <li class="footer-item order-1 order-md-1">
+                                    <a class="footer-link" href="#">Change Language <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="footer-item order-2 order-md-2">
+                                    <a class="footer-link" href="#">Catalogs <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="footer-item order-5 order-md-3">
+                                    ©2020 Royal Gem, Inc.
+                                </li>
+                                <li class="footer-item order-3 order-md-4">
+                                    <a class="footer-link" href="#">Follow Us <span class="sr-only">(current)</span></a>
+                                </li>
 
+                                <li class="footer-item order-4 order-md-5">
+                                    <a class="footer-link" href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
 
-    <script src="../script.js"></script>
+        <script src="../script.js"></script>
 </body>
 
 </html>
