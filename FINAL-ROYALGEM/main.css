@@ -699,11 +699,11 @@ p {
 
     }
 
-    .carousel-item {
+    /*.carousel-item {
         width: 1000px;
         float: none;
         margin: auto;
-    }
+    }*/
 }
 
 @media (min-width: 1200px) {
@@ -722,11 +722,11 @@ p {
 
     }
 
-    .carousel-item {
+    /*.carousel-item {
         width: 1200px;
         float: none;
         margin: auto;
-    }
+    }*/
 }
 
 @media (max-width: 768px) {
