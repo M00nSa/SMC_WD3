@@ -1563,3 +1563,15 @@ h6.card-title:hover {
 #Timepieces-Link:after {
     width: 102px;
 }
+
+.carousel .carousel-item.active {
+    opacity: 1;
+    transition: opacity .1s ease-in;
+  }
+  
+  .carousel .carousel-item {
+    opacity: 0;
+    display: block;
+    left: 0;
+    transition: opacity .5s ease-out;
+  }
