@@ -1,0 +1,151 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.Grass,
+.Sky,
+.Road {
+    position: relative;
+    width: 100%;
+}
+
+.Sky {
+
+    height: 40%;
+    background-color: #49d1e6;
+}
+
+.Grass {
+    height: 30%;
+    background-color: green;
+}
+
+.Road {
+    height: 30%;
+    background-color: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+
+.Lines {
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.Characters {
+    width: 75px;
+    position: absolute;
+    animation-name: drive;
+    animation-duration: 9s;
+    animation-fill-mode: infinite;
+    animation-delay: 2s;
+    animation-iteration-count: 6;
+}
+
+#Peach {
+    animation-timing-function: ease-out;
+    right: 0;
+}
+
+#Mario {
+    right: 45px;
+    top: 30px;
+    animation-timing-function: ease-in-out;
+}
+
+#Wario {
+    right: 15px;
+    top: 50px;
+    animation: drive 5s 2s 6 ease-in, jump .5s 5s ease-in;
+}
+
+#DonkeyKong {
+    right: 1px;
+    top: 65px;
+    animation-timing-function: ease;
+}
+
+#Ludwig {
+    right: 20px;
+    top: 80px;
+    animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+}
+
+#Iggy {
+    right: 25px;
+    top: 125px;
+    animation-timing-function: cubic-bezier(.5, 0.77, 1, .3);
+}
+
+.Cloud {
+    position: absolute;
+}
+
+.Cloud:nth-child(1) {
+    width: 100px;
+    opacity: .6;
+    top: 50px;
+    animation: wind 80s linear infinite reverse;
+}
+
+.Cloud:nth-child(2) {
+    width: 200px;
+    left: 80px;
+    top: 100px;
+    animation: wind2 50s linear infinite;
+}
+
+
+
+@keyframes drive {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes wind {
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes wind2 {
+    from {
+        left: 300px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 50px;
+    }
+
+    50% {
+        top: 25px;
+    }
+
+    100% {
+        top: 50px
+    }
+}
